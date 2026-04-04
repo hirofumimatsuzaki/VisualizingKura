@@ -1,0 +1,617 @@
+const ITOSHIMA = { name: "Itoshima, Japan", lat: 33.557, lon: 130.195 };
+const MAP_BOUNDS = { minLon: -180, maxLon: 180, minLat: -60, maxLat: 85 };
+const MAP_LABELS = [
+  { text: "NORTH AMERICA", lon: -108, lat: 48 },
+  { text: "SOUTH AMERICA", lon: -60, lat: -18 },
+  { text: "EUROPE", lon: 14, lat: 55 },
+  { text: "AFRICA", lon: 18, lat: 5 },
+  { text: "ASIA", lon: 90, lat: 42 },
+  { text: "OCEANIA", lon: 140, lat: -25 },
+  { text: "JAPAN", lon: 138, lat: 37 }
+];
+
+const COUNTRY_COORDS = {
+  Argentina: { lat: -34.61, lon: -58.38 }, Armenia: { lat: 40.18, lon: 44.51 }, Australia: { lat: -25.27, lon: 133.78 },
+  Austria: { lat: 48.21, lon: 16.37 }, Bangladesh: { lat: 23.81, lon: 90.41 }, Belgium: { lat: 50.85, lon: 4.35 },
+  Brazil: { lat: -15.79, lon: -47.88 }, Canada: { lat: 45.42, lon: -75.69 }, Chile: { lat: -33.45, lon: -70.67 },
+  China: { lat: 39.9, lon: 116.4 }, Colombia: { lat: 4.71, lon: -74.07 }, Cyprus: { lat: 35.18, lon: 33.36 },
+  "Czech Republic": { lat: 50.08, lon: 14.43 }, Denmark: { lat: 55.68, lon: 12.57 }, Estonia: { lat: 59.44, lon: 24.75 },
+  Finland: { lat: 60.17, lon: 24.94 }, France: { lat: 48.86, lon: 2.35 }, Georgia: { lat: 41.72, lon: 44.79 },
+  Germany: { lat: 52.52, lon: 13.4 }, Greece: { lat: 37.98, lon: 23.72 }, Guatemala: { lat: 14.63, lon: -90.55 },
+  "Hong Kong": { lat: 22.32, lon: 114.17 }, Iceland: { lat: 64.15, lon: -21.94 }, India: { lat: 28.61, lon: 77.21 },
+  Indonesia: { lat: -6.21, lon: 106.85 }, Ireland: { lat: 53.35, lon: -6.26 }, Israel: { lat: 31.77, lon: 35.21 },
+  Italy: { lat: 41.9, lon: 12.5 }, Japan: { lat: 35.68, lon: 139.76 }, Kenya: { lat: -1.29, lon: 36.82 },
+  Latvia: { lat: 56.95, lon: 24.11 }, Lithuania: { lat: 54.69, lon: 25.28 }, Macau: { lat: 22.2, lon: 113.55 },
+  Malaysia: { lat: 3.14, lon: 101.69 }, Mexico: { lat: 19.43, lon: -99.13 }, Netherlands: { lat: 52.37, lon: 4.89 },
+  "New Zealand": { lat: -41.29, lon: 174.78 }, Norway: { lat: 59.91, lon: 10.75 }, Pakistan: { lat: 33.69, lon: 73.06 },
+  Paraguay: { lat: -25.29, lon: -57.64 }, Peru: { lat: -12.05, lon: -77.04 }, Philippines: { lat: 14.6, lon: 120.98 },
+  Poland: { lat: 52.23, lon: 21.01 }, Portugal: { lat: 38.72, lon: -9.14 }, "Russian Federation": { lat: 55.76, lon: 37.62 },
+  Singapore: { lat: 1.35, lon: 103.82 }, "Slovak Republic": { lat: 48.15, lon: 17.11 }, "South Africa": { lat: -25.75, lon: 28.19 },
+  "South Korea": { lat: 37.57, lon: 126.98 }, Spain: { lat: 40.42, lon: -3.7 }, Sweden: { lat: 59.33, lon: 18.07 },
+  Switzerland: { lat: 46.95, lon: 7.45 }, Taiwan: { lat: 25.03, lon: 121.57 }, Thailand: { lat: 13.75, lon: 100.5 },
+  "Trinidad and Tobago": { lat: 10.66, lon: -61.52 }, Turkey: { lat: 39.93, lon: 32.86 }, Ukraine: { lat: 50.45, lon: 30.52 },
+  "United Arab Emirates": { lat: 24.45, lon: 54.38 }, "United Kingdom": { lat: 51.51, lon: -0.13 }, "United States": { lat: 38.9, lon: -77.04 },
+  "Virgin Islands (USA)": { lat: 18.34, lon: -64.93 }
+};
+
+const state = {
+  frame: 0,
+  points: [],
+  launched: 0,
+  arrived: 0,
+  speed: 1.25,
+  playing: true,
+  mapPadding: 48,
+  width: 0,
+  height: 0,
+  landShapes: [],
+  countryShapes: []
+};
+
+const dom = {};
+let canvas;
+let ctx;
+let resizeObserver;
+
+document.addEventListener("DOMContentLoaded", () => {
+  canvas = document.createElement("canvas");
+  ctx = canvas.getContext("2d");
+  document.getElementById("sketch-root").appendChild(canvas);
+  bindDom();
+  initializeMapData();
+  initializeData();
+  setupControls();
+  resizeCanvas();
+  resizeObserver = new ResizeObserver(() => resizeCanvas());
+  resizeObserver.observe(document.getElementById("sketch-root"));
+  requestAnimationFrame(tick);
+});
+
+function bindDom() {
+  dom.currentDate = document.getElementById("current-date");
+  dom.currentArtist = document.getElementById("current-artist");
+  dom.totalArtists = document.getElementById("total-artists");
+  dom.countryCount = document.getElementById("country-count");
+  dom.arrivedCount = document.getElementById("arrived-count");
+  dom.topCountry = document.getElementById("top-country");
+  dom.countryList = document.getElementById("country-list");
+  dom.speedControl = document.getElementById("speed-control");
+  dom.togglePlay = document.getElementById("toggle-play");
+  dom.restartPlay = document.getElementById("restart-play");
+}
+
+function initializeMapData() {
+  if (window.WORLD_LAND_TOPOLOGY) {
+    state.landShapes = decodeTopologyObject(window.WORLD_LAND_TOPOLOGY, "land");
+  }
+  if (window.WORLD_COUNTRIES_TOPOLOGY) {
+    state.countryShapes = decodeTopologyObject(window.WORLD_COUNTRIES_TOPOLOGY, "countries");
+  }
+}
+
+function initializeData() {
+  const payload = window.ARTIST_DATA;
+  if (!payload || !Array.isArray(payload.records)) {
+    document.getElementById("sketch-root").textContent = "Artist data could not be loaded.";
+    return;
+  }
+
+  const countryTotals = new Map();
+  state.records = payload.records.map((record, index) => {
+    const origin = COUNTRY_COORDS[record.country];
+    countryTotals.set(record.country, (countryTotals.get(record.country) || 0) + 1);
+    return { ...record, index, origin, status: "queued", progress: 0, seed: (index * 9301 + 49297) % 233280 };
+  });
+
+  state.countryTotals = [...countryTotals.entries()]
+    .map(([country, count]) => ({ country, count }))
+    .sort((a, b) => b.count - a.count || a.country.localeCompare(b.country));
+
+  dom.totalArtists.textContent = state.records.length;
+  dom.countryCount.textContent = state.countryTotals.length;
+  dom.topCountry.textContent = `${state.countryTotals[0]?.country || "-"} (${state.countryTotals[0]?.count || 0})`;
+  renderCountryList();
+  updateDomForCurrent(null);
+}
+
+function setupControls() {
+  dom.speedControl.addEventListener("input", (event) => {
+    state.speed = Number(event.target.value);
+  });
+  dom.togglePlay.addEventListener("click", () => {
+    state.playing = !state.playing;
+    dom.togglePlay.textContent = state.playing ? "Pause" : "Play";
+  });
+  dom.restartPlay.addEventListener("click", resetTimeline);
+}
+
+function resizeCanvas() {
+  const root = document.getElementById("sketch-root");
+  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  state.width = root.clientWidth;
+  state.height = root.clientHeight;
+  canvas.width = Math.floor(state.width * ratio);
+  canvas.height = Math.floor(state.height * ratio);
+  canvas.style.width = `${state.width}px`;
+  canvas.style.height = `${state.height}px`;
+  ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+  rebuildPointPositions();
+}
+
+function rebuildPointPositions() {
+  state.itoshimaScreen = projectLonLat(ITOSHIMA.lon, ITOSHIMA.lat);
+  if (!state.records) {
+    return;
+  }
+
+  for (const record of state.records) {
+    if (!record.origin) {
+      record.screenOrigin = null;
+      continue;
+    }
+    const point = projectLonLat(record.origin.lon, record.origin.lat);
+    const offsetX = pseudoNoise(record.seed * 0.01) * 36 - 18;
+    const offsetY = pseudoNoise(record.seed * 0.02) * 32 - 16;
+    record.screenOrigin = { x: point.x + offsetX, y: point.y + offsetY };
+  }
+}
+
+function tick() {
+  state.frame += 1;
+  drawScene();
+  requestAnimationFrame(tick);
+}
+
+function drawScene() {
+  drawBackdrop();
+  drawMapLayer();
+  if (state.playing && state.records) {
+    runTimeline();
+  }
+  drawTrails();
+  drawDestination();
+}
+
+function runTimeline() {
+  const launchInterval = Math.max(4, Math.floor(14 / state.speed));
+  if (state.frame % launchInterval === 0 && state.launched < state.records.length) {
+    const record = state.records[state.launched];
+    record.status = record.screenOrigin ? "flying" : "arrived";
+    record.progress = 0;
+    if (record.status === "arrived") {
+      state.arrived += 1;
+    } else {
+      state.points.push(record);
+    }
+    state.launched += 1;
+    updateDomForCurrent(record);
+  }
+
+  for (const point of state.points) {
+    if (point.status !== "flying") {
+      continue;
+    }
+    point.progress += 0.0055 * state.speed;
+    if (point.progress >= 1) {
+      point.progress = 1;
+      point.status = "arrived";
+      state.arrived += 1;
+    }
+  }
+
+  state.points = state.points.filter((point) => point.status === "flying");
+  if (state.launched >= state.records.length && state.arrived >= state.records.length) {
+    state.playing = false;
+    dom.togglePlay.textContent = "Play";
+  }
+  dom.arrivedCount.textContent = state.arrived;
+}
+
+function drawBackdrop() {
+  ctx.clearRect(0, 0, state.width, state.height);
+
+  const oceanGradient = ctx.createLinearGradient(0, 0, 0, state.height);
+  oceanGradient.addColorStop(0, "#03111a");
+  oceanGradient.addColorStop(0.45, "#081a27");
+  oceanGradient.addColorStop(1, "#041019");
+  ctx.fillStyle = oceanGradient;
+  ctx.fillRect(0, 0, state.width, state.height);
+
+  for (let i = 0; i < 4; i += 1) {
+    const radius = state.width * (0.22 + i * 0.1);
+    const x = state.width * (0.17 + i * 0.16);
+    const y = state.height * (0.12 + i * 0.11);
+    const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+    gradient.addColorStop(0, i % 2 === 0 ? "rgba(255,149,101,0.08)" : "rgba(122,242,211,0.06)");
+    gradient.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = gradient;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  const vignette = ctx.createRadialGradient(state.width * 0.5, state.height * 0.45, state.width * 0.1, state.width * 0.5, state.height * 0.45, state.width * 0.75);
+  vignette.addColorStop(0, "rgba(0,0,0,0)");
+  vignette.addColorStop(1, "rgba(0,0,0,0.34)");
+  ctx.fillStyle = vignette;
+  ctx.fillRect(0, 0, state.width, state.height);
+}
+
+function drawMapLayer() {
+  drawLongitudeLatitudeGrid();
+  drawLatitudeBands();
+  drawLand();
+  drawCountryBorders();
+  drawJapanFocus();
+  drawOriginDots();
+  drawMapLabels();
+}
+
+function drawLongitudeLatitudeGrid() {
+  ctx.strokeStyle = "rgba(122,242,211,0.08)";
+  ctx.lineWidth = 1;
+
+  for (let lon = -150; lon <= 150; lon += 30) {
+    drawGeodesicLine(
+      Array.from({ length: 30 }, (_, index) => projectLonLat(lon, -60 + index * 5)),
+      "rgba(122,242,211,0.08)",
+      1
+    );
+  }
+
+  for (let lat = -45; lat <= 75; lat += 15) {
+    drawGeodesicLine(
+      Array.from({ length: 73 }, (_, index) => projectLonLat(-180 + index * 5, lat)),
+      lat === 0 ? "rgba(255,149,101,0.18)" : "rgba(255,255,255,0.05)",
+      lat === 0 ? 1.3 : 0.8
+    );
+  }
+}
+
+function drawLatitudeBands() {
+  const top = projectLonLat(0, 23.5).y;
+  const bottom = projectLonLat(0, -23.5).y;
+  ctx.fillStyle = "rgba(255,255,255,0.025)";
+  ctx.fillRect(state.mapPadding, top, state.width - state.mapPadding * 2, bottom - top);
+}
+
+function drawLand() {
+  if (!state.landShapes.length) {
+    return;
+  }
+
+  ctx.save();
+  ctx.shadowColor = "rgba(0,0,0,0.35)";
+  ctx.shadowBlur = 24;
+  ctx.shadowOffsetY = 10;
+
+  for (const polygon of state.landShapes) {
+    const fill = ctx.createLinearGradient(0, state.mapPadding, 0, state.height - state.mapPadding);
+    fill.addColorStop(0, "rgba(149,225,248,0.16)");
+    fill.addColorStop(0.6, "rgba(73,132,153,0.18)");
+    fill.addColorStop(1, "rgba(32,73,92,0.24)");
+    tracePolygon(polygon);
+    ctx.fillStyle = fill;
+    ctx.strokeStyle = "rgba(122,242,211,0.18)";
+    ctx.lineWidth = 1;
+    ctx.fill("evenodd");
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+function drawCountryBorders() {
+  if (!state.countryShapes.length) {
+    return;
+  }
+
+  ctx.save();
+  ctx.strokeStyle = "rgba(208, 240, 255, 0.11)";
+  ctx.lineWidth = 0.55;
+
+  for (const polygon of state.countryShapes) {
+    tracePolygon(polygon);
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+function drawJapanFocus() {
+  const jp = projectLonLat(138, 37);
+  const glow = ctx.createRadialGradient(jp.x, jp.y, 0, jp.x, jp.y, 90);
+  glow.addColorStop(0, "rgba(122,242,211,0.18)");
+  glow.addColorStop(1, "rgba(122,242,211,0)");
+  ctx.fillStyle = glow;
+  ctx.beginPath();
+  ctx.arc(jp.x, jp.y, 90, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.strokeStyle = "rgba(122,242,211,0.2)";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.arc(jp.x, jp.y, 42 + Math.sin(state.frame * 0.03) * 3, 0, Math.PI * 2);
+  ctx.stroke();
+}
+
+function drawOriginDots() {
+  const seen = new Set();
+  for (const record of state.records || []) {
+    if (!record.screenOrigin || seen.has(record.country)) {
+      continue;
+    }
+    seen.add(record.country);
+    ctx.shadowColor = "rgba(122,242,211,0.45)";
+    ctx.shadowBlur = 12;
+    ctx.beginPath();
+    ctx.arc(record.screenOrigin.x, record.screenOrigin.y, 3, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(122,242,211,0.8)";
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+}
+
+function drawTrails() {
+  if (!state.itoshimaScreen) {
+    return;
+  }
+
+  for (const record of state.points) {
+    if (!record.screenOrigin) {
+      continue;
+    }
+
+    const start = record.screenOrigin;
+    const end = state.itoshimaScreen;
+    const distance = Math.hypot(end.x - start.x, end.y - start.y);
+    const arcLift = 78 + distance * 0.055;
+    const arcBend = 52 + Math.min(38, distance * 0.03);
+    const mid = {
+      x: lerp(start.x, end.x, 0.5) + (start.y < end.y ? -1 : 1) * arcBend,
+      y: lerp(start.y, end.y, 0.5) - arcLift - Math.abs(end.x - start.x) * 0.05
+    };
+    const progress = easeInOutCubic(record.progress);
+    const head = quadraticPoint(start, mid, end, progress);
+
+    const trailAlpha = 0.16 + progress * 0.34;
+    ctx.strokeStyle = `rgba(255,149,101,${trailAlpha})`;
+    ctx.lineWidth = 0.8 + progress * 1.4;
+    ctx.beginPath();
+    let started = false;
+    for (let t = 0; t <= progress; t += 0.04) {
+      const pt = quadraticPoint(start, mid, end, t);
+      if (!started) {
+        ctx.moveTo(pt.x, pt.y);
+        started = true;
+      } else {
+        ctx.lineTo(pt.x, pt.y);
+      }
+    }
+    ctx.stroke();
+
+    ctx.strokeStyle = "rgba(122,242,211,0.12)";
+    ctx.lineWidth = 0.6;
+    ctx.beginPath();
+    ctx.moveTo(start.x, start.y);
+    ctx.quadraticCurveTo(mid.x, mid.y, head.x, head.y);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(head.x, head.y, 8, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(255,209,102,0.28)";
+    ctx.fill();
+    ctx.shadowColor = "rgba(122,242,211,0.55)";
+    ctx.shadowBlur = 18;
+    ctx.beginPath();
+    ctx.arc(head.x, head.y, 3.2 + Math.sin(state.frame * 0.15 + record.index) * 0.9, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(122,242,211,0.95)";
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+}
+
+function drawDestination() {
+  if (!state.itoshimaScreen) {
+    return;
+  }
+
+  const pulse = 16 + Math.sin(state.frame * 0.08) * 6;
+  drawCircle(state.itoshimaScreen.x, state.itoshimaScreen.y, 54 + pulse, "rgba(255,149,101,0.16)");
+  drawCircle(state.itoshimaScreen.x, state.itoshimaScreen.y, 24 + pulse * 0.3, "rgba(122,242,211,0.22)");
+  drawCircle(state.itoshimaScreen.x, state.itoshimaScreen.y, 5, "rgba(255,209,102,1)");
+  ctx.strokeStyle = "rgba(255,255,255,0.18)";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.arc(state.itoshimaScreen.x, state.itoshimaScreen.y, 78 + Math.sin(state.frame * 0.04) * 4, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.fillStyle = "#edf7ff";
+  ctx.font = "700 12px 'Space Grotesk', sans-serif";
+  ctx.fillText("Itoshima", state.itoshimaScreen.x + 10, state.itoshimaScreen.y - 12);
+}
+
+function drawMapLabels() {
+  ctx.save();
+  for (const label of MAP_LABELS) {
+    const point = projectLonLat(label.lon, label.lat);
+    ctx.fillStyle = label.text === "JAPAN" ? "rgba(255,209,102,0.78)" : "rgba(237,247,255,0.34)";
+    ctx.font = label.text === "JAPAN" ? "700 10px 'Space Grotesk', sans-serif" : "600 9px 'Space Grotesk', sans-serif";
+    ctx.fillText(label.text, point.x, point.y);
+  }
+  ctx.restore();
+}
+
+function renderCountryList() {
+  const maxCount = state.countryTotals[0]?.count || 1;
+  dom.countryList.innerHTML = state.countryTotals
+    .slice(0, 18)
+    .map(({ country, count }) => {
+      const ratio = Math.max(8, (count / maxCount) * 100);
+      return `
+        <div class="country-row">
+          <div class="country-name">
+            <div class="country-title"><span>${escapeHtml(country)}</span></div>
+            <div class="country-bar"><div class="country-bar-fill" style="width:${ratio}%"></div></div>
+          </div>
+          <div class="country-count">${count}</div>
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function updateDomForCurrent(record) {
+  if (!record) {
+    dom.currentDate.textContent = state.records?.[0]?.label || "-";
+    dom.currentArtist.textContent = "Waiting for playback";
+    dom.arrivedCount.textContent = state.arrived;
+    return;
+  }
+
+  dom.currentDate.textContent = record.label;
+  dom.currentArtist.innerHTML = `<strong>${escapeHtml(record.artist)}</strong><br>${escapeHtml(record.country)}`;
+  dom.arrivedCount.textContent = state.arrived;
+}
+
+function resetTimeline() {
+  state.playing = true;
+  state.launched = 0;
+  state.arrived = 0;
+  state.points = [];
+  dom.togglePlay.textContent = "Pause";
+  for (const record of state.records || []) {
+    record.status = "queued";
+    record.progress = 0;
+  }
+  updateDomForCurrent(null);
+}
+
+function tracePolygon(polygon) {
+  ctx.beginPath();
+  for (const ring of polygon) {
+    ring.forEach((point, index) => {
+      const projected = projectLonLat(point[0], point[1]);
+      if (index === 0) {
+        ctx.moveTo(projected.x, projected.y);
+      } else {
+        ctx.lineTo(projected.x, projected.y);
+      }
+    });
+    ctx.closePath();
+  }
+}
+
+function drawGeodesicLine(points, strokeStyle, lineWidth) {
+  ctx.strokeStyle = strokeStyle;
+  ctx.lineWidth = lineWidth;
+  ctx.beginPath();
+  points.forEach((point, index) => {
+    if (index === 0) {
+      ctx.moveTo(point.x, point.y);
+    } else {
+      ctx.lineTo(point.x, point.y);
+    }
+  });
+  ctx.stroke();
+}
+
+function projectLonLat(lon, lat) {
+  const margin = state.mapPadding;
+  const usableWidth = state.width - margin * 2;
+  const usableHeight = state.height - margin * 2;
+  return {
+    x: margin + ((lon - MAP_BOUNDS.minLon) / (MAP_BOUNDS.maxLon - MAP_BOUNDS.minLon)) * usableWidth,
+    y: margin + (1 - (lat - MAP_BOUNDS.minLat) / (MAP_BOUNDS.maxLat - MAP_BOUNDS.minLat)) * usableHeight
+  };
+}
+
+function quadraticPoint(start, control, end, t) {
+  return {
+    x: (1 - t) * (1 - t) * start.x + 2 * (1 - t) * t * control.x + t * t * end.x,
+    y: (1 - t) * (1 - t) * start.y + 2 * (1 - t) * t * control.y + t * t * end.y
+  };
+}
+
+function lerp(start, end, t) {
+  return start + (end - start) * t;
+}
+
+function easeInOutCubic(t) {
+  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+function drawCircle(x, y, radius, fillStyle) {
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, Math.PI * 2);
+  ctx.fillStyle = fillStyle;
+  ctx.fill();
+}
+
+function pseudoNoise(value) {
+  return ((Math.sin(value * 12.9898) * 43758.5453) % 1 + 1) % 1;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function decodeTopologyObject(topology, objectKey) {
+  const object = topology.objects?.[objectKey];
+  if (!object?.geometries || !Array.isArray(topology.arcs)) {
+    return [];
+  }
+
+  const absoluteArcs = topology.arcs.map((arc) => decodeArc(arc, topology.transform));
+  const polygons = [];
+
+  for (const geometry of object.geometries) {
+    if (geometry.type === "Polygon") {
+      polygons.push(convertPolygon(geometry.arcs, absoluteArcs));
+    } else if (geometry.type === "MultiPolygon") {
+      for (const polygonArcs of geometry.arcs) {
+        polygons.push(convertPolygon(polygonArcs, absoluteArcs));
+      }
+    }
+  }
+
+  return polygons;
+}
+
+function decodeArc(arc, transform) {
+  let x = 0;
+  let y = 0;
+  return arc.map(([dx, dy]) => {
+    x += dx;
+    y += dy;
+    if (transform) {
+      return [
+        transform.translate[0] + x * transform.scale[0],
+        transform.translate[1] + y * transform.scale[1]
+      ];
+    }
+    return [x, y];
+  });
+}
+
+function convertPolygon(ringIndexes, arcs) {
+  return ringIndexes.map((ring) => stitchRing(ring, arcs));
+}
+
+function stitchRing(ringIndexes, arcs) {
+  const ring = [];
+  ringIndexes.forEach((arcIndex, index) => {
+    const sourceArc = arcIndex >= 0 ? arcs[arcIndex] : [...arcs[-arcIndex - 1]].reverse();
+    sourceArc.forEach((point, pointIndex) => {
+      if (index > 0 && pointIndex === 0) {
+        return;
+      }
+      ring.push(point);
+    });
+  });
+  return ring;
+}
