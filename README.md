@@ -14,12 +14,16 @@ Studio Kura residency artists visualized on a world map, animated from each arti
   Shared styling.
 - `data/artists-data.js`
   Generated artist dataset.
+- `data/artist-profiles.js`
+  Generated static profile links and image URLs for artist detail cards.
 - `data/world-land.js`
   Local world land topology for accurate coastlines.
 - `data/world-countries.js`
   Local country topology for borders.
 - `scripts/build-data.ps1`
   Rebuilds artist data from the source CSV in `Downloads`.
+- `scripts/build-artist-profiles.ps1`
+  Rebuilds static artist profile metadata from Studio Kura's public artist list.
 - `scripts/build-map-data.ps1`
   Rebuilds JS wrappers from the local map JSON files.
 
@@ -43,6 +47,26 @@ This regenerates:
 
 ```text
 data/artists-data.js
+```
+
+## Update Artist Profiles
+
+To rebuild static profile links for GitHub Pages:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\build-artist-profiles.ps1
+```
+
+To also fetch recent artist images from detail pages:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\build-artist-profiles.ps1 -FetchImages -MinImageYear 2024 -ImageLimit 180
+```
+
+This regenerates:
+
+```text
+data/artist-profiles.js
 ```
 
 ## Update Map Data

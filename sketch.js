@@ -47,7 +47,8 @@ const state = {
   landShapes: [],
   countryShapes: [],
   selectedCountry: null,
-  countryPoints: []
+  countryPoints: [],
+  profileLookup: new Map()
 };
 
 const dom = {};
@@ -102,6 +103,7 @@ function initializeMapData() {
 
 function initializeData() {
   const payload = window.ARTIST_DATA;
+  initializeProfileLookup(window.ARTIST_PROFILES);
   if (!payload || !Array.isArray(payload.records)) {
     document.getElementById("sketch-root").textContent = "Artist data could not be loaded.";
     return;
@@ -111,6 +113,7 @@ function initializeData() {
   const countryDetails = new Map();
   state.records = payload.records.map((record, index) => {
     const origin = COUNTRY_COORDS[record.country];
+    const profile = resolveProfile(record);
     countryTotals.set(record.country, (countryTotals.get(record.country) || 0) + 1);
     if (!countryDetails.has(record.country)) {
       countryDetails.set(record.country, {
@@ -125,8 +128,22 @@ function initializeData() {
     detail.count += 1;
     detail.firstYear = Math.min(detail.firstYear, record.year);
     detail.latestYear = Math.max(detail.latestYear, record.year);
-    detail.artists.push({ artist: record.artist, label: record.label, date: record.date });
-    return { ...record, index, origin, status: "queued", progress: 0, seed: (index * 9301 + 49297) % 233280 };
+    detail.artists.push({
+      artist: record.artist,
+      label: record.label,
+      date: record.date,
+      detailUrl: profile?.detailUrl || "",
+      imageUrl: profile?.imageUrl || ""
+    });
+    return {
+      ...record,
+      index,
+      origin,
+      profile,
+      status: "queued",
+      progress: 0,
+      seed: (index * 9301 + 49297) % 233280
+    };
   });
 
   state.countryTotals = [...countryTotals.entries()]
@@ -518,8 +535,12 @@ function renderCountryDetail(country) {
     .map(
       (artist) => `
         <div class="detail-artist">
-          <strong>${escapeHtml(artist.artist)}</strong>
-          <span class="detail-artist-date">${escapeHtml(artist.label)}</span>
+          ${artist.imageUrl ? `<img class="detail-artist-image" src="${escapeHtml(artist.imageUrl)}" alt="${escapeHtml(artist.artist)}">` : ""}
+          <div class="detail-artist-copy">
+            <strong>${escapeHtml(artist.artist)}</strong>
+            <span class="detail-artist-date">${escapeHtml(artist.label)}</span>
+            ${artist.detailUrl ? `<a class="detail-artist-link" href="${escapeHtml(artist.detailUrl)}" target="_blank" rel="noreferrer">Profile</a>` : ""}
+          </div>
         </div>
       `
     )
@@ -536,7 +557,11 @@ function updateDomForCurrent(record) {
   }
 
   dom.currentDate.textContent = record.label;
-  dom.currentArtist.innerHTML = `<strong>${escapeHtml(record.artist)}</strong><br>${escapeHtml(record.country)}`;
+  dom.currentArtist.innerHTML = `
+    <strong>${escapeHtml(record.artist)}</strong><br>
+    ${escapeHtml(record.country)}
+    ${record.profile?.detailUrl ? `<br><a class="current-artist-link" href="${escapeHtml(record.profile.detailUrl)}" target="_blank" rel="noreferrer">Artist page</a>` : ""}
+  `;
   dom.arrivedCount.textContent = state.arrived;
 }
 
@@ -619,6 +644,47 @@ function projectLonLat(lon, lat) {
     x: margin + ((lon - MAP_BOUNDS.minLon) / (MAP_BOUNDS.maxLon - MAP_BOUNDS.minLon)) * usableWidth,
     y: margin + (1 - (lat - MAP_BOUNDS.minLat) / (MAP_BOUNDS.maxLat - MAP_BOUNDS.minLat)) * usableHeight
   };
+}
+
+function initializeProfileLookup(payload) {
+  state.profileLookup = new Map();
+  if (!payload || !Array.isArray(payload.records)) {
+    return;
+  }
+
+  for (const record of payload.records) {
+    const exactKey = buildProfileKey(record.label, record.artist, record.country);
+    state.profileLookup.set(exactKey, record);
+
+    const fallbackKey = buildProfileKey(record.label, record.artist, "");
+    if (!state.profileLookup.has(fallbackKey)) {
+      state.profileLookup.set(fallbackKey, record);
+    }
+  }
+}
+
+function resolveProfile(record) {
+  if (!state.profileLookup?.size) {
+    return null;
+  }
+
+  return (
+    state.profileLookup.get(buildProfileKey(record.label, record.artist, record.country)) ||
+    state.profileLookup.get(buildProfileKey(record.label, record.artist, "")) ||
+    null
+  );
+}
+
+function buildProfileKey(label, artist, country) {
+  return [label, normalizeProfileText(artist), normalizeProfileText(country)].join("|");
+}
+
+function normalizeProfileText(value) {
+  return (value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
 }
 
 function quadraticPoint(start, control, end, t) {

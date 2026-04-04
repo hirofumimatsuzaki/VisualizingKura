@@ -193,6 +193,11 @@ body.embed-mode {
   background: rgba(16, 32, 43, 0.05);
 }
 
+.embed-mode .detail-artist-link,
+.embed-mode .current-artist-link {
+  color: #b85a2f;
+}
+
 .embed-mode .country-row:hover {
   background: rgba(16, 32, 43, 0.05);
 }
@@ -236,6 +241,11 @@ body.embed-mode {
   margin-top: 12px;
   color: rgba(237, 247, 255, 0.82);
   line-height: 1.45;
+}
+
+.current-artist-link {
+  color: var(--accent-3);
+  text-decoration: none;
 }
 
 .stats-grid {
@@ -359,16 +369,45 @@ body.embed-mode {
 }
 
 .detail-artist {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
   padding: 8px 10px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
   line-height: 1.35;
 }
 
+.detail-artist-copy {
+  min-width: 0;
+}
+
+.detail-artist-image {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .detail-artist-date {
   display: block;
   font-size: 0.76rem;
   color: var(--muted);
+}
+
+.detail-artist-link {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--accent-3);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.detail-artist-link:hover,
+.current-artist-link:hover {
+  text-decoration: underline;
 }
 
 .controls-panel {
