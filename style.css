@@ -461,7 +461,10 @@ button:hover {
   }
 
   #sketch-root {
-    height: 62vh;
+    height: auto;
+    aspect-ratio: 1.65 / 1;
+    min-height: 320px;
+    max-height: 56vw;
   }
 
   .sidebar {
@@ -480,6 +483,46 @@ button:hover {
   }
 
   .embed-mode #sketch-root {
-    height: 64vh;
+    height: auto;
+    aspect-ratio: 1.65 / 1;
+    min-height: 320px;
+    max-height: 58vw;
+  }
+
+  .hero-copy {
+    width: min(360px, calc(100% - 32px));
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(1.6rem, 8vw, 2.8rem);
+  }
+
+  .description {
+    max-width: 34ch;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 720px) {
+  #sketch-root,
+  .embed-mode #sketch-root {
+    aspect-ratio: 1.45 / 1;
+    min-height: 280px;
+    max-height: 72vw;
+  }
+
+  .hero-copy {
+    top: 14px;
+    left: 14px;
+    width: min(300px, calc(100% - 28px));
+  }
+
+  .hero-copy h1 {
+    margin: 6px 0 8px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    line-height: 1.45;
   }
 }
