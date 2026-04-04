@@ -45,7 +45,9 @@ const state = {
   width: 0,
   height: 0,
   landShapes: [],
-  countryShapes: []
+  countryShapes: [],
+  selectedCountry: null,
+  countryPoints: []
 };
 
 const dom = {};
@@ -57,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   canvas = document.createElement("canvas");
   ctx = canvas.getContext("2d");
   document.getElementById("sketch-root").appendChild(canvas);
+  canvas.addEventListener("click", handleCanvasClick);
   bindDom();
   initializeMapData();
   initializeData();
@@ -75,6 +78,13 @@ function bindDom() {
   dom.arrivedCount = document.getElementById("arrived-count");
   dom.topCountry = document.getElementById("top-country");
   dom.countryList = document.getElementById("country-list");
+  dom.detailEmpty = document.getElementById("detail-empty");
+  dom.detailContent = document.getElementById("detail-content");
+  dom.detailCountry = document.getElementById("detail-country");
+  dom.detailCount = document.getElementById("detail-count");
+  dom.detailFirst = document.getElementById("detail-first");
+  dom.detailLatest = document.getElementById("detail-latest");
+  dom.detailArtists = document.getElementById("detail-artists");
   dom.speedControl = document.getElementById("speed-control");
   dom.togglePlay = document.getElementById("toggle-play");
   dom.restartPlay = document.getElementById("restart-play");
@@ -97,21 +107,46 @@ function initializeData() {
   }
 
   const countryTotals = new Map();
+  const countryDetails = new Map();
   state.records = payload.records.map((record, index) => {
     const origin = COUNTRY_COORDS[record.country];
     countryTotals.set(record.country, (countryTotals.get(record.country) || 0) + 1);
+    if (!countryDetails.has(record.country)) {
+      countryDetails.set(record.country, {
+        country: record.country,
+        count: 0,
+        firstYear: record.year,
+        latestYear: record.year,
+        artists: []
+      });
+    }
+    const detail = countryDetails.get(record.country);
+    detail.count += 1;
+    detail.firstYear = Math.min(detail.firstYear, record.year);
+    detail.latestYear = Math.max(detail.latestYear, record.year);
+    detail.artists.push({ artist: record.artist, label: record.label, date: record.date });
     return { ...record, index, origin, status: "queued", progress: 0, seed: (index * 9301 + 49297) % 233280 };
   });
 
   state.countryTotals = [...countryTotals.entries()]
     .map(([country, count]) => ({ country, count }))
     .sort((a, b) => b.count - a.count || a.country.localeCompare(b.country));
+  state.countryDetails = new Map(
+    [...countryDetails.entries()].map(([country, detail]) => [
+      country,
+      {
+        ...detail,
+        artists: detail.artists.sort((a, b) => a.date.localeCompare(b.date) || a.artist.localeCompare(b.artist))
+      }
+    ])
+  );
 
   dom.totalArtists.textContent = state.records.length;
   dom.countryCount.textContent = state.countryTotals.length;
   dom.topCountry.textContent = `${state.countryTotals[0]?.country || "-"} (${state.countryTotals[0]?.count || 0})`;
   renderCountryList();
   updateDomForCurrent(null);
+  renderCountryDetail(null);
 }
 
 function setupControls() {
@@ -140,10 +175,12 @@ function resizeCanvas() {
 
 function rebuildPointPositions() {
   state.itoshimaScreen = projectLonLat(ITOSHIMA.lon, ITOSHIMA.lat);
+  state.countryPoints = [];
   if (!state.records) {
     return;
   }
 
+  const seenCountries = new Set();
   for (const record of state.records) {
     if (!record.origin) {
       record.screenOrigin = null;
@@ -153,6 +190,10 @@ function rebuildPointPositions() {
     const offsetX = pseudoNoise(record.seed * 0.01) * 36 - 18;
     const offsetY = pseudoNoise(record.seed * 0.02) * 32 - 16;
     record.screenOrigin = { x: point.x + offsetX, y: point.y + offsetY };
+    if (!seenCountries.has(record.country)) {
+      seenCountries.add(record.country);
+      state.countryPoints.push({ country: record.country, x: record.screenOrigin.x, y: record.screenOrigin.y, radius: 8 });
+    }
   }
 }
 
@@ -336,17 +377,12 @@ function drawJapanFocus() {
 }
 
 function drawOriginDots() {
-  const seen = new Set();
-  for (const record of state.records || []) {
-    if (!record.screenOrigin || seen.has(record.country)) {
-      continue;
-    }
-    seen.add(record.country);
+  for (const point of state.countryPoints) {
     ctx.shadowColor = "rgba(122,242,211,0.45)";
     ctx.shadowBlur = 12;
     ctx.beginPath();
-    ctx.arc(record.screenOrigin.x, record.screenOrigin.y, 3, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(122,242,211,0.8)";
+    ctx.arc(point.x, point.y, state.selectedCountry === point.country ? 5.5 : 3, 0, Math.PI * 2);
+    ctx.fillStyle = state.selectedCountry === point.country ? "rgba(255,209,102,0.95)" : "rgba(122,242,211,0.8)";
     ctx.fill();
     ctx.shadowBlur = 0;
   }
@@ -460,6 +496,35 @@ function renderCountryList() {
     .join("");
 }
 
+function renderCountryDetail(country) {
+  if (!dom.detailEmpty || !dom.detailContent) {
+    return;
+  }
+  if (!country || !state.countryDetails?.has(country)) {
+    dom.detailEmpty.hidden = false;
+    dom.detailContent.hidden = true;
+    return;
+  }
+
+  const detail = state.countryDetails.get(country);
+  dom.detailEmpty.hidden = true;
+  dom.detailContent.hidden = false;
+  dom.detailCountry.textContent = detail.country;
+  dom.detailCount.textContent = String(detail.count);
+  dom.detailFirst.textContent = String(detail.firstYear);
+  dom.detailLatest.textContent = String(detail.latestYear);
+  dom.detailArtists.innerHTML = detail.artists
+    .map(
+      (artist) => `
+        <div class="detail-artist">
+          <strong>${escapeHtml(artist.artist)}</strong>
+          <span class="detail-artist-date">${escapeHtml(artist.label)}</span>
+        </div>
+      `
+    )
+    .join("");
+}
+
 function updateDomForCurrent(record) {
   if (!record) {
     dom.currentDate.textContent = state.records?.[0]?.label || "-";
@@ -484,6 +549,25 @@ function resetTimeline() {
     record.progress = 0;
   }
   updateDomForCurrent(null);
+}
+
+function handleCanvasClick(event) {
+  const rect = canvas.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  let hit = null;
+  let bestDistance = Infinity;
+
+  for (const point of state.countryPoints) {
+    const distance = Math.hypot(point.x - x, point.y - y);
+    if (distance <= point.radius + 6 && distance < bestDistance) {
+      bestDistance = distance;
+      hit = point.country;
+    }
+  }
+
+  state.selectedCountry = hit;
+  renderCountryDetail(hit);
 }
 
 function tracePolygon(polygon) {

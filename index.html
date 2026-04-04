@@ -50,6 +50,22 @@
           <div id="country-list" class="country-list"></div>
         </section>
 
+        <section class="panel">
+          <div class="panel-label">Country Detail</div>
+          <div id="country-detail" class="country-detail">
+            <div id="detail-empty" class="detail-empty">Click a country dot on the map.</div>
+            <div id="detail-content" class="detail-content" hidden>
+              <div id="detail-country" class="detail-country">-</div>
+              <div class="detail-stats">
+                <div><span class="detail-stat-label">Artists</span><span id="detail-count" class="detail-stat-value">0</span></div>
+                <div><span class="detail-stat-label">First</span><span id="detail-first" class="detail-stat-value">-</span></div>
+                <div><span class="detail-stat-label">Latest</span><span id="detail-latest" class="detail-stat-value">-</span></div>
+              </div>
+              <div id="detail-artists" class="detail-artists"></div>
+            </div>
+          </div>
+        </section>
+
         <section class="panel controls-panel">
           <div class="panel-label">Playback</div>
           <label class="control-row" for="speed-control">

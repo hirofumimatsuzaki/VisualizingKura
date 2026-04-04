@@ -183,6 +183,16 @@ body.embed-mode {
   background: rgba(16, 32, 43, 0.08);
 }
 
+.embed-mode .detail-empty,
+.embed-mode .detail-artist-date,
+.embed-mode .detail-stat-label {
+  color: rgba(16, 32, 43, 0.54);
+}
+
+.embed-mode .detail-artist {
+  background: rgba(16, 32, 43, 0.05);
+}
+
 .embed-mode button {
   border-color: rgba(16, 32, 43, 0.1);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(243, 238, 230, 0.95));
@@ -282,6 +292,63 @@ body.embed-mode {
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--accent-3);
+}
+
+.country-detail {
+  margin-top: 12px;
+}
+
+.detail-empty {
+  color: rgba(237, 247, 255, 0.62);
+  line-height: 1.5;
+}
+
+.detail-country {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.detail-stats {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.detail-stat-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.detail-stat-value {
+  display: block;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.detail-artists {
+  margin-top: 14px;
+  max-height: 22vh;
+  overflow: auto;
+  display: grid;
+  gap: 8px;
+  padding-right: 6px;
+}
+
+.detail-artist {
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  line-height: 1.35;
+}
+
+.detail-artist-date {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--muted);
 }
 
 .controls-panel {
