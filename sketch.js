@@ -88,6 +88,7 @@ function bindDom() {
   dom.speedControl = document.getElementById("speed-control");
   dom.togglePlay = document.getElementById("toggle-play");
   dom.restartPlay = document.getElementById("restart-play");
+  dom.countryList.addEventListener("click", handleCountryListClick);
 }
 
 function initializeMapData() {
@@ -484,7 +485,7 @@ function renderCountryList() {
     .map(({ country, count }) => {
       const ratio = Math.max(8, (count / maxCount) * 100);
       return `
-        <div class="country-row">
+        <div class="country-row${state.selectedCountry === country ? " is-active" : ""}" data-country="${escapeHtml(country)}">
           <div class="country-name">
             <div class="country-title"><span>${escapeHtml(country)}</span></div>
             <div class="country-bar"><div class="country-bar-fill" style="width:${ratio}%"></div></div>
@@ -523,6 +524,7 @@ function renderCountryDetail(country) {
       `
     )
     .join("");
+  renderCountryList();
 }
 
 function updateDomForCurrent(record) {
@@ -560,7 +562,7 @@ function handleCanvasClick(event) {
 
   for (const point of state.countryPoints) {
     const distance = Math.hypot(point.x - x, point.y - y);
-    if (distance <= point.radius + 6 && distance < bestDistance) {
+    if (distance <= point.radius + 14 && distance < bestDistance) {
       bestDistance = distance;
       hit = point.country;
     }
@@ -568,6 +570,16 @@ function handleCanvasClick(event) {
 
   state.selectedCountry = hit;
   renderCountryDetail(hit);
+}
+
+function handleCountryListClick(event) {
+  const row = event.target.closest("[data-country]");
+  if (!row) {
+    return;
+  }
+  const country = row.getAttribute("data-country");
+  state.selectedCountry = country;
+  renderCountryDetail(country);
 }
 
 function tracePolygon(polygon) {

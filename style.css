@@ -193,6 +193,14 @@ body.embed-mode {
   background: rgba(16, 32, 43, 0.05);
 }
 
+.embed-mode .country-row:hover {
+  background: rgba(16, 32, 43, 0.05);
+}
+
+.embed-mode .country-row.is-active {
+  background: rgba(255, 149, 101, 0.12);
+}
+
 .embed-mode button {
   border-color: rgba(16, 32, 43, 0.1);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(243, 238, 230, 0.95));
@@ -261,6 +269,18 @@ body.embed-mode {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
   align-items: center;
+  padding: 6px 8px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 140ms ease;
+}
+
+.country-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.country-row.is-active {
+  background: rgba(255, 209, 102, 0.12);
 }
 
 .country-name {
