@@ -76,6 +76,15 @@ After publishing this repo with GitHub Pages or hosting the files on Studio Kura
 
 If hosting on Studio Kura directly, replace the `src` URL with the production path.
 
+## WordPress Artist Photos
+
+To enrich the visualization with artist profile images sourced from Studio Kura's residency pages, use:
+
+- [artist-photo-feed.php](/C:/Users/Mining-Base/Documents/VisualizingKura/wordpress/artist-photo-feed.php)
+- [README-wordpress.md](/C:/Users/Mining-Base/Documents/VisualizingKura/wordpress/README-wordpress.md)
+
+This adds a WordPress REST endpoint that scrapes the artist list and detail pages, then returns structured JSON with image URLs.
+
 ## Notes
 
 - The map uses local topology data, so it works without external map API requests.
