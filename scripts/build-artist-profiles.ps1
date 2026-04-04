@@ -2,6 +2,7 @@ param(
   [string]$SourcePath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artistlist-source.html",
   [string]$ArtistDataPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artists-data.js",
   [string]$OutputPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artist-profiles.js",
+  [string]$ImageOutputPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artist-images.js",
   [switch]$FetchImages,
   [int]$MinImageYear = 2024,
   [int]$ImageLimit = 180
@@ -61,6 +62,16 @@ function Normalize-KeyText {
   }
 
   $builder.ToString()
+}
+
+function Build-ProfileKey {
+  param(
+    [string]$Label,
+    [string]$Artist,
+    [string]$Country
+  )
+
+  "$Label|$(Normalize-KeyText $Artist)|$(Normalize-KeyText $Country)"
 }
 
 function Get-AbsoluteUrl {
@@ -327,6 +338,7 @@ foreach ($entry in $sourceEntries) {
 
 $detailCache = @{}
 $records = New-Object System.Collections.Generic.List[object]
+$imageMap = [ordered]@{}
 $withDetails = 0
 $withImages = 0
 $unmatched = New-Object System.Collections.Generic.List[string]
@@ -354,14 +366,16 @@ foreach ($record in $artistData.records) {
   }
 
   if ($detailUrl) { $withDetails += 1 }
-  if ($imageUrl) { $withImages += 1 }
+  if ($imageUrl) {
+    $withImages += 1
+    $imageMap[(Build-ProfileKey $record.label $record.artist $record.country)] = $imageUrl
+  }
 
   $records.Add([pscustomobject]@{
     label = $record.label
     artist = $record.artist
     country = $record.country
     detailUrl = $detailUrl
-    imageUrl = $imageUrl
   })
 }
 
@@ -378,7 +392,17 @@ $json = $payload | ConvertTo-Json -Depth 6
 $js = "window.ARTIST_PROFILES = $json;"
 [System.IO.File]::WriteAllText($OutputPath, $js, [System.Text.UTF8Encoding]::new($false))
 
+$imagePayload = [pscustomobject]@{
+  generatedAt = $payload.generatedAt
+  totalImages = $withImages
+  records = $imageMap
+}
+$imageJson = $imagePayload | ConvertTo-Json -Depth 6
+$imageJs = "window.ARTIST_IMAGES = $imageJson;"
+[System.IO.File]::WriteAllText($ImageOutputPath, $imageJs, [System.Text.UTF8Encoding]::new($false))
+
 Write-Output "Wrote $($records.Count) profile records to $OutputPath"
+Write-Output "Wrote $withImages image records to $ImageOutputPath"
 Write-Output "Profiles with detail URLs: $withDetails"
 Write-Output "Profiles with image URLs: $withImages"
 Write-Output "Unmatched records: $($unmatched.Count)"

@@ -15,7 +15,9 @@ Studio Kura residency artists visualized on a world map, animated from each arti
 - `data/artists-data.js`
   Generated artist dataset.
 - `data/artist-profiles.js`
-  Generated static profile links and image URLs for artist detail cards.
+  Generated static profile links for artist detail cards.
+- `data/artist-images.js`
+  Optional image lookup table, loaded only on larger screens.
 - `data/world-land.js`
   Local world land topology for accurate coastlines.
 - `data/world-countries.js`
@@ -67,6 +69,7 @@ This regenerates:
 
 ```text
 data/artist-profiles.js
+data/artist-images.js
 ```
 
 ## Update Map Data
