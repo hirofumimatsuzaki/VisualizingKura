@@ -31,7 +31,11 @@ body {
 }
 
 body.embed-mode {
-  background: #02060b;
+  background:
+    radial-gradient(circle at top left, rgba(255, 149, 101, 0.1), transparent 26%),
+    radial-gradient(circle at 80% 20%, rgba(122, 242, 211, 0.08), transparent 24%),
+    #f6f4ef;
+  color: #10202b;
 }
 
 .app-shell {
@@ -42,6 +46,12 @@ body.embed-mode {
 
 .embed-mode .app-shell {
   min-height: 820px;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(16, 32, 43, 0.08),
+    0 4px 16px rgba(16, 32, 43, 0.06);
 }
 
 .canvas-column {
@@ -66,6 +76,20 @@ body.embed-mode {
   top: 18px;
   left: 18px;
   width: min(420px, calc(100% - 36px));
+}
+
+.embed-mode .eyebrow {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.embed-mode .hero-copy h1 {
+  color: #fffdf8;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
+}
+
+.embed-mode .description {
+  color: rgba(255, 250, 242, 0.86);
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
 }
 
 .eyebrow,
@@ -122,7 +146,51 @@ body.embed-mode {
 
 .embed-mode .sidebar {
   padding: 18px;
-  background: linear-gradient(180deg, rgba(3, 8, 14, 0.82), rgba(3, 8, 14, 0.94));
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.96), rgba(246, 241, 233, 0.96));
+  border-left: 1px solid rgba(16, 32, 43, 0.08);
+}
+
+.embed-mode .panel {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(16, 32, 43, 0.08);
+  box-shadow: 0 10px 24px rgba(16, 32, 43, 0.05);
+}
+
+.embed-mode .panel-primary {
+  background:
+    linear-gradient(135deg, rgba(255, 149, 101, 0.12), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 242, 234, 0.92));
+}
+
+.embed-mode .panel-label,
+.embed-mode .stat-label {
+  color: rgba(16, 32, 43, 0.54);
+}
+
+.embed-mode .big-date,
+.embed-mode .stat-value,
+.embed-mode .country-count {
+  color: #10202b;
+}
+
+.embed-mode .current-artist,
+.embed-mode .country-title,
+.embed-mode .control-row {
+  color: rgba(16, 32, 43, 0.84);
+}
+
+.embed-mode .country-bar {
+  background: rgba(16, 32, 43, 0.08);
+}
+
+.embed-mode button {
+  border-color: rgba(16, 32, 43, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(243, 238, 230, 0.95));
+  color: #10202b;
+}
+
+.embed-mode button:hover {
+  border-color: rgba(255, 149, 101, 0.35);
 }
 
 .panel {
