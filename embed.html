@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kura Residency Atlas Embed</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="embed-mode">
+    <div class="app-shell">
+      <main class="canvas-column">
+        <div class="hero-copy">
+          <p class="eyebrow">Studio Kura Residency</p>
+          <h1>Artists arriving in Itoshima</h1>
+          <p class="description">
+            Artist residency journeys from 2007 onward, flowing from each home country to Itoshima.
+          </p>
+        </div>
+        <div id="sketch-root"></div>
+      </main>
+
+      <aside class="sidebar">
+        <section class="panel panel-primary">
+          <div class="panel-label">Timeline</div>
+          <div id="current-date" class="big-date">Loading...</div>
+          <div id="current-artist" class="current-artist">Preparing data...</div>
+        </section>
+
+        <section class="panel stats-grid">
+          <div>
+            <div class="stat-label">Total Artists</div>
+            <div id="total-artists" class="stat-value">0</div>
+          </div>
+          <div>
+            <div class="stat-label">Countries</div>
+            <div id="country-count" class="stat-value">0</div>
+          </div>
+          <div>
+            <div class="stat-label">Arrived</div>
+            <div id="arrived-count" class="stat-value">0</div>
+          </div>
+          <div>
+            <div class="stat-label">Top Origin</div>
+            <div id="top-country" class="stat-value stat-value-small">-</div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-label">Country Breakdown</div>
+          <div id="country-list" class="country-list"></div>
+        </section>
+
+        <section class="panel controls-panel">
+          <div class="panel-label">Playback</div>
+          <label class="control-row" for="speed-control">
+            <span>Speed</span>
+            <input id="speed-control" type="range" min="0.4" max="3" value="1.25" step="0.05" />
+          </label>
+          <div class="button-row">
+            <button id="toggle-play" type="button">Pause</button>
+            <button id="restart-play" type="button">Restart</button>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <script src="./data/artists-data.js"></script>
+    <script src="./data/world-land.js"></script>
+    <script src="./data/world-countries.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>

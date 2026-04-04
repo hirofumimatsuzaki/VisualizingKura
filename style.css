@@ -30,15 +30,27 @@ body {
   overflow: hidden;
 }
 
+body.embed-mode {
+  background: #02060b;
+}
+
 .app-shell {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 360px;
   min-height: 100vh;
 }
 
+.embed-mode .app-shell {
+  min-height: 820px;
+}
+
 .canvas-column {
   position: relative;
   padding: 24px 0 24px 24px;
+}
+
+.embed-mode .canvas-column {
+  padding: 0;
 }
 
 .hero-copy {
@@ -48,6 +60,12 @@ body {
   left: 24px;
   width: min(520px, calc(100% - 72px));
   pointer-events: none;
+}
+
+.embed-mode .hero-copy {
+  top: 18px;
+  left: 18px;
+  width: min(420px, calc(100% - 36px));
 }
 
 .eyebrow,
@@ -88,12 +106,23 @@ body {
     inset 0 -80px 120px rgba(0, 0, 0, 0.24);
 }
 
+.embed-mode #sketch-root {
+  height: 820px;
+  border-radius: 0;
+  border: 0;
+}
+
 .sidebar {
   padding: 24px;
   display: grid;
   gap: 16px;
   background: linear-gradient(180deg, rgba(3, 8, 14, 0.75), rgba(3, 8, 14, 0.9));
   border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.embed-mode .sidebar {
+  padding: 18px;
+  background: linear-gradient(180deg, rgba(3, 8, 14, 0.82), rgba(3, 8, 14, 0.94));
 }
 
 .panel {
@@ -250,5 +279,13 @@ button:hover {
 
   .country-list {
     max-height: 28vh;
+  }
+
+  .embed-mode .app-shell {
+    min-height: auto;
+  }
+
+  .embed-mode #sketch-root {
+    height: 64vh;
   }
 }
