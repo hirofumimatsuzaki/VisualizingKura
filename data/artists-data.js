@@ -1,10 +1,10 @@
 window.ARTIST_DATA = {
-    "generatedAt":  "2026-04-05T22:35:14+09:00",
-    "totalArtists":  936,
+    "generatedAt":  "2026-04-05T22:52:38+09:00",
+    "totalArtists":  939,
     "sourceCsv":  "C:\\Users\\Mining-Base\\Downloads\\無題のスプレッドシート - シート1.csv",
     "manualAdditionsPath":  "C:\\Users\\Mining-Base\\Documents\\VisualizingKura\\data\\manual-artists.csv",
     "countryOverridesPath":  "C:\\Users\\Mining-Base\\Documents\\VisualizingKura\\data\\country-overrides.csv",
-    "manualAdditionCount":  1,
+    "manualAdditionCount":  4,
     "resolvedMissingCountries":  1,
     "unresolvedMissingCountries":  [
 
@@ -51,7 +51,8 @@ window.ARTIST_DATA = {
                         "date":  "2007-09-01",
                         "label":  "2007/09",
                         "artist":  "Marcel Tasler",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2008,
@@ -59,7 +60,8 @@ window.ARTIST_DATA = {
                         "date":  "2008-06-01",
                         "label":  "2008/06",
                         "artist":  "Melissa Steckbauer",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2009,
@@ -67,7 +69,8 @@ window.ARTIST_DATA = {
                         "date":  "2009-05-01",
                         "label":  "2009/05",
                         "artist":  "Juan Parra Cancino",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2009,
@@ -75,7 +78,8 @@ window.ARTIST_DATA = {
                         "date":  "2009-07-01",
                         "label":  "2009/07",
                         "artist":  "Lev Khesin",
-                        "country":  "Russian Federation"
+                        "country":  "Russian Federation",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2009,
@@ -83,7 +87,8 @@ window.ARTIST_DATA = {
                         "date":  "2009-10-01",
                         "label":  "2009/10",
                         "artist":  "Meri Nikula",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2009,
@@ -91,7 +96,8 @@ window.ARTIST_DATA = {
                         "date":  "2009-11-01",
                         "label":  "2009/11",
                         "artist":  "Benjamin Fueglister",
-                        "country":  "Switzerland"
+                        "country":  "Switzerland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2009,
@@ -99,7 +105,8 @@ window.ARTIST_DATA = {
                         "date":  "2009-12-01",
                         "label":  "2009/12",
                         "artist":  "Jasmina Llobet",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2009,
@@ -107,7 +114,8 @@ window.ARTIST_DATA = {
                         "date":  "2009-12-01",
                         "label":  "2009/12",
                         "artist":  "Luis Fernández Pons",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2010,
@@ -115,7 +123,8 @@ window.ARTIST_DATA = {
                         "date":  "2010-03-01",
                         "label":  "2010/03",
                         "artist":  "Jane Rigler",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2010,
@@ -123,7 +132,8 @@ window.ARTIST_DATA = {
                         "date":  "2010-07-01",
                         "label":  "2010/07",
                         "artist":  "kYra Storm van Leeuwen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2010,
@@ -131,7 +141,8 @@ window.ARTIST_DATA = {
                         "date":  "2010-09-01",
                         "label":  "2010/09",
                         "artist":  "Shih Yun Yeo",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2011,
@@ -139,7 +150,8 @@ window.ARTIST_DATA = {
                         "date":  "2011-01-01",
                         "label":  "2011/01",
                         "artist":  "Bas Noordermeer",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2011,
@@ -147,7 +159,8 @@ window.ARTIST_DATA = {
                         "date":  "2011-02-01",
                         "label":  "2011/02",
                         "artist":  "Joohee Yang",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2011,
@@ -155,7 +168,8 @@ window.ARTIST_DATA = {
                         "date":  "2011-07-01",
                         "label":  "2011/07",
                         "artist":  "Juliane Eirich",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2011,
@@ -163,7 +177,8 @@ window.ARTIST_DATA = {
                         "date":  "2011-10-01",
                         "label":  "2011/10",
                         "artist":  "Michael Amter",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -171,7 +186,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-03-01",
                         "label":  "2012/03",
                         "artist":  "Justin Lee",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -179,7 +195,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-04-01",
                         "label":  "2012/04",
                         "artist":  "Martjn Tellinga",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -187,7 +204,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-06-01",
                         "label":  "2012/06",
                         "artist":  "Saran Youkongdee",
-                        "country":  "Thailand"
+                        "country":  "Thailand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -195,7 +213,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-07-01",
                         "label":  "2012/07",
                         "artist":  "Lauren Orchowski",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -203,7 +222,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-09-01",
                         "label":  "2012/09",
                         "artist":  "Carol Elizabeth Wee",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -211,7 +231,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-09-01",
                         "label":  "2012/09",
                         "artist":  "Nigel Bennet",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -219,7 +240,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-12-01",
                         "label":  "2012/12",
                         "artist":  "Felder Kwek",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -227,7 +249,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-12-01",
                         "label":  "2012/12",
                         "artist":  "Tomás Tello",
-                        "country":  "Peru"
+                        "country":  "Peru",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2012,
@@ -235,7 +258,8 @@ window.ARTIST_DATA = {
                         "date":  "2012-12-01",
                         "label":  "2012/12",
                         "artist":  "Yuko Kominami",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -243,7 +267,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-02-01",
                         "label":  "2013/02",
                         "artist":  "Tess Kelly",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -251,7 +276,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-04-01",
                         "label":  "2013/04",
                         "artist":  "Paul Nicholson",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -259,7 +285,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-04-01",
                         "label":  "2013/04",
                         "artist":  "Peter Granser",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -267,7 +294,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-05-01",
                         "label":  "2013/05",
                         "artist":  "Bernhard Sitompul",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -275,7 +303,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-06-01",
                         "label":  "2013/06",
                         "artist":  "Bissan Rafe",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -283,7 +312,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-07-01",
                         "label":  "2013/07",
                         "artist":  "Alan Cernak",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -291,7 +321,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-07-01",
                         "label":  "2013/07",
                         "artist":  "Christopher Jones",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -299,7 +330,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-07-01",
                         "label":  "2013/07",
                         "artist":  "Meri Nikula",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -307,7 +339,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-08-01",
                         "label":  "2013/08",
                         "artist":  "Nigel Bennet",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -315,7 +348,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-09-01",
                         "label":  "2013/09",
                         "artist":  "Ali Hanoon",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -323,7 +357,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-09-01",
                         "label":  "2013/09",
                         "artist":  "Vidya Andarikha",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -331,7 +366,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-10-01",
                         "label":  "2013/10",
                         "artist":  "Pia Johnson",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -339,7 +375,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-11-01",
                         "label":  "2013/11",
                         "artist":  "Erin Robinson Grant",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -347,7 +384,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-11-01",
                         "label":  "2013/11",
                         "artist":  "Hannah Quinlivan",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -355,7 +393,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-11-01",
                         "label":  "2013/11",
                         "artist":  "Suyeon Na",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2013,
@@ -363,7 +402,8 @@ window.ARTIST_DATA = {
                         "date":  "2013-11-01",
                         "label":  "2013/11",
                         "artist":  "Thomas Hadland",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -371,7 +411,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-01-01",
                         "label":  "2014/01",
                         "artist":  "Kerry Lessard",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -379,7 +420,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-01-01",
                         "label":  "2014/01",
                         "artist":  "Maxwell Nalevansky",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -387,7 +429,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-01-01",
                         "label":  "2014/01",
                         "artist":  "Ricwan Icarus Sentana",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -395,7 +438,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-02-01",
                         "label":  "2014/02",
                         "artist":  "Kevin Chin",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -403,7 +447,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-02-01",
                         "label":  "2014/02",
                         "artist":  "Kristine Marx",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -411,7 +456,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-03-01",
                         "label":  "2014/03",
                         "artist":  "France Dubois",
-                        "country":  "Belgium"
+                        "country":  "Belgium",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -419,7 +465,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-03-01",
                         "label":  "2014/03",
                         "artist":  "Thane Lund",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -427,7 +474,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-04-01",
                         "label":  "2014/04",
                         "artist":  "Justin Lee",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -435,7 +483,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-04-01",
                         "label":  "2014/04",
                         "artist":  "Lionel Lim",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -443,7 +492,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-06-01",
                         "label":  "2014/06",
                         "artist":  "Beck Wheeler",
-                        "country":  "New Zealand"
+                        "country":  "New Zealand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -451,7 +501,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-07-01",
                         "label":  "2014/07",
                         "artist":  "Sol Tan",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -459,7 +510,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-07-01",
                         "label":  "2014/07",
                         "artist":  "Theresa Daddezio",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -467,7 +519,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-08-01",
                         "label":  "2014/08",
                         "artist":  "Akie Ooba",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -475,7 +528,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-09-01",
                         "label":  "2014/09",
                         "artist":  "Amy M. Ho",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -483,7 +537,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-10-01",
                         "label":  "2014/10",
                         "artist":  "Jen Hitchings",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -491,7 +546,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-10-01",
                         "label":  "2014/10",
                         "artist":  "Marsha Anne McDonald",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -499,7 +555,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-11-01",
                         "label":  "2014/11",
                         "artist":  "Adrienne Kammerer",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -507,7 +564,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-11-01",
                         "label":  "2014/11",
                         "artist":  "Alexander Irving",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -515,7 +573,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-11-01",
                         "label":  "2014/11",
                         "artist":  "Cheong, Hoi I (Mel)",
-                        "country":  "Macau"
+                        "country":  "Macau",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -523,7 +582,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-11-01",
                         "label":  "2014/11",
                         "artist":  "Leanne Dunic",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -531,7 +591,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-12-01",
                         "label":  "2014/12",
                         "artist":  "Lauren Marie Britton",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -539,7 +600,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-12-01",
                         "label":  "2014/12",
                         "artist":  "Maria do Carmo Louceiro",
-                        "country":  "Portugal"
+                        "country":  "Portugal",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2014,
@@ -547,7 +609,8 @@ window.ARTIST_DATA = {
                         "date":  "2014-12-01",
                         "label":  "2014/12",
                         "artist":  "Tim van der Meer",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -555,7 +618,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-01-01",
                         "label":  "2015/01",
                         "artist":  "Hannah Atcheson",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -563,7 +627,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-01-01",
                         "label":  "2015/01",
                         "artist":  "Naomi Soh",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -571,7 +636,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-01-01",
                         "label":  "2015/01",
                         "artist":  "Philippe Beer Gabel",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -579,7 +645,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-02-01",
                         "label":  "2015/02",
                         "artist":  "Claire Pendrigh",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -587,7 +654,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-03-01",
                         "label":  "2015/03",
                         "artist":  "Rose Dickson",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -595,7 +663,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-03-01",
                         "label":  "2015/03",
                         "artist":  "Zack Zook",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -603,7 +672,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-04-01",
                         "label":  "2015/04",
                         "artist":  "ShinYeon Moon",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -611,7 +681,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-04-01",
                         "label":  "2015/04",
                         "artist":  "Yvonne Koo",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -619,7 +690,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-05-01",
                         "label":  "2015/05",
                         "artist":  "Andrea van der Hillen",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -627,7 +699,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-05-01",
                         "label":  "2015/05",
                         "artist":  "Boris Tsui",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -635,7 +708,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-05-01",
                         "label":  "2015/05",
                         "artist":  "Davin Tan",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -643,7 +717,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-05-01",
                         "label":  "2015/05",
                         "artist":  "Gagliardi Antonio",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -651,7 +726,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-05-01",
                         "label":  "2015/05",
                         "artist":  "Gert-Jan Akerboom",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -659,7 +735,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-05-01",
                         "label":  "2015/05",
                         "artist":  "Hannah Reber",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -667,7 +744,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-05-01",
                         "label":  "2015/05",
                         "artist":  "Marina H.S Pu",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -675,7 +753,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-06-01",
                         "label":  "2015/06",
                         "artist":  "Andrew Prayzner",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -683,7 +762,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-06-01",
                         "label":  "2015/06",
                         "artist":  "Julie Forgues",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -691,7 +771,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-06-01",
                         "label":  "2015/06",
                         "artist":  "Sarah Nguyen",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -699,7 +780,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-07-01",
                         "label":  "2015/07",
                         "artist":  "Liliane Zumkemi",
-                        "country":  "Switzerland"
+                        "country":  "Switzerland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -707,7 +789,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-07-01",
                         "label":  "2015/07",
                         "artist":  "Mia Mala McDonald",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -715,7 +798,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-07-01",
                         "label":  "2015/07",
                         "artist":  "Patricia Couveiro",
-                        "country":  "Portugal"
+                        "country":  "Portugal",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -723,7 +807,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-07-01",
                         "label":  "2015/07",
                         "artist":  "Philippe Caron Lefebvre",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -731,7 +816,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-08-01",
                         "label":  "2015/08",
                         "artist":  "Julia Mejnertsen",
-                        "country":  "Denmark"
+                        "country":  "Denmark",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -739,7 +825,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-08-01",
                         "label":  "2015/08",
                         "artist":  "Wang Min",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -747,7 +834,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-08-01",
                         "label":  "2015/08",
                         "artist":  "Yuwen Xue (Georgia)",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -755,7 +843,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-09-01",
                         "label":  "2015/09",
                         "artist":  "Brandon Joel Fernandes",
-                        "country":  "United Arab Emirates"
+                        "country":  "United Arab Emirates",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -763,7 +852,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-10-01",
                         "label":  "2015/10",
                         "artist":  "Julia Peintner",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -771,7 +861,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-10-01",
                         "label":  "2015/10",
                         "artist":  "Monique Lütolf",
-                        "country":  "Switzerland"
+                        "country":  "Switzerland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -779,7 +870,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-10-01",
                         "label":  "2015/10",
                         "artist":  "Sarah Webber",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -787,7 +879,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-10-01",
                         "label":  "2015/10",
                         "artist":  "Shellaine Godbold",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -795,7 +888,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-10-01",
                         "label":  "2015/10",
                         "artist":  "Stina Lavenius",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -803,7 +897,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-11-01",
                         "label":  "2015/11",
                         "artist":  "Lisa Ghent",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -811,7 +906,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-11-01",
                         "label":  "2015/11",
                         "artist":  "Nellie Rogerson",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -819,7 +915,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-12-01",
                         "label":  "2015/12",
                         "artist":  "Jessica Skupa",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -827,7 +924,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-12-01",
                         "label":  "2015/12",
                         "artist":  "Rob Ball",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2015,
@@ -835,7 +933,8 @@ window.ARTIST_DATA = {
                         "date":  "2015-12-01",
                         "label":  "2015/12",
                         "artist":  "Sarah Bertrand-Hamel",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -843,7 +942,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-01-01",
                         "label":  "2016/01",
                         "artist":  "Andrée-Anne Mercier",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -851,7 +951,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-01-01",
                         "label":  "2016/01",
                         "artist":  "Gwynessa Balvanz",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -859,7 +960,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-01-01",
                         "label":  "2016/01",
                         "artist":  "Miguel Blanco",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -867,7 +969,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-02-01",
                         "label":  "2016/02",
                         "artist":  "Calum Sutherland",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -875,7 +978,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-02-01",
                         "label":  "2016/02",
                         "artist":  "Jeongsoo Lim",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -883,7 +987,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-02-01",
                         "label":  "2016/02",
                         "artist":  "Kate Gorrie",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -891,7 +996,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-02-01",
                         "label":  "2016/02",
                         "artist":  "Konstantin Grebnev",
-                        "country":  "Russian Federation"
+                        "country":  "Russian Federation",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -899,7 +1005,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-03-01",
                         "label":  "2016/03",
                         "artist":  "Amjad Akash",
-                        "country":  "Bangladesh"
+                        "country":  "Bangladesh",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -907,7 +1014,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-03-01",
                         "label":  "2016/03",
                         "artist":  "Bushra Burge",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -915,7 +1023,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-03-01",
                         "label":  "2016/03",
                         "artist":  "Park Hyun Ji",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -923,7 +1032,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-03-01",
                         "label":  "2016/03",
                         "artist":  "Shari Diamond",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -931,7 +1041,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-03-01",
                         "label":  "2016/03",
                         "artist":  "Tara Benjamin-Morgan",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -939,7 +1050,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-04-01",
                         "label":  "2016/04",
                         "artist":  "Beste Miray Doğan",
-                        "country":  "Turkey"
+                        "country":  "Turkey",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -947,7 +1059,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-04-01",
                         "label":  "2016/04",
                         "artist":  "Michelle Pei Ting Huang",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -955,7 +1068,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-04-01",
                         "label":  "2016/04",
                         "artist":  "Molly Garcia-Underwood",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -963,7 +1077,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-04-01",
                         "label":  "2016/04",
                         "artist":  "Roseanne May",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -971,7 +1086,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-04-01",
                         "label":  "2016/04",
                         "artist":  "Sophia Oldsman",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -979,7 +1095,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-05-01",
                         "label":  "2016/05",
                         "artist":  "Betty Susiarjo",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -987,7 +1104,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-05-01",
                         "label":  "2016/05",
                         "artist":  "Jem Magbanua",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -995,7 +1113,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-05-01",
                         "label":  "2016/05",
                         "artist":  "Stefano Buro",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1003,7 +1122,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-05-01",
                         "label":  "2016/05",
                         "artist":  "Tomer Reuven",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1011,7 +1131,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-06-01",
                         "label":  "2016/06",
                         "artist":  "Alexander James Romero",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1019,7 +1140,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-06-01",
                         "label":  "2016/06",
                         "artist":  "Ashley Yeo Yakka",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1027,7 +1149,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-06-01",
                         "label":  "2016/06",
                         "artist":  "Emilie Lang",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1035,7 +1158,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-06-01",
                         "label":  "2016/06",
                         "artist":  "Gagliardi Antonio",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1043,7 +1167,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-06-01",
                         "label":  "2016/06",
                         "artist":  "Ruby Silvious",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1051,7 +1176,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-06-01",
                         "label":  "2016/06",
                         "artist":  "Vieno James",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1059,7 +1185,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-06-01",
                         "label":  "2016/06",
                         "artist":  "Zac Grenfell",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1067,7 +1194,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-07-01",
                         "label":  "2016/07",
                         "artist":  "Elise Broadway",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1075,7 +1203,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-07-01",
                         "label":  "2016/07",
                         "artist":  "Enriqueta Vendrell",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1083,7 +1212,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-07-01",
                         "label":  "2016/07",
                         "artist":  "Ien Dobbelaar",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1091,7 +1221,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-07-01",
                         "label":  "2016/07",
                         "artist":  "Marijke Wijgerinck",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1099,7 +1230,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-07-01",
                         "label":  "2016/07",
                         "artist":  "Wenting Tao",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1107,7 +1239,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-08-01",
                         "label":  "2016/08",
                         "artist":  "3dsense Media School",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1115,7 +1248,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-08-01",
                         "label":  "2016/08",
                         "artist":  "Anne-Sophie Guillet",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1123,7 +1257,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-08-01",
                         "label":  "2016/08",
                         "artist":  "Cathy Laudenbach",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1131,7 +1266,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-08-01",
                         "label":  "2016/08",
                         "artist":  "Nancy Ryan Keeling",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1139,7 +1275,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-08-01",
                         "label":  "2016/08",
                         "artist":  "Thomas Hoeren",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1147,7 +1284,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-09-01",
                         "label":  "2016/09",
                         "artist":  "Charlotte Clermont",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1155,7 +1293,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-09-01",
                         "label":  "2016/09",
                         "artist":  "Inkeri Jäntti",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1163,7 +1302,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-09-01",
                         "label":  "2016/09",
                         "artist":  "Nazia Andaleeb Preema",
-                        "country":  "Bangladesh"
+                        "country":  "Bangladesh",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1171,7 +1311,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-10-01",
                         "label":  "2016/10",
                         "artist":  "Carla Cañellas",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1179,7 +1320,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-10-01",
                         "label":  "2016/10",
                         "artist":  "Guy Sherwin",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1187,7 +1329,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-10-01",
                         "label":  "2016/10",
                         "artist":  "Jordan Gower",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1195,7 +1338,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-10-01",
                         "label":  "2016/10",
                         "artist":  "Lilly Buttrose",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1203,7 +1347,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-10-01",
                         "label":  "2016/10",
                         "artist":  "Lynn Loo",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1211,7 +1356,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-10-01",
                         "label":  "2016/10",
                         "artist":  "Novemto Komo",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1219,7 +1365,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-10-01",
                         "label":  "2016/10",
                         "artist":  "Prasanta Kumar Kolay",
-                        "country":  "India"
+                        "country":  "India",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1227,7 +1374,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-11-01",
                         "label":  "2016/11",
                         "artist":  "Gabrielle Zimmermann",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1235,7 +1383,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-11-01",
                         "label":  "2016/11",
                         "artist":  "Guillaume Cousson",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1243,7 +1392,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-11-01",
                         "label":  "2016/11",
                         "artist":  "Haryo Hutomo Mohamad",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1251,7 +1401,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-11-01",
                         "label":  "2016/11",
                         "artist":  "Joanna Vymeris",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1259,7 +1410,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-11-01",
                         "label":  "2016/11",
                         "artist":  "Linsey Walker",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1267,7 +1419,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-11-01",
                         "label":  "2016/11",
                         "artist":  "Silas Thomas Parry",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1275,7 +1428,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-12-01",
                         "label":  "2016/12",
                         "artist":  "Carla Cañellas",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1283,7 +1437,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-12-01",
                         "label":  "2016/12",
                         "artist":  "George Liu Zhen",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1291,7 +1446,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-12-01",
                         "label":  "2016/12",
                         "artist":  "Isabelle Kawai Vincent",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1299,7 +1455,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-12-01",
                         "label":  "2016/12",
                         "artist":  "Neuneu Woo",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2016,
@@ -1307,7 +1464,8 @@ window.ARTIST_DATA = {
                         "date":  "2016-12-01",
                         "label":  "2016/12",
                         "artist":  "Stephen Kavanagh",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1315,7 +1473,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-01-01",
                         "label":  "2017/01",
                         "artist":  "Daniela Tenhamm",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1323,7 +1482,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-01-01",
                         "label":  "2017/01",
                         "artist":  "Ellie Craze",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1331,7 +1491,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-01-01",
                         "label":  "2017/01",
                         "artist":  "Laura Ortego",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1339,7 +1500,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-01-01",
                         "label":  "2017/01",
                         "artist":  "Melissa Beattie",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1347,7 +1509,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-01-01",
                         "label":  "2017/01",
                         "artist":  "Sebastián Riffo",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1355,7 +1518,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-02-01",
                         "label":  "2017/02",
                         "artist":  "Chiu Wan-Ting",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1363,7 +1527,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-02-01",
                         "label":  "2017/02",
                         "artist":  "Serena Della Bona",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1371,7 +1536,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-02-01",
                         "label":  "2017/02",
                         "artist":  "Tsai-Yi-Chi",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1379,7 +1545,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Angela Chen",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1387,7 +1554,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Darae Baek",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1395,7 +1563,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Hanna Lee",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1403,7 +1572,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Isabelle Kawai Vincent",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1411,7 +1581,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Kat Teede",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1419,7 +1590,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Lærke Lauta",
-                        "country":  "Denmark"
+                        "country":  "Denmark",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1427,7 +1599,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Laurence O\u0027 Toole",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1435,7 +1608,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Mary-Beth Acres",
-                        "country":  "New Zealand"
+                        "country":  "New Zealand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1443,7 +1617,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Pengcheng Chen",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1451,7 +1626,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-03-01",
                         "label":  "2017/03",
                         "artist":  "Solal Israel",
-                        "country":  "Belgium"
+                        "country":  "Belgium",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1459,7 +1635,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Danilo Oliveira",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1467,7 +1644,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Hong Huazheng (H)",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1475,7 +1653,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Joycelyn Ong",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1483,7 +1662,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Lacourt",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1491,7 +1671,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Madeline Lynch",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1499,7 +1680,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Mark Yong",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1507,7 +1689,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Rachel King",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1515,7 +1698,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-04-01",
                         "label":  "2017/04",
                         "artist":  "Stassja Mrozinski",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1523,7 +1707,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Brandon Joel Fernandes",
-                        "country":  "United Arab Emirates"
+                        "country":  "United Arab Emirates",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1531,7 +1716,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Colin Peel",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1539,7 +1725,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Elena Boils",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1547,7 +1734,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Francisca Derqui",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1555,7 +1743,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Jesse Ng",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1563,7 +1752,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "JP Neang",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1571,7 +1761,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Justin Lee",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1579,7 +1770,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Laura Williams",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1587,7 +1779,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Naomi Soh",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1595,7 +1788,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-05-01",
                         "label":  "2017/05",
                         "artist":  "Rajiv Alvares",
-                        "country":  "India"
+                        "country":  "India",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1603,7 +1797,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Alexandra Abbatiello",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1611,7 +1806,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Cameron McIntosh",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1619,7 +1815,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Elvira Lantenhammer",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1627,7 +1824,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Hannie van den Bergh + Jan van den Berg",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1635,7 +1833,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Hugh Davies",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1643,7 +1842,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Samina Islam",
-                        "country":  "Pakistan"
+                        "country":  "Pakistan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1651,7 +1851,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Shuwen Xu",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1659,7 +1860,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-06-01",
                         "label":  "2017/06",
                         "artist":  "Xuewei Loy",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1667,7 +1869,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-07-01",
                         "label":  "2017/07",
                         "artist":  "Layne Farmer",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1675,7 +1878,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-07-01",
                         "label":  "2017/07",
                         "artist":  "Marion Paquette",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1683,7 +1887,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-07-01",
                         "label":  "2017/07",
                         "artist":  "Maya Cannon",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1691,7 +1896,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-07-01",
                         "label":  "2017/07",
                         "artist":  "Yumna Sadiq",
-                        "country":  "Pakistan"
+                        "country":  "Pakistan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1699,7 +1905,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Ann Mcginley",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1707,7 +1914,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Anne-Sophie Guillet",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1715,7 +1923,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Christoffer Ohlander",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1723,7 +1932,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Ester Poyas",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1731,7 +1941,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Janet Saunders",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1739,7 +1950,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Julia Peintner",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1747,7 +1959,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Stina Lavenius",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1755,7 +1968,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-08-01",
                         "label":  "2017/08",
                         "artist":  "Sun Yu",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1763,7 +1977,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-09-01",
                         "label":  "2017/09",
                         "artist":  "Laurence Rimes",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1771,7 +1986,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-09-01",
                         "label":  "2017/09",
                         "artist":  "Ollanski",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1779,7 +1995,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-10-01",
                         "label":  "2017/10",
                         "artist":  "Colin Peel",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1787,7 +2004,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-10-01",
                         "label":  "2017/10",
                         "artist":  "Kayleigh Goh",
-                        "country":  "Malaysia"
+                        "country":  "Malaysia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1795,7 +2013,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-10-01",
                         "label":  "2017/10",
                         "artist":  "Michelle Belgiorno",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1803,7 +2022,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-10-01",
                         "label":  "2017/10",
                         "artist":  "Miya Sukune",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1811,7 +2031,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-10-01",
                         "label":  "2017/10",
                         "artist":  "Nancy Yoshii",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1819,7 +2040,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-10-01",
                         "label":  "2017/10",
                         "artist":  "Saga Unnsteinsdottir",
-                        "country":  "Iceland"
+                        "country":  "Iceland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1827,7 +2049,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-11-01",
                         "label":  "2017/11",
                         "artist":  "Guillaume Cousson",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1835,7 +2058,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-11-01",
                         "label":  "2017/11",
                         "artist":  "Helen Brown",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1843,7 +2067,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-11-01",
                         "label":  "2017/11",
                         "artist":  "Kit Khong",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1851,7 +2076,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-11-01",
                         "label":  "2017/11",
                         "artist":  "Leonardo Hidalgo",
-                        "country":  "Colombia"
+                        "country":  "Colombia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1859,7 +2085,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-11-01",
                         "label":  "2017/11",
                         "artist":  "Shu Lun",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1867,7 +2094,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-11-01",
                         "label":  "2017/11",
                         "artist":  "Si Ying Wong",
-                        "country":  "Malaysia"
+                        "country":  "Malaysia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1875,7 +2103,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-12-01",
                         "label":  "2017/12",
                         "artist":  "Cai Jun Lee",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2017,
@@ -1883,7 +2112,8 @@ window.ARTIST_DATA = {
                         "date":  "2017-12-01",
                         "label":  "2017/12",
                         "artist":  "Eswari Krishnadas",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1891,7 +2121,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-01-01",
                         "label":  "2018/01",
                         "artist":  "Desirée Gedda",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1899,7 +2130,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-01-01",
                         "label":  "2018/01",
                         "artist":  "Eunji Jung",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1907,7 +2139,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-01-01",
                         "label":  "2018/01",
                         "artist":  "Maria Fernanda Carlos",
-                        "country":  "Guatemala"
+                        "country":  "Guatemala",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1915,7 +2148,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-01-01",
                         "label":  "2018/01",
                         "artist":  "Maternal Mitochodria",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1923,7 +2157,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-01-01",
                         "label":  "2018/01",
                         "artist":  "Pimpi Syarly Naomi",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1931,7 +2166,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-01-01",
                         "label":  "2018/01",
                         "artist":  "Seunghui Sim",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1939,7 +2175,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-02-01",
                         "label":  "2018/02",
                         "artist":  "Didi Lehnhausen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1947,7 +2184,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-02-01",
                         "label":  "2018/02",
                         "artist":  "Hye-Jin Kim",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1955,7 +2193,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-02-01",
                         "label":  "2018/02",
                         "artist":  "Nobushige Kono",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1963,7 +2202,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-02-01",
                         "label":  "2018/02",
                         "artist":  "Paola Germar",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1971,7 +2211,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-02-01",
                         "label":  "2018/02",
                         "artist":  "Terrence Combos",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1979,7 +2220,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Danika van Kaathoven",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1987,7 +2229,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Eleanor Anderson",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -1995,7 +2238,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Ella Webb",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2003,7 +2247,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Ian Campbell",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2011,7 +2256,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Lily Lewis",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2019,7 +2265,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Marcelina Wellmer",
-                        "country":  "Poland"
+                        "country":  "Poland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2027,7 +2274,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Maria Pääkkönen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2035,7 +2283,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Ruth Celeste Estigarribia",
-                        "country":  "Paraguay"
+                        "country":  "Paraguay",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2043,7 +2292,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Sarah Thibault",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2051,7 +2301,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-03-01",
                         "label":  "2018/03",
                         "artist":  "Stephen Cooney",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2059,7 +2310,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Alexis Hill",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2067,7 +2319,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Ashley B Favor",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2075,7 +2328,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Ella Harrington Knapton",
-                        "country":  "New Zealand"
+                        "country":  "New Zealand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2083,7 +2337,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Gabrielle Kroese NL",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2091,7 +2346,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Gilly Beal",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2099,7 +2355,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Igor Moritz",
-                        "country":  "Portugal"
+                        "country":  "Portugal",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2107,7 +2364,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "JP Neang",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2115,7 +2373,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Maria Secio",
-                        "country":  "Portugal"
+                        "country":  "Portugal",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2123,7 +2382,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Neda Dana-Haeri",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2131,7 +2391,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-04-01",
                         "label":  "2018/04",
                         "artist":  "Prasanta Kumar Kolay",
-                        "country":  "India"
+                        "country":  "India",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2139,7 +2400,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-05-01",
                         "label":  "2018/05",
                         "artist":  "Eric Strauss",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2147,7 +2409,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-05-01",
                         "label":  "2018/05",
                         "artist":  "Marcus Farr",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2155,7 +2418,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-05-01",
                         "label":  "2018/05",
                         "artist":  "Miriam Salamander",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2163,7 +2427,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-05-01",
                         "label":  "2018/05",
                         "artist":  "Serena Della Bona",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2171,7 +2436,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-05-01",
                         "label":  "2018/05",
                         "artist":  "Tonje Horn Kolbjørnsen",
-                        "country":  "Norway"
+                        "country":  "Norway",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2179,7 +2445,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-05-01",
                         "label":  "2018/05",
                         "artist":  "Warren Goh",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2187,7 +2454,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Alexis Hill",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2195,7 +2463,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Dionysius Hatmaji",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2203,7 +2472,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Ebony Ibrahim",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2211,7 +2481,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Elisabeth Belliveau",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2219,7 +2490,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Eun-Kyung Suh",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2227,7 +2499,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Lindi Shi",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2235,7 +2508,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Maider Gonzalo Salceda",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2243,7 +2517,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Nadia Oh Sueh Peng",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2251,7 +2526,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-06-01",
                         "label":  "2018/06",
                         "artist":  "Sa Youngin",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2259,7 +2535,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Charlyn Reynolds",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2267,7 +2544,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Gaelle Pelachaud",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2275,7 +2553,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Izaro Ieregi",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2283,7 +2562,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Karima Duchamp",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2291,7 +2571,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Linsey Walker",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2299,7 +2580,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Margaux Derhy",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2307,7 +2589,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Mary Jane Duffy",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2315,7 +2598,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-07-01",
                         "label":  "2018/07",
                         "artist":  "Shiro Akiyoshi",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2323,7 +2607,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Caitlin Bowe",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2331,7 +2616,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Carol Swain",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2339,7 +2625,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Chloe Ong",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2347,7 +2634,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Corinne Caro",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2355,7 +2643,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Fiona Templeton",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2363,7 +2652,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Herman Verhagen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2371,7 +2661,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Hiroka Yamashita",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2379,7 +2670,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-08-01",
                         "label":  "2018/08",
                         "artist":  "Lisa Fong",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2387,7 +2679,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Colin Peel",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2395,7 +2688,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Davin Saputra",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2403,7 +2697,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Debbie Donnelly",
-                        "country":  "New Zealand"
+                        "country":  "New Zealand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2411,7 +2706,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Eleonora Allan",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2419,7 +2715,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Jinhee Jeon",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2427,7 +2724,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Lesly Patricia Holliday",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2435,7 +2733,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Rino Kodama",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2443,7 +2742,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Yin Yue Chan",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2451,7 +2751,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-10-01",
                         "label":  "2018/10",
                         "artist":  "Aurora Solberg",
-                        "country":  "Norway"
+                        "country":  "Norway",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2459,7 +2760,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-10-01",
                         "label":  "2018/10",
                         "artist":  "Ben Harb",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2467,7 +2769,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-10-01",
                         "label":  "2018/10",
                         "artist":  "Jolene Yeo",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2475,7 +2778,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-10-01",
                         "label":  "2018/10",
                         "artist":  "Nikki Lam",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2483,7 +2787,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-10-01",
                         "label":  "2018/10",
                         "artist":  "Saga Unnsteinsdottir",
-                        "country":  "Iceland"
+                        "country":  "Iceland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2491,7 +2796,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-10-01",
                         "label":  "2018/10",
                         "artist":  "Yang Yu Pei",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2499,7 +2805,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "Ana Fernández",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2507,7 +2814,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "Anna Zoladz",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2515,7 +2823,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "Carly Snoswell",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2523,7 +2832,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "Elysha Rei",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2531,7 +2841,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "Ho Chia- Lien",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2539,7 +2850,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "James Wylie",
-                        "country":  "New Zealand"
+                        "country":  "New Zealand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2547,7 +2859,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "Karolina Nowosielska",
-                        "country":  "Norway"
+                        "country":  "Norway",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2555,7 +2868,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-11-01",
                         "label":  "2018/11",
                         "artist":  "Mariel S. Ypil",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2563,7 +2877,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Anna Zoladz",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2571,7 +2886,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Ginnie Hsu",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2579,7 +2895,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Jessica Auer and Zuhaitz Akizu",
-                        "country":  "Iceland"
+                        "country":  "Iceland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2587,7 +2904,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Khor Ke Xin",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2595,7 +2913,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Kyle Bates",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2603,7 +2922,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Sanne van de Goor",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2018,
@@ -2611,7 +2931,8 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Zhongsheng Gu",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2619,7 +2940,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Aniruddha Khanwelkar",
-                        "country":  "India"
+                        "country":  "India",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2627,7 +2949,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Chloe Jane Hambleton",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2635,7 +2958,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Clio Berta",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2643,7 +2967,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Elsa Kwan",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2651,7 +2976,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Ivy Koh",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2659,7 +2985,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Jordana Infeld",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2667,7 +2994,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Jun You Ang",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2675,7 +3003,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Susan Jablonski",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2683,7 +3012,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-01-01",
                         "label":  "2019/01",
                         "artist":  "Zeno Siew",
-                        "country":  "Malaysia"
+                        "country":  "Malaysia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2691,7 +3021,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-02-01",
                         "label":  "2019/02",
                         "artist":  "Juho Kastemaa",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2699,7 +3030,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-02-01",
                         "label":  "2019/02",
                         "artist":  "Marina H.S Pu",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2707,7 +3039,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-02-01",
                         "label":  "2019/02",
                         "artist":  "Philippe Internoscia",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2715,7 +3048,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Adrian Jing Song",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2723,7 +3057,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Cho, Hui-Chin",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2731,7 +3066,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Emily Beasy",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2739,7 +3075,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Luo Jiang-jiang",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2747,7 +3084,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Maria Schilder",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2755,7 +3093,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Oliver Jerrold",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2763,7 +3102,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Pamela Gcia",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2771,7 +3111,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Ric Dragon",
-                        "country":  "Colombia"
+                        "country":  "Colombia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2779,7 +3120,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Rody Luton",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2787,7 +3129,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-03-01",
                         "label":  "2019/03",
                         "artist":  "Yuming Zhu",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2795,7 +3138,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Aafke Bouman",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2803,7 +3147,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Anu Raatikainen",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2811,7 +3156,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Bram Chilton Smiley",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2819,7 +3165,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Cai Jun Lee",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2827,7 +3174,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "cary b fagan jr",
-                        "country":  "Armenia"
+                        "country":  "Armenia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2835,7 +3183,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Cora Mak",
-                        "country":  "Hong Kong"
+                        "country":  "Hong Kong",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2843,7 +3192,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Fongyee Ng",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2851,7 +3201,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Huiqi He",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2859,7 +3210,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Jonathan Reid Sévigny",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2867,7 +3219,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Luke Garrett",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2875,7 +3228,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Marie Heléne Boone",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2883,7 +3237,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-04-01",
                         "label":  "2019/04",
                         "artist":  "Taishi Kamiya",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2891,7 +3246,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Adrian Jing Song",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2899,7 +3255,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Arne Kohlweyer",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2907,7 +3264,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Cho Hui-Chin",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2915,7 +3273,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Grace Turman Damien",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2923,7 +3282,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Katie Lennard",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2931,7 +3291,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Kim Karlsrud",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2939,7 +3300,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Linda Vigdorcika",
-                        "country":  "Latvia"
+                        "country":  "Latvia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2947,7 +3309,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Meredith Bardo",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2955,7 +3318,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-05-01",
                         "label":  "2019/05",
                         "artist":  "Trek Matthews",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2963,7 +3327,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Arthur Braud",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2971,7 +3336,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Chen Ziwei",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2979,7 +3345,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Evelyn Yee",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2987,7 +3354,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Gabriel Echaveste",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -2995,7 +3363,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Konstantin Guz",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3003,7 +3372,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Lyubov Matyunina",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3011,7 +3381,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Madelyn Barrante",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3019,7 +3390,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Ryder Richards",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3027,7 +3399,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Sally Clegg",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3035,7 +3408,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Stanford Cheung",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3043,7 +3417,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-06-01",
                         "label":  "2019/06",
                         "artist":  "Sue Anne Rische",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3051,7 +3426,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-07-01",
                         "label":  "2019/07",
                         "artist":  "Ashley Rodriguez Reed",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3059,7 +3435,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-07-01",
                         "label":  "2019/07",
                         "artist":  "Ema Gaspar and Pedro Brito",
-                        "country":  "Portugal"
+                        "country":  "Portugal",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3067,7 +3444,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-07-01",
                         "label":  "2019/07",
                         "artist":  "Meagan Smith",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3075,7 +3453,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-07-01",
                         "label":  "2019/07",
                         "artist":  "Mitch Shiles",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3083,7 +3462,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-07-01",
                         "label":  "2019/07",
                         "artist":  "Nathan Phillips",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3091,7 +3471,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-07-01",
                         "label":  "2019/07",
                         "artist":  "Rachel Eng",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3099,7 +3480,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-07-01",
                         "label":  "2019/07",
                         "artist":  "Yvan Mas",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3107,7 +3489,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Ava Grauls",
-                        "country":  "Belgium"
+                        "country":  "Belgium",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3115,7 +3498,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Donglai Meng",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3123,7 +3507,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Kai Richards",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3131,7 +3516,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Laura Cochrane",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3139,7 +3525,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Lee Jia-An",
-                        "country":  "Malaysia"
+                        "country":  "Malaysia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3147,7 +3534,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "María Fernanda Araya",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3155,7 +3543,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Micha Tauber and Cyrille Faivre",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3163,7 +3552,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Mirabell Nicklas",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3171,7 +3561,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Muriel Holloway",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3179,7 +3570,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-08-01",
                         "label":  "2019/08",
                         "artist":  "Thomas Coffey",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3187,7 +3579,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Allison Kovar",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3195,7 +3588,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "caroline aun anguita",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3203,7 +3597,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Cristias Rosas",
-                        "country":  "Peru"
+                        "country":  "Peru",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3211,7 +3606,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Desiree Kong",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3219,7 +3615,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Dora Brooks",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3227,7 +3624,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "JP Neang",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3235,7 +3633,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Simone Darcy",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3243,7 +3642,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Tais Koshino",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3251,7 +3651,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Thomas Williams",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3259,7 +3660,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Alexander Radevski",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3267,7 +3669,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Ana Popescu",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3275,7 +3678,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "asmaa al-issa",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3283,7 +3687,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Desiree Kong",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3291,7 +3696,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Geneviève Lebleu",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3299,7 +3705,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Justice Nnanna",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3307,7 +3714,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Liqing Tan",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3315,7 +3723,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Liqing Tan 2019 Itoya",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3323,7 +3732,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Tegan Iversen",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3331,7 +3741,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-10-01",
                         "label":  "2019/10",
                         "artist":  "Yusuke Joshua Banno",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3339,7 +3750,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Alisa Rekunova",
-                        "country":  "Estonia"
+                        "country":  "Estonia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3347,7 +3759,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Candace Pritchard",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3355,7 +3768,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Ella Webb",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3363,7 +3777,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Golda King",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3371,7 +3786,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Ingchanok Sinudom",
-                        "country":  "Thailand"
+                        "country":  "Thailand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3379,7 +3795,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Justin Seiji Waddell",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3387,7 +3804,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Nicolo SERTORIO",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3395,7 +3813,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Santiago Zarzosa",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3403,7 +3822,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Virginie Eudeline",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3411,7 +3831,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-11-01",
                         "label":  "2019/11",
                         "artist":  "Walter Bishop and Francisca Fuenzalida",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3419,7 +3840,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Chris Fitzpatrick",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3427,7 +3849,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Colleen Kwok",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3435,7 +3858,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Daniel Christian Saliem",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3443,7 +3867,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Jia Sheng",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3451,7 +3876,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Kalina Winska",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3459,7 +3885,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Kostas Papakostas \u0026 Stephanie Pochet",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3467,7 +3894,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Susan Sun",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2019,
@@ -3475,7 +3903,8 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Vanessa Vien",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3483,7 +3912,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-01-01",
                         "label":  "2020/01",
                         "artist":  "Antonio Donaire",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3491,7 +3921,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-01-01",
                         "label":  "2020/01",
                         "artist":  "Harry Copas",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3499,7 +3930,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-01-01",
                         "label":  "2020/01",
                         "artist":  "Ja Min Yie",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3507,7 +3939,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-01-01",
                         "label":  "2020/01",
                         "artist":  "Jacobus Capone",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3515,7 +3948,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-01-01",
                         "label":  "2020/01",
                         "artist":  "Yuchen Xin",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3523,7 +3957,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Alexey Lazarev",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3531,7 +3966,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Brett Piva",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3539,7 +3975,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Lim Jun Yu",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3547,7 +3984,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Madeleine Sherburn",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3555,7 +3993,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Ng Shu Jie Elden",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3563,7 +4002,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Nicole Tay Hui Hsien",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3571,7 +4011,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Ong Huan Yi Ernest",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3579,7 +4020,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Rebecca Green",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3587,7 +4029,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-02-01",
                         "label":  "2020/02",
                         "artist":  "Shilpi Deb",
-                        "country":  "Kenya"
+                        "country":  "Kenya",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3595,7 +4038,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-03-01",
                         "label":  "2020/03",
                         "artist":  "Carolina Mercado Vargas",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3603,7 +4047,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-03-01",
                         "label":  "2020/03",
                         "artist":  "cincin (Chang Yuchin)",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3611,7 +4056,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-03-01",
                         "label":  "2020/03",
                         "artist":  "Craig Martin Wood",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3619,7 +4065,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-03-01",
                         "label":  "2020/03",
                         "artist":  "David McGovern",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3627,7 +4074,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-03-01",
                         "label":  "2020/03",
                         "artist":  "Kacie Lees",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3635,7 +4083,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-03-01",
                         "label":  "2020/03",
                         "artist":  "Seb Agresti",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3643,7 +4092,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-04-01",
                         "label":  "2020/04",
                         "artist":  "Mai Marie Dijksma",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3651,7 +4101,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-05-01",
                         "label":  "2020/05",
                         "artist":  "Elizabeth Duffy",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3659,7 +4110,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-05-01",
                         "label":  "2020/05",
                         "artist":  "Qinxi Yu",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3667,7 +4119,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-06-01",
                         "label":  "2020/06",
                         "artist":  "Ben Harb",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3675,7 +4128,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-06-01",
                         "label":  "2020/06",
                         "artist":  "Gagliardi Antonio",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3683,7 +4137,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-06-01",
                         "label":  "2020/06",
                         "artist":  "Mara Yuki Thøgersen",
-                        "country":  "Denmark"
+                        "country":  "Denmark",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3691,7 +4146,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-07-01",
                         "label":  "2020/07",
                         "artist":  "Neal Rock",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3699,7 +4155,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-08-01",
                         "label":  "2020/08",
                         "artist":  "Kazutaka Fujii",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3707,7 +4164,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-08-01",
                         "label":  "2020/08",
                         "artist":  "Mika Obayashi",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3715,7 +4173,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-10-01",
                         "label":  "2020/10",
                         "artist":  "Kitty Harris",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2020,
@@ -3723,7 +4182,8 @@ window.ARTIST_DATA = {
                         "date":  "2020-10-01",
                         "label":  "2020/10",
                         "artist":  "Rhys Douglas Farrell",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2021,
@@ -3731,7 +4191,8 @@ window.ARTIST_DATA = {
                         "date":  "2021-07-01",
                         "label":  "2021/07",
                         "artist":  "Brendan Sarsfield",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2021,
@@ -3739,7 +4200,8 @@ window.ARTIST_DATA = {
                         "date":  "2021-08-01",
                         "label":  "2021/08",
                         "artist":  "Clara Kumagai",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2021,
@@ -3747,7 +4209,8 @@ window.ARTIST_DATA = {
                         "date":  "2021-09-01",
                         "label":  "2021/09",
                         "artist":  "Scott Harano",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3755,7 +4218,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-05-01",
                         "label":  "2022/05",
                         "artist":  "Laura Ibáñez Kuzmanic",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3763,7 +4227,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-06-01",
                         "label":  "2022/06",
                         "artist":  "Carmen Soler",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3771,7 +4236,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-06-01",
                         "label":  "2022/06",
                         "artist":  "Ibuta Takuto",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3779,7 +4245,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-06-01",
                         "label":  "2022/06",
                         "artist":  "Ibuta Takuto",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3787,7 +4254,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-06-01",
                         "label":  "2022/06",
                         "artist":  "Lorraine Mimnagh",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3795,7 +4263,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-06-01",
                         "label":  "2022/06",
                         "artist":  "Sara Green",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3803,7 +4272,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Ann Mcginley",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3811,7 +4281,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Jenny Macgregor",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3819,7 +4290,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Justin Lee",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3827,7 +4299,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Kayla Milne",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3835,7 +4308,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Marie-Jose Njoku-Obi",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3843,7 +4317,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Nick Uglow",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3851,7 +4326,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Oscar Nimmo",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3859,7 +4335,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Pedro Marques Pereira",
-                        "country":  "Portugal"
+                        "country":  "Portugal",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3867,7 +4344,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Raluca Iancu",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3875,7 +4353,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-08-01",
                         "label":  "2022/08",
                         "artist":  "Karen Jiang",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3883,7 +4362,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-08-01",
                         "label":  "2022/08",
                         "artist":  "Laura Flores",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3891,7 +4371,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-08-01",
                         "label":  "2022/08",
                         "artist":  "Mai Marie Dijksma",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3899,7 +4380,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-08-01",
                         "label":  "2022/08",
                         "artist":  "Seph Li",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3907,7 +4389,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Alice Anna Ford",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3915,7 +4398,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Anna Abl",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3923,7 +4407,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Colin Peel",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3931,7 +4416,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Eugenio Nuzzo",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3939,7 +4425,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Georgia b. Smith",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3947,7 +4434,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Matthew Forsythe",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3955,7 +4443,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Rebecca Merlic",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3963,7 +4452,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Sabina Kafkova",
-                        "country":  "Czech Republic"
+                        "country":  "Czech Republic",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3971,7 +4461,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-09-01",
                         "label":  "2022/09",
                         "artist":  "Sanae Nicolas",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3979,7 +4470,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Agnes Ersson",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3987,7 +4479,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Beatriz Yu / Bady",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -3995,7 +4488,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Christine Vannier",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4003,7 +4497,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Elisa Bochicchio",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4011,7 +4506,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Emmanuel Montiel",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4019,7 +4515,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Floyd Grimm and Ruven Stettler",
-                        "country":  "Switzerland"
+                        "country":  "Switzerland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4027,7 +4524,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Karl Patric Näsman",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4035,7 +4533,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Katerina Kerouli",
-                        "country":  "Greece"
+                        "country":  "Greece",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4043,7 +4542,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-10-01",
                         "label":  "2022/10",
                         "artist":  "Merijn Haenen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4051,7 +4551,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-11-01",
                         "label":  "2022/11",
                         "artist":  "Alejandro Lara",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4059,7 +4560,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-11-01",
                         "label":  "2022/11",
                         "artist":  "Erlend Cross",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4067,7 +4569,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-11-01",
                         "label":  "2022/11",
                         "artist":  "Esteban Del Rio",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4075,7 +4578,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-11-01",
                         "label":  "2022/11",
                         "artist":  "Jikke Lesterhuis",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4083,7 +4587,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-11-01",
                         "label":  "2022/11",
                         "artist":  "Lauren Prousky",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4091,7 +4596,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-11-01",
                         "label":  "2022/11",
                         "artist":  "Michelle Eismann",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4099,7 +4605,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Chris Lightbody",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4107,7 +4614,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Gabrielle Rameriz",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4115,7 +4623,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Maya Hendricks",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2022,
@@ -4123,7 +4632,8 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Paula Schultz",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4131,7 +4641,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-01-01",
                         "label":  "2023/01",
                         "artist":  "David Phillips",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4139,7 +4650,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-01-01",
                         "label":  "2023/01",
                         "artist":  "Leander Tammo Beck",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4147,7 +4659,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-01-01",
                         "label":  "2023/01",
                         "artist":  "Lucy Hollier",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4155,7 +4668,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Eric Xue",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4163,7 +4677,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Hanna Wainio",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4171,7 +4686,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Helen Zhu",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4179,7 +4695,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Maria Vazquez",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4187,7 +4704,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Mercedes Ng",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4195,7 +4713,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Prisca Youn",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4203,7 +4722,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Saskia Martindale",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4211,7 +4731,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-02-01",
                         "label":  "2023/02",
                         "artist":  "Siba Sahabi",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4219,7 +4740,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Andrina Manon",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4227,7 +4749,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Anna Révész",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4235,7 +4758,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Caryl Song",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4243,7 +4767,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "charmaine tan",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4251,7 +4776,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Edie Woolf",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4259,7 +4785,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Ellie Lauritsen",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4267,7 +4794,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Grace O’Leary",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4275,7 +4803,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Jae Youl Jeoung",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4283,7 +4812,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Kennie Lim",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4291,7 +4821,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Liisa Kruusmägi",
-                        "country":  "Estonia"
+                        "country":  "Estonia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4299,7 +4830,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Taavi Tulev",
-                        "country":  "Estonia"
+                        "country":  "Estonia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4307,7 +4839,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Aileen Ng",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4315,7 +4848,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Angelica Yudasto",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4323,7 +4857,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Babette Robertson",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4331,7 +4866,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Becky O\u0027Brien",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4339,7 +4875,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Chris rutter and Evelyn bennett",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4347,7 +4884,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "HsiaoYu",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4355,7 +4893,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Jaime Kim",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4363,7 +4902,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Karina Nyss",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4371,7 +4911,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Nomi Abeliovich",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4379,7 +4920,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-04-01",
                         "label":  "2023/04",
                         "artist":  "Sonja Porcaro",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4387,7 +4929,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Aina Ramolete",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4395,7 +4938,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Andrea Taylor",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4403,7 +4947,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Andrew Pochan",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4411,7 +4956,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Barbora Žižková",
-                        "country":  "Czech Republic"
+                        "country":  "Czech Republic",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4419,7 +4965,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Cian McCarthy",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4427,7 +4974,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Julie Amalie Svensson",
-                        "country":  "Denmark"
+                        "country":  "Denmark",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4435,7 +4983,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Nadia Pochan",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4443,7 +4992,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-05-01",
                         "label":  "2023/05",
                         "artist":  "Naela Ali",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4451,7 +5001,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Alex Latham",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4459,7 +5010,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Amy-Leigh Braaf",
-                        "country":  "South Africa"
+                        "country":  "South Africa",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4467,7 +5019,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "César Pelizer",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4475,7 +5028,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Holly Elan Watson",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4483,7 +5037,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Katharina Eisenberg",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4491,7 +5046,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Kendall Schauder",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4499,7 +5055,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Lee Bullitt",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4507,7 +5064,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Mark Donoghue",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4515,7 +5073,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Marlitt Almodovar",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4523,7 +5082,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Mitch Patrick",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4531,7 +5091,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Nanouche Oriano",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4539,7 +5100,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Otis Burian Hodge",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4547,7 +5109,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Qinxi Yu",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4555,7 +5118,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-06-01",
                         "label":  "2023/06",
                         "artist":  "Xinran LI",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4563,7 +5127,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Ash Tower",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4571,7 +5136,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Benjamin Andrae",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4579,7 +5145,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Caroline Hamann",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4587,7 +5154,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Heather Steckler",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4595,7 +5163,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Mary Gortani",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4603,7 +5172,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Mollie Mayer",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4611,7 +5181,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Richard Talbot",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4619,7 +5190,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-07-01",
                         "label":  "2023/07",
                         "artist":  "Riley McAndrews",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4627,7 +5199,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-08-01",
                         "label":  "2023/08",
                         "artist":  "Aaron Ossia",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4635,7 +5208,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-08-01",
                         "label":  "2023/08",
                         "artist":  "Anthony Lopez",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4643,7 +5217,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-08-01",
                         "label":  "2023/08",
                         "artist":  "Berk Yagli",
-                        "country":  "Cyprus"
+                        "country":  "Cyprus",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4651,7 +5226,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-08-01",
                         "label":  "2023/08",
                         "artist":  "Diana Bonet",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4659,7 +5235,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-08-01",
                         "label":  "2023/08",
                         "artist":  "Jordan Barry-Browne",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4667,7 +5244,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-08-01",
                         "label":  "2023/08",
                         "artist":  "Ruby Michelle",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4675,7 +5253,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-08-01",
                         "label":  "2023/08",
                         "artist":  "Stephanie Sleiman",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4683,7 +5262,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Ayelen Mohaded",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4691,7 +5271,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Gerda Knoche",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4699,7 +5280,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Ío Bru",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4707,7 +5289,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Irene Moray",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4715,7 +5298,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Jo (aka MoJo)",
-                        "country":  "South Africa"
+                        "country":  "South Africa",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4723,7 +5307,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Mara",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4731,7 +5316,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Marina Solé",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4739,7 +5325,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Marina Solé",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4747,7 +5334,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Nawoon Shin",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4755,7 +5343,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "S. Portico Bowman",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4763,7 +5352,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-09-01",
                         "label":  "2023/09",
                         "artist":  "Winneke de Groot and Felix van Dam",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4771,7 +5361,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Carmen Wong",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4779,7 +5370,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Caroline Rose Dunning",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4787,7 +5379,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Colin Peel",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4795,7 +5388,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Ed Seymour",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4803,7 +5397,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Elise Miller",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4811,7 +5406,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Elisha Wang",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4819,7 +5415,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Ev Hales",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4827,7 +5424,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Joshua Catanzariti",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4835,7 +5433,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Pat McKenzie",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4843,7 +5442,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-10-01",
                         "label":  "2023/10",
                         "artist":  "Rachel Warwick",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4851,7 +5451,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Agnès Albérola",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4859,7 +5460,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Boris Granche",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4867,7 +5469,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Irene de Boer",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4875,7 +5478,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Jennie Dahlén",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4883,7 +5487,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Jonathan Teo",
-                        "country":  "Malaysia"
+                        "country":  "Malaysia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4891,7 +5496,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Marija Tiurina",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4899,7 +5505,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Patricia Moribe",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4907,7 +5514,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Rebecka Wolfe",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4915,7 +5523,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-11-01",
                         "label":  "2023/11",
                         "artist":  "Ruby Jean Wilby",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4923,7 +5532,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Angeline Toh",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4931,7 +5541,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Charlotte Whiteside",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4939,7 +5550,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Cheryl aka Rollround",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4947,7 +5559,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Chun-Chieh Chang",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4955,7 +5568,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Jesse Siegel",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4963,7 +5577,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Mel C // Hellumelu",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4971,7 +5586,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Misty Scrimgeour",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4979,7 +5595,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Sean Carroll",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4987,7 +5604,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Tatjana Preuss",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2023,
@@ -4995,7 +5613,8 @@ window.ARTIST_DATA = {
                         "date":  "2023-12-01",
                         "label":  "2023/12",
                         "artist":  "Yuja Ding",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5003,7 +5622,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Chen Ke Hsuan",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5011,7 +5631,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Elissa Sadgrove",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5019,7 +5640,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Ida-Simone",
-                        "country":  "Denmark"
+                        "country":  "Denmark",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5027,7 +5649,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Judith Peris Gatell",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5035,7 +5658,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Marco Sebastiano Alessi",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5043,7 +5667,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Marisa Seguin",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5051,7 +5676,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Subin Lee",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5059,7 +5685,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-01-01",
                         "label":  "2024/01",
                         "artist":  "Zhong Xian",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5067,7 +5694,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Anna Rocke",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5075,7 +5703,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Anne Renahan",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5083,7 +5712,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Arale Reartes",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5091,7 +5721,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Henri Cainglet",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5099,7 +5730,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "John Claesson",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5107,7 +5739,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Laura Jean",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5115,7 +5748,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Louise Crompton",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5123,7 +5757,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Marceau Verdiere",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5131,7 +5766,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Sulju Kim",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5139,7 +5775,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Vanessa Bong",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5147,7 +5784,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Wai Santy",
-                        "country":  "Indonesia"
+                        "country":  "Indonesia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5155,7 +5793,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Cassie Thring",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5163,7 +5802,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Cecilia Reeve",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5171,7 +5811,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Gina Ariko (Virgin Islands",
-                        "country":  "USA)"
+                        "country":  "USA)",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5179,7 +5820,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Holly Granken",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5187,7 +5829,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Issy Grew",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5195,7 +5838,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Komikka Patton",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5203,7 +5847,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Pascale Jean",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5211,7 +5856,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Sébastien Clermont",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5219,7 +5865,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Sue Pentelow",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5227,7 +5874,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-03-01",
                         "label":  "2024/03",
                         "artist":  "Una Wiener",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5235,7 +5883,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-04-01",
                         "label":  "2024/04",
                         "artist":  "Benoit Aupoix",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5243,7 +5892,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-04-01",
                         "label":  "2024/04",
                         "artist":  "Eliza Williams",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5251,7 +5901,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-04-01",
                         "label":  "2024/04",
                         "artist":  "Ella Carroll",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5259,7 +5910,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-04-01",
                         "label":  "2024/04",
                         "artist":  "Fei",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5267,7 +5919,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-04-01",
                         "label":  "2024/04",
                         "artist":  "Philo Ouweleen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5275,7 +5928,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-04-01",
                         "label":  "2024/04",
                         "artist":  "Rabin Huissen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5283,7 +5937,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Ana Balboa",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5291,7 +5946,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Angela Lang",
-                        "country":  "Colombia"
+                        "country":  "Colombia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5299,7 +5955,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Angelina Wanczarskyj",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5307,7 +5964,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Céleste Rilliet",
-                        "country":  "Switzerland"
+                        "country":  "Switzerland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5315,7 +5973,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Christine Lykkeh",
-                        "country":  "Denmark"
+                        "country":  "Denmark",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5323,7 +5982,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Emily Pelstring",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5331,7 +5991,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Lasa Chang",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5339,7 +6000,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Nicoletta Draper",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5347,7 +6009,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Nina Vroemen",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5355,7 +6018,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Rozana Lee",
-                        "country":  "New Zealand"
+                        "country":  "New Zealand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5363,7 +6027,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-05-01",
                         "label":  "2024/05",
                         "artist":  "Ximena Valle",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5371,7 +6036,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Anne Leloup",
-                        "country":  "Belgium"
+                        "country":  "Belgium",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5379,7 +6045,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Eduard Klena",
-                        "country":  "Slovak Republic"
+                        "country":  "Slovak Republic",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5387,7 +6054,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Élise Kasztelan",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5395,7 +6063,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Enle Li",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5403,7 +6072,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Finlay Neal",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5411,7 +6081,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Guste Sakalauskaite",
-                        "country":  "Lithuania"
+                        "country":  "Lithuania",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5419,7 +6090,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Maaike Canne",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5427,7 +6099,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Machiel Beijaert",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5435,7 +6108,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Mär Martinez",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5443,7 +6117,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Michaelann Tostanoski",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5451,7 +6126,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Natalie Deam",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5459,7 +6135,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Nora Terwilliger",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5467,7 +6144,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Olivia Fredricks",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5475,7 +6153,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "RAY LC",
-                        "country":  "Hong Kong"
+                        "country":  "Hong Kong",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5483,7 +6162,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Zoë Ward",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5491,7 +6171,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-06-01",
                         "label":  "2024/06",
                         "artist":  "Zwaantje Kurpershoek",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5499,7 +6180,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Britta Benno",
-                        "country":  "Estonia"
+                        "country":  "Estonia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5507,7 +6189,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Cecile Maurel",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5515,7 +6198,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Christopher Kanyusik",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5523,7 +6207,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Dorris Ng",
-                        "country":  "Hong Kong"
+                        "country":  "Hong Kong",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5531,7 +6216,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Irene Anglada",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5539,7 +6225,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Jiayue Yu",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5547,7 +6234,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Kirsten MacKenzie",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5555,7 +6243,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Liz Howe",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5563,7 +6252,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Sally Boon Matthews",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5571,7 +6261,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Susan Jablonski",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5579,7 +6270,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Tuulike Kivestu-Rotella",
-                        "country":  "Estonia"
+                        "country":  "Estonia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5587,7 +6279,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-07-01",
                         "label":  "2024/07",
                         "artist":  "Xinyu Liu",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5595,7 +6288,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Anna Moghaddam",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5603,7 +6297,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Elisabeth Karin",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5611,7 +6306,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Friedrich Lindner",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5619,7 +6315,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Greta Alice",
-                        "country":  "Lithuania"
+                        "country":  "Lithuania",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5627,7 +6324,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Guillaume Saur",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5635,7 +6333,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Jeong Man Gyu",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5643,7 +6342,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Katrina Mesta",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5651,7 +6351,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Macy Castañeda Lee",
-                        "country":  "Philippines"
+                        "country":  "Philippines",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5659,7 +6360,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Max Lawrence White",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5667,7 +6369,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Ralf Born",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5675,7 +6378,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Sarah Doan",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5683,7 +6387,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Yixuan Pan",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5691,7 +6396,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-08-01",
                         "label":  "2024/08",
                         "artist":  "Yolande Mutale",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5699,7 +6405,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Barbora Kachlíková",
-                        "country":  "Czech Republic"
+                        "country":  "Czech Republic",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5707,7 +6414,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Caroline Kampfraath",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5715,7 +6423,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Charys Wilson",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5723,7 +6432,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Chelsea FARQUHAR",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5731,7 +6441,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Claude Creighton",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5739,7 +6450,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Lucy Zhang",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5747,7 +6459,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Maddy Adams",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5755,7 +6468,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Martin SCHEPKENS",
-                        "country":  "Belgium"
+                        "country":  "Belgium",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5763,7 +6477,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-09-01",
                         "label":  "2024/09",
                         "artist":  "Samara Martínez",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5771,7 +6486,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Carola Björk",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5779,7 +6495,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Deborah Wong",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5787,7 +6504,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Laís Machado",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5795,7 +6513,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Las Maleantes",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5803,7 +6522,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Lisa Slawitz",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5811,7 +6531,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Nancy Yoshii",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5819,7 +6540,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Pat Ong",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5827,7 +6549,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Paula Kovarik",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5835,7 +6558,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Ruby Silvious",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5843,7 +6567,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "Veronika Beringer",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5851,7 +6576,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-10-01",
                         "label":  "2024/10",
                         "artist":  "What The Frog Is That",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5859,7 +6585,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Alexandra Beguez",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5867,7 +6594,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Anastasia Rigaud",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5875,7 +6603,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Benett Holgerson",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5883,7 +6612,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Emilia Rigaud",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5891,7 +6621,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Erica D’Ali",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5899,7 +6630,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Hyojoo Lee",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5907,7 +6639,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Michal Krasny",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5915,7 +6648,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Nia Alavezos",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5923,7 +6657,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Penelope Blunsden",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5931,7 +6666,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Seiko Atsuta Purdue",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5939,7 +6675,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Silver",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5947,7 +6684,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-11-01",
                         "label":  "2024/11",
                         "artist":  "Sydnee Peters",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5955,7 +6693,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Anna Bisnaire",
-                        "country":  "Japan"
+                        "country":  "Japan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5963,7 +6702,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Cherry Zong",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5971,7 +6711,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Fawzia Muradali Kane",
-                        "country":  "Trinidad and Tobago"
+                        "country":  "Trinidad and Tobago",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5979,7 +6720,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Harrison Rae",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5987,7 +6729,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Izzy Barszcz",
-                        "country":  "Poland"
+                        "country":  "Poland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -5995,7 +6738,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "JJ",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -6003,7 +6747,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Lily Coyl",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -6011,7 +6756,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Lois Richard",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -6019,7 +6765,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Marsha Anne McDonald",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -6027,7 +6774,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Nate Hester",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2024,
@@ -6035,7 +6783,8 @@ window.ARTIST_DATA = {
                         "date":  "2024-12-01",
                         "label":  "2024/12",
                         "artist":  "Olena Tolstokora",
-                        "country":  "Ukraine"
+                        "country":  "Ukraine",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6043,7 +6792,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Adam Elder-Mullan",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6051,7 +6801,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Ashlena Sharma",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6059,7 +6810,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Das Fuerst",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6067,7 +6819,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Elloise Arabol Alexander",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6075,7 +6828,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Hypolite Martin",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6083,7 +6837,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Lara Bruggeman",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6091,7 +6846,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Lucy Parris-Piper",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6099,7 +6855,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Oda Tilset",
-                        "country":  "Norway"
+                        "country":  "Norway",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6107,7 +6864,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Robert Moss",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6115,7 +6873,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Rocío Muy Bien",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6123,7 +6882,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "RON NUYORK",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6131,7 +6891,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "SueLeen Ng",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6139,7 +6900,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-01-01",
                         "label":  "2025/01",
                         "artist":  "Vladimiro Bellini",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6147,7 +6909,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Alexandra Busch",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6155,7 +6918,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Ann Trinca",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6163,7 +6927,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Brett Piva",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6171,7 +6936,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Candace Pritchard",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6179,7 +6945,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Fran Hayes",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6187,7 +6954,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Holly Leonardson",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6195,7 +6963,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Jess Joy",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6203,7 +6972,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Loh Choi Ying",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6211,7 +6981,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Rebecca Salinas",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6219,7 +6990,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Tabatha Lucia González",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6227,7 +6999,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Valerie Ng",
-                        "country":  "Malaysia"
+                        "country":  "Malaysia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6235,7 +7008,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-02-01",
                         "label":  "2025/02",
                         "artist":  "Zayd Latib",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6243,7 +7017,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Bernhard Hollinger",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6251,7 +7026,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Caitlin Bowe",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6259,7 +7035,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Dea Khalvashi",
-                        "country":  "Georgia"
+                        "country":  "Georgia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6267,7 +7044,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Franco",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6275,7 +7053,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Giuseppe Ferrara",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6283,7 +7062,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Holly Friend",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6291,7 +7071,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Julia Liedel",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6299,7 +7080,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Justin Seiji Waddell",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6307,7 +7089,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Madeleine Becker",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6315,7 +7098,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "MoJo",
-                        "country":  "South Africa"
+                        "country":  "South Africa",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6323,7 +7107,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Sebastian Jung",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6331,7 +7116,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Sharon Murro",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6339,7 +7125,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Sophia Twigt",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6347,7 +7134,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Tess Tomassini",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6355,7 +7143,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-03-01",
                         "label":  "2025/03",
                         "artist":  "Violeta Aguiló Rodríguez",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6363,7 +7152,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Bárbara Malagoli",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6371,7 +7161,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Isabella MacKirdy",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6379,7 +7170,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Juan Pedro",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6387,7 +7179,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Laura Edelbacher",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6395,7 +7188,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Lavanya Siri D",
-                        "country":  "India"
+                        "country":  "India",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6403,7 +7197,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Philo Ouweleen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6411,7 +7206,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Prang Sayasilpi",
-                        "country":  "Thailand"
+                        "country":  "Thailand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6419,7 +7215,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Salma Arastu",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6427,7 +7224,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Shana Pagano Lohrey",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6435,7 +7233,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Sophie Potter",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6443,7 +7242,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-04-01",
                         "label":  "2025/04",
                         "artist":  "Texas Nixon-Kain and Niki Verrall",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6451,7 +7251,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Amir James smith",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6459,7 +7260,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Béatrice Gaucherand",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6467,7 +7269,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Chloé Arrouy and Corentin Gaillardin",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6475,7 +7278,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Clementine Blue",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6483,7 +7287,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Isabella Zammit",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6491,7 +7296,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Jingqi Wang Steinhiser",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6499,7 +7305,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Kenna Barradell",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6507,7 +7314,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Mel·lif·lu·ous",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6515,7 +7323,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Mela Boev + Yu",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6523,7 +7332,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Rita Ribeiro",
-                        "country":  "Portugal"
+                        "country":  "Portugal",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6531,7 +7341,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-05-01",
                         "label":  "2025/05",
                         "artist":  "Sunday Jemmott",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6539,7 +7350,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Alison Lorraine",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6547,7 +7359,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Angela Luo",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6555,7 +7368,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Anita Wexler",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6563,7 +7377,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Betsey Kilpatrick",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6571,7 +7386,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Chi Zhang",
-                        "country":  "China"
+                        "country":  "China",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6579,7 +7395,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Gloria Kim",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6587,7 +7404,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Ju Yi Chia",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6595,7 +7413,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Lara Kroeker",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6603,7 +7422,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Lyndon Polan",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6611,7 +7431,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Madelyn Schutz",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6619,7 +7440,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Piret Uibotalu",
-                        "country":  "Estonia"
+                        "country":  "Estonia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6627,7 +7449,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Sarah Matthews",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6635,7 +7458,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Thomas Triebe-Pay",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6643,7 +7467,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Vanessa Hudig",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6651,7 +7476,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Vanna Nguyen",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6659,7 +7485,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-06-01",
                         "label":  "2025/06",
                         "artist":  "Vered Ganchrow",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6667,7 +7494,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Alison Lorraine",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6675,7 +7503,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Anu Perkkiö",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6683,7 +7512,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Danielle Rochecouste",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6691,7 +7521,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Estelle Sweeney",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6699,7 +7530,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Joanna Letchimy",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6707,7 +7539,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Lucy Levine",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6715,7 +7548,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Lyndon Polan",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6723,7 +7557,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Nataliia Melnychenko",
-                        "country":  "Ukraine"
+                        "country":  "Ukraine",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6731,7 +7566,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Samantha Lee Curran",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6739,7 +7575,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Soupy Tang",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6747,7 +7584,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-07-01",
                         "label":  "2025/07",
                         "artist":  "Vanessa Hudig",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6755,7 +7593,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Anat Martkovich",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6763,7 +7602,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Bob Corporaal",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6771,7 +7611,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Eugene Sarmiento",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6779,7 +7620,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Fernanda Urquiza",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6787,7 +7629,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Holly MacKinnon",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6795,7 +7638,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Janet Otter",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6803,7 +7647,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Jasper Avice Demay",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6811,7 +7656,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Kate Kurucz",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6819,7 +7665,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Magdalena Saliba",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6827,7 +7674,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Mar Aroko",
-                        "country":  "Mexico"
+                        "country":  "Mexico",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6835,7 +7683,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Mari Costa",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6843,7 +7692,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Marta Baroni",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6851,7 +7701,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Rebecca Merlic",
-                        "country":  "Austria"
+                        "country":  "Austria",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6859,7 +7710,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-08-01",
                         "label":  "2025/08",
                         "artist":  "Vanessa Branchi",
-                        "country":  "Italy"
+                        "country":  "Italy",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6867,7 +7719,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Alex Conway",
-                        "country":  "Ireland"
+                        "country":  "Ireland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6875,7 +7728,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Camilla Rantanen",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6883,7 +7737,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Chandler Condon",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6891,7 +7746,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Felicitas Butt",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6899,7 +7755,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Guðný Kristmanns",
-                        "country":  "Iceland"
+                        "country":  "Iceland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6907,7 +7764,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Jonathan Lass",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6915,7 +7773,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Kiani Kodama",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6923,7 +7782,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Lara Gough",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6931,7 +7791,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Vale Wilson",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6939,7 +7800,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-09-01",
                         "label":  "2025/09",
                         "artist":  "Zuzana Radicova",
-                        "country":  "Denmark"
+                        "country":  "Denmark",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6947,7 +7809,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Daphne Bleeker",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6955,7 +7818,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Dora Miller",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6963,7 +7827,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Dorthea Magonet",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6971,7 +7836,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Ingrid Yuzly Mathurin",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6979,7 +7845,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Jazz Groden-Gilchrist",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6987,7 +7854,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Jeffrey de Bruin",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -6995,7 +7863,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Jenny Hsieh",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7003,7 +7872,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Julie Lindell",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7011,7 +7881,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "karen shangguan",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7019,7 +7890,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Katrin Ahlgren",
-                        "country":  "Sweden"
+                        "country":  "Sweden",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7027,7 +7899,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Konstantinos Vachlas",
-                        "country":  "Greece"
+                        "country":  "Greece",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7035,7 +7908,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Maxim de Gilder",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7043,7 +7917,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-10-01",
                         "label":  "2025/10",
                         "artist":  "Susan Sitko",
-                        "country":  "Poland"
+                        "country":  "Poland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7051,7 +7926,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Abram Katz",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7059,7 +7935,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Alisa Welby",
-                        "country":  "New Zealand"
+                        "country":  "New Zealand",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7067,7 +7944,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Cam Collins",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7075,7 +7953,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Camille Olsen-Ormandy",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7083,7 +7962,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Finn McGrath",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7091,7 +7971,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Grace Hamilton",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7099,7 +7980,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Hannah Wald",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7107,7 +7989,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Josh Juett",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7115,7 +7998,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Lauren Metzler",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7123,7 +8007,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "MOMO KIM",
-                        "country":  "South Korea"
+                        "country":  "South Korea",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7131,7 +8016,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Mónica Calvo",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7139,7 +8025,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Ollie Linden",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7147,7 +8034,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Sushma Juttukonda",
-                        "country":  "India"
+                        "country":  "India",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7155,7 +8043,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Tom Halkitis",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7163,7 +8052,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Tom Halkitis",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7171,7 +8061,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Tzu Li Hsu",
-                        "country":  "Taiwan"
+                        "country":  "Taiwan",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7179,7 +8070,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-11-01",
                         "label":  "2025/11",
                         "artist":  "Wolfgang Saker",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7187,7 +8079,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Amanda del Valle",
-                        "country":  "Chile"
+                        "country":  "Chile",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7195,7 +8088,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Anna Cho",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7203,7 +8097,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Bree Stallings",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7211,7 +8106,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Colin Russell",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7219,7 +8115,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Etienne Mory",
-                        "country":  "Switzerland"
+                        "country":  "Switzerland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7227,7 +8124,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Jody Tableporter",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7235,7 +8133,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Katarina Čelebić",
-                        "country":  "Serbia"
+                        "country":  "Serbia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7243,7 +8142,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Leanne Xiu Williams",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7251,7 +8151,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Limo Hair",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7259,7 +8160,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Luise Spielhagen",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7267,7 +8169,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Luise Spielhagen",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7275,7 +8178,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Luz López Davicino",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7283,7 +8187,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Melda Kilinc",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2025,
@@ -7291,7 +8196,8 @@ window.ARTIST_DATA = {
                         "date":  "2025-12-01",
                         "label":  "2025/12",
                         "artist":  "Noa Goffer",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7299,7 +8205,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "Camille Viviani",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7307,7 +8214,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "Cole Roberts",
-                        "country":  "United States"
+                        "country":  "United States",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7315,7 +8223,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "Fawzia Muradali Kane",
-                        "country":  "Trinidad and Tobago"
+                        "country":  "Trinidad and Tobago",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7323,7 +8232,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "June Monstera",
-                        "country":  "Belgium"
+                        "country":  "Belgium",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7331,7 +8241,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "Lisa Holmén",
-                        "country":  "Finland"
+                        "country":  "Finland",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7339,7 +8250,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "Lorinda Mutsaers",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7347,7 +8259,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "Paula Iglesias",
-                        "country":  "Spain"
+                        "country":  "Spain",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7355,7 +8268,26 @@ window.ARTIST_DATA = {
                         "date":  "2026-01-01",
                         "label":  "2026/01",
                         "artist":  "Robin van Hekezen",
-                        "country":  "Netherlands"
+                        "country":  "Netherlands",
+                        "detailUrl":  ""
+                    },
+                    {
+                        "year":  2026,
+                        "month":  2,
+                        "date":  "2026-02-01",
+                        "label":  "2026/02",
+                        "artist":  "Andrea Kez Marchetti",
+                        "country":  "Italy",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1%e3%82%ba%e3%83%bb%e3%83%9e%e3%83%ab%e3%82%b1%e3%83%83%e3%83%86%e3%82%a3%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1/"
+                    },
+                    {
+                        "year":  2026,
+                        "month":  2,
+                        "date":  "2026-02-01",
+                        "label":  "2026/02",
+                        "artist":  "Chiara Pernicini",
+                        "country":  "Italy",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1%e3%82%ba%e3%83%bb%e3%83%9e%e3%83%ab%e3%82%b1%e3%83%83%e3%83%86%e3%82%a3%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1/"
                     },
                     {
                         "year":  2026,
@@ -7363,7 +8295,26 @@ window.ARTIST_DATA = {
                         "date":  "2026-02-01",
                         "label":  "2026/02",
                         "artist":  "Chloe Kang",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
+                    },
+                    {
+                        "year":  2026,
+                        "month":  2,
+                        "date":  "2026-02-01",
+                        "label":  "2026/02",
+                        "artist":  "Ellen McCalmont",
+                        "country":  "Australia",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/ellen-mccalmont%ef%bc%88%e3%82%a8%e3%83%ac%e3%83%b3%e3%83%bb%e3%83%9e%e3%83%83%e3%82%ab%e3%83%ab%e3%83%a2%e3%83%b3%e3%83%88%ef%bc%89%e3%81%af%e3%80%81%e4%b8%bb%e3%81%ab%e3%83%89%e3%83%ad%e3%83%bc/"
+                    },
+                    {
+                        "year":  2026,
+                        "month":  2,
+                        "date":  "2026-02-01",
+                        "label":  "2026/02",
+                        "artist":  "Eric Leif Conrad",
+                        "country":  "United States",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/%e6%bb%9e%e5%9c%a8%e4%b8%ad%e3%81%ae%e3%82%a2%e3%83%bc%e3%83%86%e3%82%a3%e3%82%b9%e3%83%88eric-leif-conrad%e3%82%92%e7%b4%b9%e4%bb%8b%e3%81%97%e3%81%be%e3%81%99%e3%80%82/"
                     },
                     {
                         "year":  2026,
@@ -7371,7 +8322,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-02-01",
                         "label":  "2026/02",
                         "artist":  "Juan Barro",
-                        "country":  "Argentina"
+                        "country":  "Argentina",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7379,7 +8331,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-02-01",
                         "label":  "2026/02",
                         "artist":  "Justine Wake",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7387,7 +8340,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-02-01",
                         "label":  "2026/02",
                         "artist":  "Madison Houeix",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7395,7 +8349,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-02-01",
                         "label":  "2026/02",
                         "artist":  "Mary Galbraith",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7403,7 +8358,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-02-01",
                         "label":  "2026/02",
                         "artist":  "Sorcha 常盤 Gibson",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7411,7 +8367,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-02-01",
                         "label":  "2026/02",
                         "artist":  "Steffi Lai",
-                        "country":  "Canada"
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7419,7 +8376,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Amir Lotan",
-                        "country":  "Israel"
+                        "country":  "Israel",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7427,7 +8385,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Ash Djokic",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7435,7 +8394,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Eduard Klena",
-                        "country":  "Slovak Republic"
+                        "country":  "Slovak Republic",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7443,7 +8403,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Electra Peraki",
-                        "country":  "Greece"
+                        "country":  "Greece",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7451,7 +8412,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Henning Gundlach",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7459,7 +8421,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Joshua Copland-Nielsen",
-                        "country":  "Australia"
+                        "country":  "Australia",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7467,7 +8430,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Juliana Wolf",
-                        "country":  "Brazil"
+                        "country":  "Brazil",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7475,7 +8439,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Katy Wang",
-                        "country":  "United Kingdom"
+                        "country":  "United Kingdom",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7483,7 +8448,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Klara Stefanovicova",
-                        "country":  "Slovak Republic"
+                        "country":  "Slovak Republic",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7491,7 +8457,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Lou Amara",
-                        "country":  "France"
+                        "country":  "France",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7499,7 +8466,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Nate Eileen Tjoeng",
-                        "country":  "Singapore"
+                        "country":  "Singapore",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7507,7 +8475,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Ronny Szillo",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7515,7 +8484,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "Traudel Fährenkemper",
-                        "country":  "Germany"
+                        "country":  "Germany",
+                        "detailUrl":  ""
                     },
                     {
                         "year":  2026,
@@ -7523,15 +8493,8 @@ window.ARTIST_DATA = {
                         "date":  "2026-03-01",
                         "label":  "2026/03",
                         "artist":  "V Dang",
-                        "country":  "France"
-                    },
-                    {
-                        "year":  2026,
-                        "month":  4,
-                        "date":  "2026-04-01",
-                        "label":  "2026/04",
-                        "artist":  "Example Artist",
-                        "country":  "Canada"
+                        "country":  "France",
+                        "detailUrl":  ""
                     }
                 ]
 };

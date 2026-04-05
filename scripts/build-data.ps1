@@ -76,7 +76,8 @@ function New-ArtistRecord {
     [int]$Year,
     [int]$Month,
     [string]$Artist,
-    [string]$Country
+    [string]$Country,
+    [string]$DetailUrl = ""
   )
 
   $isoDate = "{0:D4}-{1:D2}-01" -f $Year, $Month
@@ -87,6 +88,7 @@ function New-ArtistRecord {
     label = ("{0:D4}/{1:D2}" -f $Year, $Month)
     artist = $Artist.Trim()
     country = Normalize-Country $Country
+    detailUrl = $DetailUrl.Trim()
   }
 }
 
@@ -151,23 +153,24 @@ function Load-ManualAdditions {
     }
 
     $trimmed = $line.Trim()
-    if ($trimmed -eq "label,artist,country") {
+    if ($trimmed -eq "label,artist,country" -or $trimmed -eq "label,artist,country,detailUrl") {
       continue
     }
 
-    $parts = $trimmed.Split(',', 3)
-    if ($parts.Count -ne 3) {
+    $parts = $trimmed.Split(',', 4)
+    if ($parts.Count -lt 3) {
       continue
     }
 
     $label = $parts[0].Trim()
     $artist = $parts[1].Trim()
     $country = $parts[2].Trim()
+    $detailUrl = if ($parts.Count -ge 4) { $parts[3].Trim() } else { "" }
     if ($label -notmatch '^(\d{4})/(\d{2})$' -or [string]::IsNullOrWhiteSpace($artist)) {
       continue
     }
 
-    $records.Add((New-ArtistRecord -Year ([int]$matches[1]) -Month ([int]$matches[2]) -Artist $artist -Country $country))
+    $records.Add((New-ArtistRecord -Year ([int]$matches[1]) -Month ([int]$matches[2]) -Artist $artist -Country $country -DetailUrl $detailUrl))
   }
 
   $records

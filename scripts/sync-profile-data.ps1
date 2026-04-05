@@ -1,7 +1,8 @@
 param(
   [string]$ArtistDataPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artists-data.js",
   [string]$ProfileDataPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artist-profiles.js",
-  [string]$ImageDataPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artist-images.js"
+  [string]$ImageDataPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artist-images.js",
+  [string]$ManualAdditionsPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\manual-artists.csv"
 )
 
 $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
@@ -55,9 +56,54 @@ function Build-ProfileKey {
   "$Label|$(Normalize-KeyText $Artist)|$(Normalize-KeyText $Country)"
 }
 
+function Read-Utf8Lines {
+  param([string]$Path)
+
+  if (-not (Test-Path $Path)) {
+    return @()
+  }
+
+  (Read-Utf8Text $Path) -split "`r?`n"
+}
+
+function Load-ManualDetailUrls {
+  param([string]$Path)
+
+  $lookup = @{}
+  foreach ($line in (Read-Utf8Lines $Path)) {
+    if ([string]::IsNullOrWhiteSpace($line)) {
+      continue
+    }
+
+    $trimmed = $line.Trim()
+    if ($trimmed -eq "label,artist,country" -or $trimmed -eq "label,artist,country,detailUrl") {
+      continue
+    }
+
+    $parts = $trimmed.Split(',', 4)
+    if ($parts.Count -lt 4) {
+      continue
+    }
+
+    $label = $parts[0].Trim()
+    $artist = $parts[1].Trim()
+    $country = $parts[2].Trim()
+    $detailUrl = $parts[3].Trim()
+    if ([string]::IsNullOrWhiteSpace($label) -or [string]::IsNullOrWhiteSpace($artist) -or [string]::IsNullOrWhiteSpace($detailUrl)) {
+      continue
+    }
+
+    $lookup[(Build-ProfileKey $label $artist $country)] = $detailUrl
+    $lookup[(Build-ProfileKey $label $artist "")] = $detailUrl
+  }
+
+  $lookup
+}
+
 $artistData = Read-WindowPayload $ArtistDataPath "ARTIST_DATA"
 $profileData = Read-WindowPayload $ProfileDataPath "ARTIST_PROFILES"
 $imageData = Read-WindowPayload $ImageDataPath "ARTIST_IMAGES"
+$manualDetailUrls = Load-ManualDetailUrls $ManualAdditionsPath
 
 $remappedImages = [ordered]@{}
 $profileRecords = New-Object System.Collections.Generic.List[object]
@@ -99,7 +145,7 @@ foreach ($artistRecord in $artistData.records) {
     label = $artistRecord.label
     artist = $artistRecord.artist
     country = $artistRecord.country
-    detailUrl = if ($profileRecord) { $profileRecord.detailUrl } else { "" }
+    detailUrl = if ($manualDetailUrls.ContainsKey($newKey)) { $manualDetailUrls[$newKey] } elseif ($profileRecord) { $profileRecord.detailUrl } else { "" }
   })
 }
 

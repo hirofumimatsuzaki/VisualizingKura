@@ -1,7 +1,7 @@
 window.ARTIST_PROFILES = {
-    "generatedAt":  "2026-04-05T22:35:15+09:00",
-    "totalProfiles":  936,
-    "profilesWithDetailUrl":  896,
+    "generatedAt":  "2026-04-05T22:52:40+09:00",
+    "totalProfiles":  939,
+    "profilesWithDetailUrl":  900,
     "profilesWithImageUrl":  186,
     "unmatched":  [
                       "2025/12: Katarina ﾄ憩lebiﾄ・"
@@ -5493,9 +5493,33 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2026/02",
+                        "artist":  "Andrea Kez Marchetti",
+                        "country":  "Italy",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1%e3%82%ba%e3%83%bb%e3%83%9e%e3%83%ab%e3%82%b1%e3%83%83%e3%83%86%e3%82%a3%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1/"
+                    },
+                    {
+                        "label":  "2026/02",
+                        "artist":  "Chiara Pernicini",
+                        "country":  "Italy",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1%e3%82%ba%e3%83%bb%e3%83%9e%e3%83%ab%e3%82%b1%e3%83%83%e3%83%86%e3%82%a3%e3%82%a2%e3%83%b3%e3%83%89%e3%83%ac%e3%82%a2%e3%83%bb%e3%82%b1/"
+                    },
+                    {
+                        "label":  "2026/02",
                         "artist":  "Chloe Kang",
                         "country":  "Australia",
                         "detailUrl":  "https://studiokura.info/en/2026/02/chloe-kang%e3%81%af%e3%80%81%e7%9b%ae%e3%81%ab%e8%a6%8b%e3%81%88%e3%81%aa%e3%81%84%e4%b8%96%e7%95%8c%e3%81%ab%e6%b7%b1%e3%81%8f%e5%88%86%e3%81%91%e5%85%a5%e3%82%8b%e3%82%a2%e3%83%bc%e3%83%86%e3%82%a3/"
+                    },
+                    {
+                        "label":  "2026/02",
+                        "artist":  "Ellen McCalmont",
+                        "country":  "Australia",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/ellen-mccalmont%ef%bc%88%e3%82%a8%e3%83%ac%e3%83%b3%e3%83%bb%e3%83%9e%e3%83%83%e3%82%ab%e3%83%ab%e3%83%a2%e3%83%b3%e3%83%88%ef%bc%89%e3%81%af%e3%80%81%e4%b8%bb%e3%81%ab%e3%83%89%e3%83%ad%e3%83%bc/"
+                    },
+                    {
+                        "label":  "2026/02",
+                        "artist":  "Eric Leif Conrad",
+                        "country":  "United States",
+                        "detailUrl":  "https://studiokura.info/en/2026/02/%e6%bb%9e%e5%9c%a8%e4%b8%ad%e3%81%ae%e3%82%a2%e3%83%bc%e3%83%86%e3%82%a3%e3%82%b9%e3%83%88eric-leif-conrad%e3%82%92%e7%b4%b9%e4%bb%8b%e3%81%97%e3%81%be%e3%81%99%e3%80%82/"
                     },
                     {
                         "label":  "2026/02",
@@ -5616,12 +5640,6 @@ window.ARTIST_PROFILES = {
                         "artist":  "V Dang",
                         "country":  "France",
                         "detailUrl":  "https://studiokura.info/en/2026/03/v-dang-dairplane-%e3%81%af%e3%83%95%e3%83%a9%e3%83%b3%e3%82%b9%e3%83%bb%e3%83%91%e3%83%aa%e3%82%92%e6%8b%a0%e7%82%b9%e3%81%a8%e3%81%99%e3%82%8b%e3%82%a2%e3%83%bc%e3%83%86%e3%82%a3%e3%82%b9%e3%83%88/"
-                    },
-                    {
-                        "label":  "2026/04",
-                        "artist":  "Example Artist",
-                        "country":  "Canada",
-                        "detailUrl":  ""
                     }
                 ]
 };
