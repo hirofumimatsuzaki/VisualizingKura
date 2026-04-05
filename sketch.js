@@ -26,7 +26,7 @@ const COUNTRY_COORDS = {
   "New Zealand": { lat: -41.29, lon: 174.78 }, Norway: { lat: 59.91, lon: 10.75 }, Pakistan: { lat: 33.69, lon: 73.06 },
   Paraguay: { lat: -25.29, lon: -57.64 }, Peru: { lat: -12.05, lon: -77.04 }, Philippines: { lat: 14.6, lon: 120.98 },
   Poland: { lat: 52.23, lon: 21.01 }, Portugal: { lat: 38.72, lon: -9.14 }, "Russian Federation": { lat: 55.76, lon: 37.62 },
-  Singapore: { lat: 1.35, lon: 103.82 }, "Slovak Republic": { lat: 48.15, lon: 17.11 }, "South Africa": { lat: -25.75, lon: 28.19 },
+  Serbia: { lat: 44.81, lon: 20.46 }, Singapore: { lat: 1.35, lon: 103.82 }, "Slovak Republic": { lat: 48.15, lon: 17.11 }, "South Africa": { lat: -25.75, lon: 28.19 },
   "South Korea": { lat: 37.57, lon: 126.98 }, Spain: { lat: 40.42, lon: -3.7 }, Sweden: { lat: 59.33, lon: 18.07 },
   Switzerland: { lat: 46.95, lon: 7.45 }, Taiwan: { lat: 25.03, lon: 121.57 }, Thailand: { lat: 13.75, lon: 100.5 },
   "Trinidad and Tobago": { lat: 10.66, lon: -61.52 }, Turkey: { lat: 39.93, lon: 32.86 }, Ukraine: { lat: 50.45, lon: 30.52 },
@@ -726,11 +726,23 @@ function buildProfileKey(label, artist, country) {
 }
 
 function normalizeProfileText(value) {
-  return (value || "")
+  return repairMojibakeText(value || "")
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "");
+}
+
+function repairMojibakeText(value) {
+  if (!value || !/[\uFF00-\uFFEF]/.test(value)) {
+    return value;
+  }
+
+  try {
+    return decodeURIComponent(escape(value));
+  } catch {
+    return value;
+  }
 }
 
 function quadraticPoint(start, control, end, t) {

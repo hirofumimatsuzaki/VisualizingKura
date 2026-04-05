@@ -1,5 +1,5 @@
 window.ARTIST_PROFILES = {
-    "generatedAt":  "2026-04-05T08:04:51+09:00",
+    "generatedAt":  "2026-04-05T22:07:09+09:00",
     "totalProfiles":  935,
     "profilesWithDetailUrl":  896,
     "profilesWithImageUrl":  186,
@@ -51,7 +51,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2009/12",
-                        "artist":  "Luis Fernﾃ｡ndez Pons",
+                        "artist":  "Luis Fernández Pons",
                         "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/guestartists/llobet-pons"
                     },
@@ -141,7 +141,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2012/12",
-                        "artist":  "Tomﾃ｡s Tello",
+                        "artist":  "Tomás Tello",
                         "country":  "Peru",
                         "detailUrl":  "https://studiokura.info/en/guestartists/tomas-tello"
                     },
@@ -549,7 +549,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2015/10",
-                        "artist":  "Monique Lﾃｼtolf",
+                        "artist":  "Monique Lütolf",
                         "country":  "Switzerland",
                         "detailUrl":  "https://studiokura.info/en/guestartists/monique-lutolf/"
                     },
@@ -603,7 +603,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2016/01",
-                        "artist":  "Andrﾃｩe-Anne Mercier",
+                        "artist":  "Andrée-Anne Mercier",
                         "country":  "Canada",
                         "detailUrl":  "https://studiokura.info/en/guestartists/andree-anne-mercier/"
                     },
@@ -675,7 +675,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2016/04",
-                        "artist":  "Beste Miray Doﾄ歛n",
+                        "artist":  "Beste Miray Doğan",
                         "country":  "Turkey",
                         "detailUrl":  "https://studiokura.info/en/guestartists/beste-miray-dogan/"
                     },
@@ -837,7 +837,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2016/09",
-                        "artist":  "Inkeri Jﾃ､ntti",
+                        "artist":  "Inkeri Jäntti",
                         "country":  "Finland",
                         "detailUrl":  "https://studiokura.info/en/guestartists/inkeri-jantti/"
                     },
@@ -849,7 +849,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2016/10",
-                        "artist":  "Carla Caﾃｱellas",
+                        "artist":  "Carla Cañellas",
                         "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/guestartists/carla-canellas/"
                     },
@@ -927,7 +927,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2016/12",
-                        "artist":  "Carla Caﾃｱellas",
+                        "artist":  "Carla Cañellas",
                         "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/guestartists/carla-canellas/"
                     },
@@ -981,7 +981,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2017/01",
-                        "artist":  "Sebastiﾃ｡n Riffo",
+                        "artist":  "Sebastián Riffo",
                         "country":  "Chile",
                         "detailUrl":  "https://studiokura.info/en/guestartists/daniela-tenhamm/"
                     },
@@ -1035,14 +1035,14 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2017/03",
-                        "artist":  "Laurence O\u0027 Toole",
-                        "country":  "Ireland",
+                        "artist":  "Lærke Lauta",
+                        "country":  "Denmark",
                         "detailUrl":  "https://studiokura.info/en/guestartists/laurence-o-toole/"
                     },
                     {
                         "label":  "2017/03",
-                        "artist":  "Lﾃｦrke Lauta",
-                        "country":  "Denmark",
+                        "artist":  "Laurence O\u0027 Toole",
+                        "country":  "Ireland",
                         "detailUrl":  "https://studiokura.info/en/guestartists/laerke-lauta/"
                     },
                     {
@@ -1389,7 +1389,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2018/01",
-                        "artist":  "Desirﾃｩe Gedda",
+                        "artist":  "Desirée Gedda",
                         "country":  "Italy",
                         "detailUrl":  "https://studiokura.info/en/guestartists/desiree-gedda/"
                     },
@@ -1491,7 +1491,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2018/03",
-                        "artist":  "Maria Pﾃ､ﾃ､kkﾃｶnen",
+                        "artist":  "Maria Pääkkönen",
                         "country":  "Netherlands",
                         "detailUrl":  "https://studiokura.info/en/guestartists/danika-van-kaathoven/"
                     },
@@ -1599,7 +1599,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2018/05",
-                        "artist":  "Tonje Horn Kolbjﾃｸrnsen",
+                        "artist":  "Tonje Horn Kolbjørnsen",
                         "country":  "Norway",
                         "detailUrl":  "https://studiokura.info/en/guestartists/tonje-horn-kolbjornsen/"
                     },
@@ -1774,7 +1774,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2018/09",
                         "artist":  "Debbie Donnelly",
-                        "country":  "Unknown",
+                        "country":  "New Zealand",
                         "detailUrl":  "https://studiokura.info/en/guestartists/deb-donnelly/"
                     },
                     {
@@ -1845,7 +1845,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2018/11",
-                        "artist":  "Ana Fernﾃ｡ndez",
+                        "artist":  "Ana Fernández",
                         "country":  "Chile",
                         "detailUrl":  "https://studiokura.info/en/guestartists/ana-fernandez/"
                     },
@@ -1894,7 +1894,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2018/12",
                         "artist":  "Anna Zoladz",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  ""
                     },
                     {
@@ -2115,7 +2115,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2019/04",
-                        "artist":  "Jonathan Reid Sﾃｩvigny",
+                        "artist":  "Jonathan Reid Sévigny",
                         "country":  "Canada",
                         "detailUrl":  "https://studiokura.info/en/guestartists/jonathan-reid-sevigny/"
                     },
@@ -2127,7 +2127,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2019/04",
-                        "artist":  "Marie Helﾃｩne Boone",
+                        "artist":  "Marie Heléne Boone",
                         "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/guestartists/marie-helene-boone/"
                     },
@@ -2331,7 +2331,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2019/08",
-                        "artist":  "Marﾃｭa Fernanda Araya",
+                        "artist":  "María Fernanda Araya",
                         "country":  "Chile",
                         "detailUrl":  "https://studiokura.info/en/guestartists/maria-fernanda-araya/"
                     },
@@ -2362,7 +2362,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2019/09",
                         "artist":  "Allison Kovar",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/guestartists/allison-kovar/"
                     },
                     {
@@ -2439,7 +2439,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2019/10",
-                        "artist":  "Geneviﾃｨve Lebleu",
+                        "artist":  "Geneviève Lebleu",
                         "country":  "Canada",
                         "detailUrl":  "https://studiokura.info/en/guestartists/genevieve-lebleu/"
                     },
@@ -2566,7 +2566,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2019/12",
                         "artist":  "Kostas Papakostas \u0026 Stephanie Pochet",
-                        "country":  "Unknown",
+                        "country":  "United Kingdom",
                         "detailUrl":  "https://studiokura.info/en/guestartists/kostas-papakostas-stephanie-pochet/"
                     },
                     {
@@ -2733,7 +2733,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2020/06",
-                        "artist":  "Mara Yuki Thﾃｸgersen",
+                        "artist":  "Mara Yuki Thøgersen",
                         "country":  "Denmark",
                         "detailUrl":  "https://studiokura.info/en/mara-yuki-thogersen/"
                     },
@@ -2746,7 +2746,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2020/08",
                         "artist":  "Kazutaka Fujii",
-                        "country":  "Unknown",
+                        "country":  "Japan",
                         "detailUrl":  "https://studiokura.info/en/kazutaka-fujii/"
                     },
                     {
@@ -2782,12 +2782,12 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2021/09",
                         "artist":  "Scott Harano",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/scott-harano/"
                     },
                     {
                         "label":  "2022/05",
-                        "artist":  "Laura Ibﾃ｡ﾃｱez Kuzmanic",
+                        "artist":  "Laura Ibáñez Kuzmanic",
                         "country":  "Chile",
                         "detailUrl":  "https://studiokura.info/en/laura-ibanez-kuzmanic/"
                     },
@@ -2830,7 +2830,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2022/07",
                         "artist":  "Jenny Macgregor",
-                        "country":  "Unknown",
+                        "country":  "United Kingdom",
                         "detailUrl":  "https://studiokura.info/en/jenny-macgregor-2/"
                     },
                     {
@@ -2842,7 +2842,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2022/07",
                         "artist":  "Kayla Milne",
-                        "country":  "Unknown",
+                        "country":  "United Kingdom",
                         "detailUrl":  "https://studiokura.info/en/kayla-milne/"
                     },
                     {
@@ -2878,7 +2878,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2022/08",
                         "artist":  "Karen Jiang",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/karen-jiang/"
                     },
                     {
@@ -2991,7 +2991,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2022/10",
-                        "artist":  "Karl Patric Nﾃ､sman",
+                        "artist":  "Karl Patric Näsman",
                         "country":  "Sweden",
                         "detailUrl":  ""
                     },
@@ -3046,25 +3046,25 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2022/12",
                         "artist":  "Chris Lightbody",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/chris-lightbody/"
                     },
                     {
                         "label":  "2022/12",
                         "artist":  "Gabrielle Rameriz",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/gabrielle-rameriz/"
                     },
                     {
                         "label":  "2022/12",
                         "artist":  "Maya Hendricks",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/maya-hendricks/"
                     },
                     {
                         "label":  "2022/12",
                         "artist":  "Paula Schultz",
-                        "country":  "Unknown",
+                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/paula-schultz/"
                     },
                     {
@@ -3136,12 +3136,12 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2023/03",
                         "artist":  "Andrina Manon",
-                        "country":  "Unknown",
+                        "country":  "Australia",
                         "detailUrl":  "https://studiokura.info/en/andrina-manon/"
                     },
                     {
                         "label":  "2023/03",
-                        "artist":  "Anna Rﾃｩvﾃｩsz",
+                        "artist":  "Anna Révész",
                         "country":  "Australia",
                         "detailUrl":  "https://studiokura.info/en/anna-revesz/"
                     },
@@ -3171,7 +3171,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2023/03",
-                        "artist":  "Grace O窶儉eary",
+                        "artist":  "Grace O’Leary",
                         "country":  "Ireland",
                         "detailUrl":  "https://studiokura.info/en/grace-oleary/"
                     },
@@ -3189,7 +3189,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2023/03",
-                        "artist":  "Liisa Kruusmﾃ､gi",
+                        "artist":  "Liisa Kruusmägi",
                         "country":  "Estonia",
                         "detailUrl":  "https://studiokura.info/en/liisa-kruusmagi/"
                     },
@@ -3279,7 +3279,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2023/05",
-                        "artist":  "Barbora ﾅｽiﾅｾkovﾃ｡",
+                        "artist":  "Barbora Žižková",
                         "country":  "Czech Republic",
                         "detailUrl":  "https://studiokura.info/en/2023/05/barbora-zizkova/"
                     },
@@ -3321,7 +3321,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2023/06",
-                        "artist":  "Cﾃｩsar Pelizer",
+                        "artist":  "César Pelizer",
                         "country":  "United Kingdom",
                         "detailUrl":  "https://studiokura.info/en/2023/06/holly-elan-watson/"
                     },
@@ -3495,56 +3495,56 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2023/09",
-                        "artist":  "Irene Moray",
+                        "artist":  "Ío Bru",
                         "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/2023/09/irene-moray/"
                     },
                     {
                         "label":  "2023/09",
+                        "artist":  "Irene Moray",
+                        "country":  "Spain",
+                        "detailUrl":  "https://studiokura.info/en/2023/09/jo-aka-mojo/"
+                    },
+                    {
+                        "label":  "2023/09",
                         "artist":  "Jo (aka MoJo)",
                         "country":  "South Africa",
-                        "detailUrl":  "https://studiokura.info/en/2023/09/jo-aka-mojo/"
+                        "detailUrl":  "https://studiokura.info/en/2023/09/mara/"
                     },
                     {
                         "label":  "2023/09",
                         "artist":  "Mara",
                         "country":  "Australia",
-                        "detailUrl":  "https://studiokura.info/en/2023/09/mara/"
+                        "detailUrl":  "https://studiokura.info/en/2023/09/marina-sole/"
                     },
                     {
                         "label":  "2023/09",
-                        "artist":  "Marina Solﾃｩ",
+                        "artist":  "Marina Solé",
                         "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/2023/09/marina-sole/"
                     },
                     {
                         "label":  "2023/09",
-                        "artist":  "Marina Solﾃｩ",
+                        "artist":  "Marina Solé",
                         "country":  "United States",
-                        "detailUrl":  "https://studiokura.info/en/2023/09/marina-sole/"
+                        "detailUrl":  "https://studiokura.info/en/2023/09/nawoon-shin/"
                     },
                     {
                         "label":  "2023/09",
                         "artist":  "Nawoon Shin",
                         "country":  "South Korea",
-                        "detailUrl":  "https://studiokura.info/en/2023/09/nawoon-shin/"
+                        "detailUrl":  "https://studiokura.info/en/2023/09/s-portico-bowman/"
                     },
                     {
                         "label":  "2023/09",
                         "artist":  "S. Portico Bowman",
                         "country":  "Canada",
-                        "detailUrl":  "https://studiokura.info/en/2023/09/s-portico-bowman/"
+                        "detailUrl":  "https://studiokura.info/en/2023/09/winneke-de-groot-and-felix-van-dam/"
                     },
                     {
                         "label":  "2023/09",
                         "artist":  "Winneke de Groot and Felix van Dam",
                         "country":  "Netherlands",
-                        "detailUrl":  "https://studiokura.info/en/2023/09/winneke-de-groot-and-felix-van-dam/"
-                    },
-                    {
-                        "label":  "2023/09",
-                        "artist":  "ﾃ腔 Bru",
-                        "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/2023/09/io-bru/"
                     },
                     {
@@ -3609,7 +3609,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2023/11",
-                        "artist":  "Agnﾃｨs Albﾃｩrola",
+                        "artist":  "Agnès Albérola",
                         "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/2023/11/agnes-alberola/"
                     },
@@ -3627,7 +3627,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2023/11",
-                        "artist":  "Jennie Dahlﾃｩn",
+                        "artist":  "Jennie Dahlén",
                         "country":  "Sweden",
                         "detailUrl":  "https://studiokura.info/en/2023/11/jennie-dahlen/"
                     },
@@ -3814,7 +3814,7 @@ window.ARTIST_PROFILES = {
                     {
                         "label":  "2024/02",
                         "artist":  "Marceau Verdiere",
-                        "country":  "Unknown",
+                        "country":  "France",
                         "detailUrl":  "https://studiokura.info/en/2024/02/marceau-verdiere/"
                     },
                     {
@@ -3879,14 +3879,14 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/03",
-                        "artist":  "Sue Pentelow",
-                        "country":  "Australia",
+                        "artist":  "Sébastien Clermont",
+                        "country":  "Canada",
                         "detailUrl":  "https://studiokura.info/en/2024/03/sue-pentelow/"
                     },
                     {
                         "label":  "2024/03",
-                        "artist":  "Sﾃｩbastien Clermont",
-                        "country":  "Canada",
+                        "artist":  "Sue Pentelow",
+                        "country":  "Australia",
                         "detailUrl":  "https://studiokura.info/en/2024/03/sebastien-clermont/"
                     },
                     {
@@ -3951,14 +3951,14 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/05",
-                        "artist":  "Christine Lykkeh",
-                        "country":  "Denmark",
+                        "artist":  "Céleste Rilliet",
+                        "country":  "Switzerland",
                         "detailUrl":  "https://studiokura.info/en/2024/05/christine-lykkeh/"
                     },
                     {
                         "label":  "2024/05",
-                        "artist":  "Cﾃｩleste Rilliet",
-                        "country":  "Switzerland",
+                        "artist":  "Christine Lykkeh",
+                        "country":  "Denmark",
                         "detailUrl":  "https://studiokura.info/en/2024/05/celeste-rilliet/"
                     },
                     {
@@ -4011,43 +4011,49 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/06",
+                        "artist":  "Élise Kasztelan",
+                        "country":  "France",
+                        "detailUrl":  "https://studiokura.info/en/2024/06/enle-li/"
+                    },
+                    {
+                        "label":  "2024/06",
                         "artist":  "Enle Li",
                         "country":  "United States",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/enle-li/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/finlay-neal/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "Finlay Neal",
                         "country":  "Australia",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/finlay-neal/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/guste-sakalauskaite/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "Guste Sakalauskaite",
                         "country":  "Lithuania",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/guste-sakalauskaite/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/maaike-canne/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "Maaike Canne",
                         "country":  "Netherlands",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/maaike-canne/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/machiel-beijaert/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "Machiel Beijaert",
                         "country":  "Netherlands",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/machiel-beijaert/"
-                    },
-                    {
-                        "label":  "2024/06",
-                        "artist":  "Michaelann Tostanoski",
-                        "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/2024/06/michaelann-tostanoski/"
                     },
                     {
                         "label":  "2024/06",
-                        "artist":  "Mﾃ､r Martinez",
+                        "artist":  "Mär Martinez",
+                        "country":  "United States",
+                        "detailUrl":  "https://studiokura.info/en/2024/06/natalie-deam/"
+                    },
+                    {
+                        "label":  "2024/06",
+                        "artist":  "Michaelann Tostanoski",
                         "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/2024/06/natalie-deam/"
                     },
@@ -4055,42 +4061,36 @@ window.ARTIST_PROFILES = {
                         "label":  "2024/06",
                         "artist":  "Natalie Deam",
                         "country":  "United States",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/natalie-deam/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/nora-terwilliger/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "Nora Terwilliger",
                         "country":  "United States",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/nora-terwilliger/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/olivia-fredricks/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "Olivia Fredricks",
                         "country":  "United States",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/olivia-fredricks/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/ray-lc/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "RAY LC",
                         "country":  "Hong Kong",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/ray-lc/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/zoe-ward/"
                     },
                     {
                         "label":  "2024/06",
-                        "artist":  "Zoﾃｫ Ward",
+                        "artist":  "Zoë Ward",
                         "country":  "United Kingdom",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/zoe-ward/"
+                        "detailUrl":  "https://studiokura.info/en/2024/06/zwaantje-kurpershoek/"
                     },
                     {
                         "label":  "2024/06",
                         "artist":  "Zwaantje Kurpershoek",
                         "country":  "Netherlands",
-                        "detailUrl":  "https://studiokura.info/en/2024/06/zwaantje-kurpershoek/"
-                    },
-                    {
-                        "label":  "2024/06",
-                        "artist":  "ﾃ瑛ise Kasztelan",
-                        "country":  "France",
                         "detailUrl":  "https://studiokura.info/en/2024/06/elise-kasztelan/"
                     },
                     {
@@ -4209,7 +4209,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/08",
-                        "artist":  "Macy Castaﾃｱeda Lee",
+                        "artist":  "Macy Castañeda Lee",
                         "country":  "Philippines",
                         "detailUrl":  "https://studiokura.info/en/2024/08/macy-castaneda-lee/"
                     },
@@ -4245,7 +4245,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/09",
-                        "artist":  "Barbora Kachlﾃｭkovﾃ｡",
+                        "artist":  "Barbora Kachlíková",
                         "country":  "Czech Republic",
                         "detailUrl":  "https://studiokura.info/en/2024/09/barbora-kachlikova/"
                     },
@@ -4293,13 +4293,13 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/09",
-                        "artist":  "Samara Martﾃｭnez",
+                        "artist":  "Samara Martínez",
                         "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/2024/09/samara-martinez/"
                     },
                     {
                         "label":  "2024/10",
-                        "artist":  "Carola Bjﾃｶrk",
+                        "artist":  "Carola Björk",
                         "country":  "Sweden",
                         "detailUrl":  "https://studiokura.info/en/2024/10/carola-bjork/"
                     },
@@ -4311,14 +4311,14 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/10",
-                        "artist":  "Las Maleantes",
-                        "country":  "Spain",
+                        "artist":  "Laís Machado",
+                        "country":  "Brazil",
                         "detailUrl":  "https://studiokura.info/en/2024/10/las-maleantes/"
                     },
                     {
                         "label":  "2024/10",
-                        "artist":  "Laﾃｭs Machado",
-                        "country":  "Brazil",
+                        "artist":  "Las Maleantes",
+                        "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/2024/10/lais-machado/"
                     },
                     {
@@ -4389,7 +4389,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2024/11",
-                        "artist":  "Erica D窶僊li",
+                        "artist":  "Erica D’Ali",
                         "country":  "Australia",
                         "detailUrl":  "https://studiokura.info/en/2024/11/penelope-blunsden/"
                     },
@@ -4557,7 +4557,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/01",
-                        "artist":  "Rocﾃｭo Muy Bien",
+                        "artist":  "Rocío Muy Bien",
                         "country":  "Argentina",
                         "detailUrl":  "https://studiokura.info/en/2025/01/vladimiro-bellini/"
                     },
@@ -4635,7 +4635,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/02",
-                        "artist":  "Tabatha Lucia Gonzﾃ｡lez",
+                        "artist":  "Tabatha Lucia González",
                         "country":  "United States",
                         "detailUrl":  "https://studiokura.info/en/2025/02/zayd-latib/"
                     },
@@ -4737,13 +4737,13 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/03",
-                        "artist":  "Violeta Aguilﾃｳ Rodrﾃｭguez",
+                        "artist":  "Violeta Aguiló Rodríguez",
                         "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/2025/03/violeta-aguilo-rodriguez/"
                     },
                     {
                         "label":  "2025/04",
-                        "artist":  "Bﾃ｡rbara Malagoli",
+                        "artist":  "Bárbara Malagoli",
                         "country":  "Brazil",
                         "detailUrl":  "https://studiokura.info/en/2025/04/barbara-malagoli/"
                     },
@@ -4815,13 +4815,13 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/05",
-                        "artist":  "Bﾃｩatrice Gaucherand",
+                        "artist":  "Béatrice Gaucherand",
                         "country":  "France",
                         "detailUrl":  "https://studiokura.info/en/2025/05/chloe-arrouy-and-corentin-gaillardin/"
                     },
                     {
                         "label":  "2025/05",
-                        "artist":  "Chloﾃｩ Arrouy and Corentin Gaillardin",
+                        "artist":  "Chloé Arrouy and Corentin Gaillardin",
                         "country":  "France",
                         "detailUrl":  "https://studiokura.info/en/2025/05/chloe-arrouy-and-corentin-gaillardin/"
                     },
@@ -4851,14 +4851,14 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/05",
-                        "artist":  "Mela Boev + Yu",
-                        "country":  "Italy",
+                        "artist":  "Mel·lif·lu·ous",
+                        "country":  "Canada",
                         "detailUrl":  "https://studiokura.info/en/2025/05/mela-boev-yu/"
                     },
                     {
                         "label":  "2025/05",
-                        "artist":  "Melﾂｷlifﾂｷluﾂｷous",
-                        "country":  "Canada",
+                        "artist":  "Mela Boev + Yu",
+                        "country":  "Italy",
                         "detailUrl":  "https://studiokura.info/en/2025/05/mel%c2%b7lif%c2%b7lu%c2%b7ous/"
                     },
                     {
@@ -4977,7 +4977,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/07",
-                        "artist":  "Anu Perkkiﾃｶ",
+                        "artist":  "Anu Perkkiö",
                         "country":  "Finland",
                         "detailUrl":  "https://studiokura.info/en/2025/07/anu-perkkio/"
                     },
@@ -5145,7 +5145,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/09",
-                        "artist":  "Guﾃｰnﾃｽ Kristmanns",
+                        "artist":  "Guðný Kristmanns",
                         "country":  "Iceland",
                         "detailUrl":  "https://studiokura.info/en/2025/09/gudny-kristmanns/"
                     },
@@ -5319,7 +5319,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/11",
-                        "artist":  "Mﾃｳnica Calvo",
+                        "artist":  "Mónica Calvo",
                         "country":  "Spain",
                         "detailUrl":  "https://studiokura.info/en/2025/11/monica-calvo/"
                     },
@@ -5397,8 +5397,8 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/12",
-                        "artist":  "Katarina ﾄ憩lebiﾄ・",
-                        "country":  "Unknown",
+                        "artist":  "Katarina Čelebić",
+                        "country":  "Serbia",
                         "detailUrl":  ""
                     },
                     {
@@ -5427,7 +5427,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2025/12",
-                        "artist":  "Luz Lﾃｳpez Davicino",
+                        "artist":  "Luz López Davicino",
                         "country":  "Argentina",
                         "detailUrl":  "https://studiokura.info/en/2025/12/luz-lopez-davicino%e3%83%ab%e3%82%b9%e3%83%bb%e3%83%ad%e3%83%9a%e3%82%b9%e3%83%bb%e3%83%80%e3%83%93%e3%82%b7%e3%83%8e/"
                     },
@@ -5469,7 +5469,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2026/01",
-                        "artist":  "Lisa Holmﾃｩn",
+                        "artist":  "Lisa Holmén",
                         "country":  "Finland",
                         "detailUrl":  "https://studiokura.info/en/2026/01/lisa-holmen-%e3%83%aa%e3%82%b5-%e3%83%9b%e3%83%ab%e3%83%a1%e3%83%b3/"
                     },
@@ -5523,7 +5523,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2026/02",
-                        "artist":  "Sorcha 蟶ｸ逶､ Gibson",
+                        "artist":  "Sorcha 常盤 Gibson",
                         "country":  "Canada",
                         "detailUrl":  "https://studiokura.info/en/2026/02/steffi-lai%e3%81%af%e3%80%81%e3%82%ab%e3%83%8a%e3%83%80%e3%83%bb%e3%83%96%e3%83%aa%e3%83%86%e3%82%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%82%b3%e3%83%ad%e3%83%b3%e3%83%93%e3%82%a2%e5%b7%9e%e3%81%ae%e6%b5%b7/"
                     },
@@ -5607,7 +5607,7 @@ window.ARTIST_PROFILES = {
                     },
                     {
                         "label":  "2026/03",
-                        "artist":  "Traudel Fﾃ､hrenkemper",
+                        "artist":  "Traudel Fährenkemper",
                         "country":  "Germany",
                         "detailUrl":  "https://studiokura.info/en/2026/03/%e6%bb%9e%e5%9c%a8%e4%b8%ad%e3%81%ae%e3%82%a2%e3%83%bc%e3%83%86%e3%82%a3%e3%82%b9%e3%83%88henning-gundlach%e3%82%92%e7%b4%b9%e4%bb%8b%e3%81%97%e3%81%be%e3%81%99%e3%80%82/"
                     },

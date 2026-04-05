@@ -1,8 +1,12 @@
 window.ARTIST_DATA = {
-    "generatedAt":  "2026-04-04T17:42:32+09:00",
+    "generatedAt":  "2026-04-05T22:07:01+09:00",
     "totalArtists":  935,
+    "resolvedMissingCountries":  1,
+    "unresolvedMissingCountries":  {
+
+                                   },
     "warnings":  [
-                     "Missing country: 2025/12: Katarina ﾄ憩lebiﾄ・",
+                     "Missing country: 2025/12: Katarina Čelebić",
                      "Skipped counter-like line: 2025/07: 28",
                      "Missing country: 2024/02: Marceau Verdiere",
                      "Missing country: 2023/03: Andrina Manon",
@@ -18,7 +22,23 @@ window.ARTIST_DATA = {
                      "Missing country: 2019/12: Kostas Papakostas \u0026 Stephanie Pochet",
                      "Missing country: 2019/09: Allison Kovar",
                      "Missing country: 2018/12: Anna Zoladz",
-                     "Missing country: 2018/09: Debbie Donnelly"
+                     "Missing country: 2018/09: Debbie Donnelly",
+                     "Resolved missing country from override: 2025/12: Katarina Čelebić -\u003e Serbia",
+                     "Resolved missing country from override: 2024/02: Marceau Verdiere -\u003e France",
+                     "Resolved missing country from override: 2023/03: Andrina Manon -\u003e Australia",
+                     "Resolved missing country from override: 2022/12: Paula Schultz -\u003e United States",
+                     "Resolved missing country from override: 2022/12: Maya Hendricks -\u003e United States",
+                     "Resolved missing country from override: 2022/12: Chris Lightbody -\u003e United States",
+                     "Resolved missing country from override: 2022/12: Gabrielle Rameriz -\u003e United States",
+                     "Resolved missing country from override: 2022/08: Karen Jiang -\u003e United States",
+                     "Resolved missing country from override: 2022/07: Kayla Milne -\u003e United Kingdom",
+                     "Resolved missing country from override: 2022/07: Jenny Macgregor -\u003e United Kingdom",
+                     "Resolved missing country from override: 2021/09: Scott Harano -\u003e United States",
+                     "Resolved missing country from override: 2020/08: Kazutaka Fujii -\u003e Japan",
+                     "Resolved missing country from override: 2019/12: Kostas Papakostas \u0026 Stephanie Pochet -\u003e United Kingdom",
+                     "Resolved missing country from override: 2019/09: Allison Kovar -\u003e United States",
+                     "Resolved missing country from override: 2018/09: Debbie Donnelly -\u003e New Zealand",
+                     "Resolved missing country from duplicate artist: 2018/12: Anna Zoladz -\u003e United States"
                  ],
     "records":  [
                     {
@@ -82,7 +102,7 @@ window.ARTIST_DATA = {
                         "month":  12,
                         "date":  "2009-12-01",
                         "label":  "2009/12",
-                        "artist":  "Luis Fernﾃ｡ndez Pons",
+                        "artist":  "Luis Fernández Pons",
                         "country":  "Spain"
                     },
                     {
@@ -202,7 +222,7 @@ window.ARTIST_DATA = {
                         "month":  12,
                         "date":  "2012-12-01",
                         "label":  "2012/12",
-                        "artist":  "Tomﾃ｡s Tello",
+                        "artist":  "Tomás Tello",
                         "country":  "Peru"
                     },
                     {
@@ -746,7 +766,7 @@ window.ARTIST_DATA = {
                         "month":  10,
                         "date":  "2015-10-01",
                         "label":  "2015/10",
-                        "artist":  "Monique Lﾃｼtolf",
+                        "artist":  "Monique Lütolf",
                         "country":  "Switzerland"
                     },
                     {
@@ -818,7 +838,7 @@ window.ARTIST_DATA = {
                         "month":  1,
                         "date":  "2016-01-01",
                         "label":  "2016/01",
-                        "artist":  "Andrﾃｩe-Anne Mercier",
+                        "artist":  "Andrée-Anne Mercier",
                         "country":  "Canada"
                     },
                     {
@@ -914,7 +934,7 @@ window.ARTIST_DATA = {
                         "month":  4,
                         "date":  "2016-04-01",
                         "label":  "2016/04",
-                        "artist":  "Beste Miray Doﾄ歛n",
+                        "artist":  "Beste Miray Doğan",
                         "country":  "Turkey"
                     },
                     {
@@ -1130,7 +1150,7 @@ window.ARTIST_DATA = {
                         "month":  9,
                         "date":  "2016-09-01",
                         "label":  "2016/09",
-                        "artist":  "Inkeri Jﾃ､ntti",
+                        "artist":  "Inkeri Jäntti",
                         "country":  "Finland"
                     },
                     {
@@ -1146,7 +1166,7 @@ window.ARTIST_DATA = {
                         "month":  10,
                         "date":  "2016-10-01",
                         "label":  "2016/10",
-                        "artist":  "Carla Caﾃｱellas",
+                        "artist":  "Carla Cañellas",
                         "country":  "Spain"
                     },
                     {
@@ -1250,7 +1270,7 @@ window.ARTIST_DATA = {
                         "month":  12,
                         "date":  "2016-12-01",
                         "label":  "2016/12",
-                        "artist":  "Carla Caﾃｱellas",
+                        "artist":  "Carla Cañellas",
                         "country":  "Spain"
                     },
                     {
@@ -1322,7 +1342,7 @@ window.ARTIST_DATA = {
                         "month":  1,
                         "date":  "2017-01-01",
                         "label":  "2017/01",
-                        "artist":  "Sebastiﾃ｡n Riffo",
+                        "artist":  "Sebastián Riffo",
                         "country":  "Chile"
                     },
                     {
@@ -1394,16 +1414,16 @@ window.ARTIST_DATA = {
                         "month":  3,
                         "date":  "2017-03-01",
                         "label":  "2017/03",
-                        "artist":  "Laurence O\u0027 Toole",
-                        "country":  "Ireland"
+                        "artist":  "Lærke Lauta",
+                        "country":  "Denmark"
                     },
                     {
                         "year":  2017,
                         "month":  3,
                         "date":  "2017-03-01",
                         "label":  "2017/03",
-                        "artist":  "Lﾃｦrke Lauta",
-                        "country":  "Denmark"
+                        "artist":  "Laurence O\u0027 Toole",
+                        "country":  "Ireland"
                     },
                     {
                         "year":  2017,
@@ -1866,7 +1886,7 @@ window.ARTIST_DATA = {
                         "month":  1,
                         "date":  "2018-01-01",
                         "label":  "2018/01",
-                        "artist":  "Desirﾃｩe Gedda",
+                        "artist":  "Desirée Gedda",
                         "country":  "Italy"
                     },
                     {
@@ -2002,7 +2022,7 @@ window.ARTIST_DATA = {
                         "month":  3,
                         "date":  "2018-03-01",
                         "label":  "2018/03",
-                        "artist":  "Maria Pﾃ､ﾃ､kkﾃｶnen",
+                        "artist":  "Maria Pääkkönen",
                         "country":  "Netherlands"
                     },
                     {
@@ -2146,7 +2166,7 @@ window.ARTIST_DATA = {
                         "month":  5,
                         "date":  "2018-05-01",
                         "label":  "2018/05",
-                        "artist":  "Tonje Horn Kolbjﾃｸrnsen",
+                        "artist":  "Tonje Horn Kolbjørnsen",
                         "country":  "Norway"
                     },
                     {
@@ -2379,7 +2399,7 @@ window.ARTIST_DATA = {
                         "date":  "2018-09-01",
                         "label":  "2018/09",
                         "artist":  "Debbie Donnelly",
-                        "country":  "Unknown"
+                        "country":  "New Zealand"
                     },
                     {
                         "year":  2018,
@@ -2474,7 +2494,7 @@ window.ARTIST_DATA = {
                         "month":  11,
                         "date":  "2018-11-01",
                         "label":  "2018/11",
-                        "artist":  "Ana Fernﾃ｡ndez",
+                        "artist":  "Ana Fernández",
                         "country":  "Chile"
                     },
                     {
@@ -2539,7 +2559,7 @@ window.ARTIST_DATA = {
                         "date":  "2018-12-01",
                         "label":  "2018/12",
                         "artist":  "Anna Zoladz",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2018,
@@ -2834,7 +2854,7 @@ window.ARTIST_DATA = {
                         "month":  4,
                         "date":  "2019-04-01",
                         "label":  "2019/04",
-                        "artist":  "Jonathan Reid Sﾃｩvigny",
+                        "artist":  "Jonathan Reid Sévigny",
                         "country":  "Canada"
                     },
                     {
@@ -2850,7 +2870,7 @@ window.ARTIST_DATA = {
                         "month":  4,
                         "date":  "2019-04-01",
                         "label":  "2019/04",
-                        "artist":  "Marie Helﾃｩne Boone",
+                        "artist":  "Marie Heléne Boone",
                         "country":  "United States"
                     },
                     {
@@ -3122,7 +3142,7 @@ window.ARTIST_DATA = {
                         "month":  8,
                         "date":  "2019-08-01",
                         "label":  "2019/08",
-                        "artist":  "Marﾃｭa Fernanda Araya",
+                        "artist":  "María Fernanda Araya",
                         "country":  "Chile"
                     },
                     {
@@ -3163,7 +3183,7 @@ window.ARTIST_DATA = {
                         "date":  "2019-09-01",
                         "label":  "2019/09",
                         "artist":  "Allison Kovar",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2019,
@@ -3266,7 +3286,7 @@ window.ARTIST_DATA = {
                         "month":  10,
                         "date":  "2019-10-01",
                         "label":  "2019/10",
-                        "artist":  "Geneviﾃｨve Lebleu",
+                        "artist":  "Geneviève Lebleu",
                         "country":  "Canada"
                     },
                     {
@@ -3435,7 +3455,7 @@ window.ARTIST_DATA = {
                         "date":  "2019-12-01",
                         "label":  "2019/12",
                         "artist":  "Kostas Papakostas \u0026 Stephanie Pochet",
-                        "country":  "Unknown"
+                        "country":  "United Kingdom"
                     },
                     {
                         "year":  2019,
@@ -3658,7 +3678,7 @@ window.ARTIST_DATA = {
                         "month":  6,
                         "date":  "2020-06-01",
                         "label":  "2020/06",
-                        "artist":  "Mara Yuki Thﾃｸgersen",
+                        "artist":  "Mara Yuki Thøgersen",
                         "country":  "Denmark"
                     },
                     {
@@ -3675,7 +3695,7 @@ window.ARTIST_DATA = {
                         "date":  "2020-08-01",
                         "label":  "2020/08",
                         "artist":  "Kazutaka Fujii",
-                        "country":  "Unknown"
+                        "country":  "Japan"
                     },
                     {
                         "year":  2020,
@@ -3723,14 +3743,14 @@ window.ARTIST_DATA = {
                         "date":  "2021-09-01",
                         "label":  "2021/09",
                         "artist":  "Scott Harano",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2022,
                         "month":  5,
                         "date":  "2022-05-01",
                         "label":  "2022/05",
-                        "artist":  "Laura Ibﾃ｡ﾃｱez Kuzmanic",
+                        "artist":  "Laura Ibáñez Kuzmanic",
                         "country":  "Chile"
                     },
                     {
@@ -3787,7 +3807,7 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Jenny Macgregor",
-                        "country":  "Unknown"
+                        "country":  "United Kingdom"
                     },
                     {
                         "year":  2022,
@@ -3803,7 +3823,7 @@ window.ARTIST_DATA = {
                         "date":  "2022-07-01",
                         "label":  "2022/07",
                         "artist":  "Kayla Milne",
-                        "country":  "Unknown"
+                        "country":  "United Kingdom"
                     },
                     {
                         "year":  2022,
@@ -3851,7 +3871,7 @@ window.ARTIST_DATA = {
                         "date":  "2022-08-01",
                         "label":  "2022/08",
                         "artist":  "Karen Jiang",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2022,
@@ -4002,7 +4022,7 @@ window.ARTIST_DATA = {
                         "month":  10,
                         "date":  "2022-10-01",
                         "label":  "2022/10",
-                        "artist":  "Karl Patric Nﾃ､sman",
+                        "artist":  "Karl Patric Näsman",
                         "country":  "Sweden"
                     },
                     {
@@ -4075,7 +4095,7 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Chris Lightbody",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2022,
@@ -4083,7 +4103,7 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Gabrielle Rameriz",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2022,
@@ -4091,7 +4111,7 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Maya Hendricks",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2022,
@@ -4099,7 +4119,7 @@ window.ARTIST_DATA = {
                         "date":  "2022-12-01",
                         "label":  "2022/12",
                         "artist":  "Paula Schultz",
-                        "country":  "Unknown"
+                        "country":  "United States"
                     },
                     {
                         "year":  2023,
@@ -4195,14 +4215,14 @@ window.ARTIST_DATA = {
                         "date":  "2023-03-01",
                         "label":  "2023/03",
                         "artist":  "Andrina Manon",
-                        "country":  "Unknown"
+                        "country":  "Australia"
                     },
                     {
                         "year":  2023,
                         "month":  3,
                         "date":  "2023-03-01",
                         "label":  "2023/03",
-                        "artist":  "Anna Rﾃｩvﾃｩsz",
+                        "artist":  "Anna Révész",
                         "country":  "Australia"
                     },
                     {
@@ -4242,7 +4262,7 @@ window.ARTIST_DATA = {
                         "month":  3,
                         "date":  "2023-03-01",
                         "label":  "2023/03",
-                        "artist":  "Grace O窶儉eary",
+                        "artist":  "Grace O’Leary",
                         "country":  "Ireland"
                     },
                     {
@@ -4266,7 +4286,7 @@ window.ARTIST_DATA = {
                         "month":  3,
                         "date":  "2023-03-01",
                         "label":  "2023/03",
-                        "artist":  "Liisa Kruusmﾃ､gi",
+                        "artist":  "Liisa Kruusmägi",
                         "country":  "Estonia"
                     },
                     {
@@ -4386,7 +4406,7 @@ window.ARTIST_DATA = {
                         "month":  5,
                         "date":  "2023-05-01",
                         "label":  "2023/05",
-                        "artist":  "Barbora ﾅｽiﾅｾkovﾃ｡",
+                        "artist":  "Barbora Žižková",
                         "country":  "Czech Republic"
                     },
                     {
@@ -4442,7 +4462,7 @@ window.ARTIST_DATA = {
                         "month":  6,
                         "date":  "2023-06-01",
                         "label":  "2023/06",
-                        "artist":  "Cﾃｩsar Pelizer",
+                        "artist":  "César Pelizer",
                         "country":  "United Kingdom"
                     },
                     {
@@ -4674,6 +4694,14 @@ window.ARTIST_DATA = {
                         "month":  9,
                         "date":  "2023-09-01",
                         "label":  "2023/09",
+                        "artist":  "Ío Bru",
+                        "country":  "Spain"
+                    },
+                    {
+                        "year":  2023,
+                        "month":  9,
+                        "date":  "2023-09-01",
+                        "label":  "2023/09",
                         "artist":  "Irene Moray",
                         "country":  "Spain"
                     },
@@ -4698,7 +4726,7 @@ window.ARTIST_DATA = {
                         "month":  9,
                         "date":  "2023-09-01",
                         "label":  "2023/09",
-                        "artist":  "Marina Solﾃｩ",
+                        "artist":  "Marina Solé",
                         "country":  "United States"
                     },
                     {
@@ -4706,7 +4734,7 @@ window.ARTIST_DATA = {
                         "month":  9,
                         "date":  "2023-09-01",
                         "label":  "2023/09",
-                        "artist":  "Marina Solﾃｩ",
+                        "artist":  "Marina Solé",
                         "country":  "United States"
                     },
                     {
@@ -4732,14 +4760,6 @@ window.ARTIST_DATA = {
                         "label":  "2023/09",
                         "artist":  "Winneke de Groot and Felix van Dam",
                         "country":  "Netherlands"
-                    },
-                    {
-                        "year":  2023,
-                        "month":  9,
-                        "date":  "2023-09-01",
-                        "label":  "2023/09",
-                        "artist":  "ﾃ腔 Bru",
-                        "country":  "Spain"
                     },
                     {
                         "year":  2023,
@@ -4826,7 +4846,7 @@ window.ARTIST_DATA = {
                         "month":  11,
                         "date":  "2023-11-01",
                         "label":  "2023/11",
-                        "artist":  "Agnﾃｨs Albﾃｩrola",
+                        "artist":  "Agnès Albérola",
                         "country":  "United States"
                     },
                     {
@@ -4850,7 +4870,7 @@ window.ARTIST_DATA = {
                         "month":  11,
                         "date":  "2023-11-01",
                         "label":  "2023/11",
-                        "artist":  "Jennie Dahlﾃｩn",
+                        "artist":  "Jennie Dahlén",
                         "country":  "Sweden"
                     },
                     {
@@ -5099,7 +5119,7 @@ window.ARTIST_DATA = {
                         "date":  "2024-02-01",
                         "label":  "2024/02",
                         "artist":  "Marceau Verdiere",
-                        "country":  "Unknown"
+                        "country":  "France"
                     },
                     {
                         "year":  2024,
@@ -5186,16 +5206,16 @@ window.ARTIST_DATA = {
                         "month":  3,
                         "date":  "2024-03-01",
                         "label":  "2024/03",
-                        "artist":  "Sue Pentelow",
-                        "country":  "Australia"
+                        "artist":  "Sébastien Clermont",
+                        "country":  "Canada"
                     },
                     {
                         "year":  2024,
                         "month":  3,
                         "date":  "2024-03-01",
                         "label":  "2024/03",
-                        "artist":  "Sﾃｩbastien Clermont",
-                        "country":  "Canada"
+                        "artist":  "Sue Pentelow",
+                        "country":  "Australia"
                     },
                     {
                         "year":  2024,
@@ -5282,16 +5302,16 @@ window.ARTIST_DATA = {
                         "month":  5,
                         "date":  "2024-05-01",
                         "label":  "2024/05",
-                        "artist":  "Christine Lykkeh",
-                        "country":  "Denmark"
+                        "artist":  "Céleste Rilliet",
+                        "country":  "Switzerland"
                     },
                     {
                         "year":  2024,
                         "month":  5,
                         "date":  "2024-05-01",
                         "label":  "2024/05",
-                        "artist":  "Cﾃｩleste Rilliet",
-                        "country":  "Switzerland"
+                        "artist":  "Christine Lykkeh",
+                        "country":  "Denmark"
                     },
                     {
                         "year":  2024,
@@ -5362,6 +5382,14 @@ window.ARTIST_DATA = {
                         "month":  6,
                         "date":  "2024-06-01",
                         "label":  "2024/06",
+                        "artist":  "Élise Kasztelan",
+                        "country":  "France"
+                    },
+                    {
+                        "year":  2024,
+                        "month":  6,
+                        "date":  "2024-06-01",
+                        "label":  "2024/06",
                         "artist":  "Enle Li",
                         "country":  "United States"
                     },
@@ -5402,7 +5430,7 @@ window.ARTIST_DATA = {
                         "month":  6,
                         "date":  "2024-06-01",
                         "label":  "2024/06",
-                        "artist":  "Michaelann Tostanoski",
+                        "artist":  "Mär Martinez",
                         "country":  "United States"
                     },
                     {
@@ -5410,7 +5438,7 @@ window.ARTIST_DATA = {
                         "month":  6,
                         "date":  "2024-06-01",
                         "label":  "2024/06",
-                        "artist":  "Mﾃ､r Martinez",
+                        "artist":  "Michaelann Tostanoski",
                         "country":  "United States"
                     },
                     {
@@ -5450,7 +5478,7 @@ window.ARTIST_DATA = {
                         "month":  6,
                         "date":  "2024-06-01",
                         "label":  "2024/06",
-                        "artist":  "Zoﾃｫ Ward",
+                        "artist":  "Zoë Ward",
                         "country":  "United Kingdom"
                     },
                     {
@@ -5460,14 +5488,6 @@ window.ARTIST_DATA = {
                         "label":  "2024/06",
                         "artist":  "Zwaantje Kurpershoek",
                         "country":  "Netherlands"
-                    },
-                    {
-                        "year":  2024,
-                        "month":  6,
-                        "date":  "2024-06-01",
-                        "label":  "2024/06",
-                        "artist":  "ﾃ瑛ise Kasztelan",
-                        "country":  "France"
                     },
                     {
                         "year":  2024,
@@ -5626,7 +5646,7 @@ window.ARTIST_DATA = {
                         "month":  8,
                         "date":  "2024-08-01",
                         "label":  "2024/08",
-                        "artist":  "Macy Castaﾃｱeda Lee",
+                        "artist":  "Macy Castañeda Lee",
                         "country":  "Philippines"
                     },
                     {
@@ -5674,7 +5694,7 @@ window.ARTIST_DATA = {
                         "month":  9,
                         "date":  "2024-09-01",
                         "label":  "2024/09",
-                        "artist":  "Barbora Kachlﾃｭkovﾃ｡",
+                        "artist":  "Barbora Kachlíková",
                         "country":  "Czech Republic"
                     },
                     {
@@ -5738,7 +5758,7 @@ window.ARTIST_DATA = {
                         "month":  9,
                         "date":  "2024-09-01",
                         "label":  "2024/09",
-                        "artist":  "Samara Martﾃｭnez",
+                        "artist":  "Samara Martínez",
                         "country":  "Spain"
                     },
                     {
@@ -5746,7 +5766,7 @@ window.ARTIST_DATA = {
                         "month":  10,
                         "date":  "2024-10-01",
                         "label":  "2024/10",
-                        "artist":  "Carola Bjﾃｶrk",
+                        "artist":  "Carola Björk",
                         "country":  "Sweden"
                     },
                     {
@@ -5762,16 +5782,16 @@ window.ARTIST_DATA = {
                         "month":  10,
                         "date":  "2024-10-01",
                         "label":  "2024/10",
-                        "artist":  "Las Maleantes",
-                        "country":  "Spain"
+                        "artist":  "Laís Machado",
+                        "country":  "Brazil"
                     },
                     {
                         "year":  2024,
                         "month":  10,
                         "date":  "2024-10-01",
                         "label":  "2024/10",
-                        "artist":  "Laﾃｭs Machado",
-                        "country":  "Brazil"
+                        "artist":  "Las Maleantes",
+                        "country":  "Spain"
                     },
                     {
                         "year":  2024,
@@ -5866,7 +5886,7 @@ window.ARTIST_DATA = {
                         "month":  11,
                         "date":  "2024-11-01",
                         "label":  "2024/11",
-                        "artist":  "Erica D窶僊li",
+                        "artist":  "Erica D’Ali",
                         "country":  "Australia"
                     },
                     {
@@ -6090,7 +6110,7 @@ window.ARTIST_DATA = {
                         "month":  1,
                         "date":  "2025-01-01",
                         "label":  "2025/01",
-                        "artist":  "Rocﾃｭo Muy Bien",
+                        "artist":  "Rocío Muy Bien",
                         "country":  "Argentina"
                     },
                     {
@@ -6194,7 +6214,7 @@ window.ARTIST_DATA = {
                         "month":  2,
                         "date":  "2025-02-01",
                         "label":  "2025/02",
-                        "artist":  "Tabatha Lucia Gonzﾃ｡lez",
+                        "artist":  "Tabatha Lucia González",
                         "country":  "United States"
                     },
                     {
@@ -6330,7 +6350,7 @@ window.ARTIST_DATA = {
                         "month":  3,
                         "date":  "2025-03-01",
                         "label":  "2025/03",
-                        "artist":  "Violeta Aguilﾃｳ Rodrﾃｭguez",
+                        "artist":  "Violeta Aguiló Rodríguez",
                         "country":  "Spain"
                     },
                     {
@@ -6338,7 +6358,7 @@ window.ARTIST_DATA = {
                         "month":  4,
                         "date":  "2025-04-01",
                         "label":  "2025/04",
-                        "artist":  "Bﾃ｡rbara Malagoli",
+                        "artist":  "Bárbara Malagoli",
                         "country":  "Brazil"
                     },
                     {
@@ -6434,7 +6454,7 @@ window.ARTIST_DATA = {
                         "month":  5,
                         "date":  "2025-05-01",
                         "label":  "2025/05",
-                        "artist":  "Bﾃｩatrice Gaucherand",
+                        "artist":  "Béatrice Gaucherand",
                         "country":  "France"
                     },
                     {
@@ -6442,7 +6462,7 @@ window.ARTIST_DATA = {
                         "month":  5,
                         "date":  "2025-05-01",
                         "label":  "2025/05",
-                        "artist":  "Chloﾃｩ Arrouy and Corentin Gaillardin",
+                        "artist":  "Chloé Arrouy and Corentin Gaillardin",
                         "country":  "France"
                     },
                     {
@@ -6482,16 +6502,16 @@ window.ARTIST_DATA = {
                         "month":  5,
                         "date":  "2025-05-01",
                         "label":  "2025/05",
-                        "artist":  "Mela Boev + Yu",
-                        "country":  "Italy"
+                        "artist":  "Mel·lif·lu·ous",
+                        "country":  "Canada"
                     },
                     {
                         "year":  2025,
                         "month":  5,
                         "date":  "2025-05-01",
                         "label":  "2025/05",
-                        "artist":  "Melﾂｷlifﾂｷluﾂｷous",
-                        "country":  "Canada"
+                        "artist":  "Mela Boev + Yu",
+                        "country":  "Italy"
                     },
                     {
                         "year":  2025,
@@ -6650,7 +6670,7 @@ window.ARTIST_DATA = {
                         "month":  7,
                         "date":  "2025-07-01",
                         "label":  "2025/07",
-                        "artist":  "Anu Perkkiﾃｶ",
+                        "artist":  "Anu Perkkiö",
                         "country":  "Finland"
                     },
                     {
@@ -6874,7 +6894,7 @@ window.ARTIST_DATA = {
                         "month":  9,
                         "date":  "2025-09-01",
                         "label":  "2025/09",
-                        "artist":  "Guﾃｰnﾃｽ Kristmanns",
+                        "artist":  "Guðný Kristmanns",
                         "country":  "Iceland"
                     },
                     {
@@ -7106,7 +7126,7 @@ window.ARTIST_DATA = {
                         "month":  11,
                         "date":  "2025-11-01",
                         "label":  "2025/11",
-                        "artist":  "Mﾃｳnica Calvo",
+                        "artist":  "Mónica Calvo",
                         "country":  "Spain"
                     },
                     {
@@ -7210,8 +7230,8 @@ window.ARTIST_DATA = {
                         "month":  12,
                         "date":  "2025-12-01",
                         "label":  "2025/12",
-                        "artist":  "Katarina ﾄ憩lebiﾄ・",
-                        "country":  "Unknown"
+                        "artist":  "Katarina Čelebić",
+                        "country":  "Serbia"
                     },
                     {
                         "year":  2025,
@@ -7250,7 +7270,7 @@ window.ARTIST_DATA = {
                         "month":  12,
                         "date":  "2025-12-01",
                         "label":  "2025/12",
-                        "artist":  "Luz Lﾃｳpez Davicino",
+                        "artist":  "Luz López Davicino",
                         "country":  "Argentina"
                     },
                     {
@@ -7306,7 +7326,7 @@ window.ARTIST_DATA = {
                         "month":  1,
                         "date":  "2026-01-01",
                         "label":  "2026/01",
-                        "artist":  "Lisa Holmﾃｩn",
+                        "artist":  "Lisa Holmén",
                         "country":  "Finland"
                     },
                     {
@@ -7378,7 +7398,7 @@ window.ARTIST_DATA = {
                         "month":  2,
                         "date":  "2026-02-01",
                         "label":  "2026/02",
-                        "artist":  "Sorcha 蟶ｸ逶､ Gibson",
+                        "artist":  "Sorcha 常盤 Gibson",
                         "country":  "Canada"
                     },
                     {
@@ -7490,7 +7510,7 @@ window.ARTIST_DATA = {
                         "month":  3,
                         "date":  "2026-03-01",
                         "label":  "2026/03",
-                        "artist":  "Traudel Fﾃ､hrenkemper",
+                        "artist":  "Traudel Fährenkemper",
                         "country":  "Germany"
                     },
                     {
