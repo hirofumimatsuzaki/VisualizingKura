@@ -1,17 +1,20 @@
-$downloadDir = "C:\Users\Mining-Base\Downloads"
-$sourceFile = Get-ChildItem $downloadDir -Filter "*.csv" |
+param(
+  [string]$DownloadDir = "C:\Users\Mining-Base\Downloads",
+  [string]$ManualAdditionsPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\manual-artists.csv",
+  [string]$CountryOverridesPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\country-overrides.csv",
+  [string]$OutputPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artists-data.js"
+)
+
+$sourceFile = Get-ChildItem $DownloadDir -Filter "*.csv" |
   Where-Object { $_.Length -gt 30000 } |
   Sort-Object LastWriteTime -Descending |
   Select-Object -First 1
 
-$sourcePath = $sourceFile.FullName
-$outputPath = "C:\Users\Mining-Base\Documents\VisualizingKura\data\artists-data.js"
-$countryOverridePath = "C:\Users\Mining-Base\Downloads\無題のスプレッドシート - シート1 (1).csv"
-
 if (-not $sourceFile) {
-  throw "CSV not found in $downloadDir"
+  throw "CSV not found in $DownloadDir"
 }
 
+$sourcePath = $sourceFile.FullName
 $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
 
 function Read-Utf8Lines {
@@ -42,7 +45,7 @@ function Normalize-ArtistKey {
     }
   }
 
-  return $builder.ToString()
+  $builder.ToString()
 }
 
 function Normalize-Country {
@@ -56,7 +59,35 @@ function Normalize-Country {
   $normalized = $normalized -replace ", The 3dsense-Kura Artistic Residency Award", ""
   if ($normalized -eq "Great Britain") { return "United Kingdom" }
   if ($normalized -eq "Scotland") { return "United Kingdom" }
-  return $normalized
+  $normalized
+}
+
+function Build-RecordKey {
+  param(
+    [string]$Label,
+    [string]$Artist
+  )
+
+  "$Label|$(Normalize-ArtistKey $Artist)"
+}
+
+function New-ArtistRecord {
+  param(
+    [int]$Year,
+    [int]$Month,
+    [string]$Artist,
+    [string]$Country
+  )
+
+  $isoDate = "{0:D4}-{1:D2}-01" -f $Year, $Month
+  [pscustomobject]@{
+    year = $Year
+    month = $Month
+    date = $isoDate
+    label = ("{0:D4}/{1:D2}" -f $Year, $Month)
+    artist = $Artist.Trim()
+    country = Normalize-Country $Country
+  }
 }
 
 function Load-CountryOverrides {
@@ -67,51 +98,85 @@ function Load-CountryOverrides {
     return $overrides
   }
 
-  foreach ($line in (Read-Utf8Lines $Path)) {
+  $lines = Read-Utf8Lines $Path
+  foreach ($line in $lines) {
     if ([string]::IsNullOrWhiteSpace($line)) {
       continue
     }
 
-    $parts = $line.Split(',', 2)
-    if ($parts.Count -ne 2) {
+    $trimmed = $line.Trim()
+    if ($trimmed -match '^(label,artist,country|artist,country)$') {
       continue
     }
 
-    $artist = $parts[0].Trim()
-    $country = Normalize-Country $parts[1]
-    $artistKey = Normalize-ArtistKey $artist
-    if ([string]::IsNullOrWhiteSpace($artistKey) -or [string]::IsNullOrWhiteSpace($country)) {
+    $parts = $trimmed.Split(',', 3)
+    if ($parts.Count -eq 2) {
+      $artist = $parts[0].Trim()
+      $country = Normalize-Country $parts[1]
+      if ([string]::IsNullOrWhiteSpace($artist) -or [string]::IsNullOrWhiteSpace($country)) {
+        continue
+      }
+
+      $overrides["*|$(Normalize-ArtistKey $artist)"] = $country
       continue
     }
 
-    $overrides[$artistKey] = $country
+    if ($parts.Count -eq 3) {
+      $label = $parts[0].Trim()
+      $artist = $parts[1].Trim()
+      $country = Normalize-Country $parts[2]
+      if ([string]::IsNullOrWhiteSpace($label) -or [string]::IsNullOrWhiteSpace($artist) -or [string]::IsNullOrWhiteSpace($country)) {
+        continue
+      }
+
+      $overrides[(Build-RecordKey $label $artist)] = $country
+    }
   }
 
-  return $overrides
+  $overrides
+}
+
+function Load-ManualAdditions {
+  param([string]$Path)
+
+  $records = New-Object System.Collections.Generic.List[object]
+  if (-not (Test-Path $Path)) {
+    return $records
+  }
+
+  $lines = Read-Utf8Lines $Path
+  foreach ($line in $lines) {
+    if ([string]::IsNullOrWhiteSpace($line)) {
+      continue
+    }
+
+    $trimmed = $line.Trim()
+    if ($trimmed -eq "label,artist,country") {
+      continue
+    }
+
+    $parts = $trimmed.Split(',', 3)
+    if ($parts.Count -ne 3) {
+      continue
+    }
+
+    $label = $parts[0].Trim()
+    $artist = $parts[1].Trim()
+    $country = $parts[2].Trim()
+    if ($label -notmatch '^(\d{4})/(\d{2})$' -or [string]::IsNullOrWhiteSpace($artist)) {
+      continue
+    }
+
+    $records.Add((New-ArtistRecord -Year ([int]$matches[1]) -Month ([int]$matches[2]) -Artist $artist -Country $country))
+  }
+
+  $records
 }
 
 $lines = Read-Utf8Lines $sourcePath
-$countryOverrides = Load-CountryOverrides $countryOverridePath
-foreach ($entry in @(
-  @{ artist = "Debbie Donnelly"; country = "New Zealand" },
-  @{ artist = "Allison Kovar"; country = "United States" },
-  @{ artist = "Kostas Papakostas & Stephanie Pochet"; country = "United Kingdom" },
-  @{ artist = "Kazutaka Fujii"; country = "Japan" },
-  @{ artist = "Scott Harano"; country = "United States" },
-  @{ artist = "Jenny Macgregor"; country = "United Kingdom" },
-  @{ artist = "Kayla Milne"; country = "United Kingdom" },
-  @{ artist = "Karen Jiang"; country = "United States" },
-  @{ artist = "Chris Lightbody"; country = "United States" },
-  @{ artist = "Gabrielle Rameriz"; country = "United States" },
-  @{ artist = "Maya Hendricks"; country = "United States" },
-  @{ artist = "Paula Schultz"; country = "United States" },
-  @{ artist = "Andrina Manon"; country = "Australia" },
-  @{ artist = "Marceau Verdiere"; country = "France" },
-  @{ artist = ("Katarina " + [string][char]0x010C + "elebi" + [string][char]0x0107); country = "Serbia" }
-)) {
-  $countryOverrides[(Normalize-ArtistKey $entry.artist)] = Normalize-Country $entry.country
-}
-
+$countryOverrides = Load-CountryOverrides $CountryOverridesPath
+$manualAdditions = @(Load-ManualAdditions $ManualAdditionsPath)
+$manualAdditionCount = $manualAdditions.Count
 $records = New-Object System.Collections.Generic.List[object]
 $warnings = New-Object System.Collections.Generic.List[string]
 
@@ -141,39 +206,50 @@ foreach ($line in $lines) {
 
   $lastOpen = $body.LastIndexOf('(')
   $lastClose = $body.LastIndexOf(')')
-
-  $name = $body
+  $artist = $body
   $country = "Unknown"
 
   if ($lastOpen -gt 0 -and $lastClose -gt $lastOpen) {
-    $name = $body.Substring(0, $lastOpen).Trim()
+    $artist = $body.Substring(0, $lastOpen).Trim()
     $country = Normalize-Country($body.Substring($lastOpen + 1, $lastClose - $lastOpen - 1))
   } else {
     $warnings.Add("Missing country: $trimmed")
   }
 
-  if ([string]::IsNullOrWhiteSpace($name)) {
+  if ([string]::IsNullOrWhiteSpace($artist)) {
     $warnings.Add("Skipped empty-name line: $trimmed")
     continue
   }
 
-  $isoDate = "{0:D4}-{1:D2}-01" -f $year, $month
+  $records.Add((New-ArtistRecord -Year $year -Month $month -Artist $artist -Country $country))
+}
 
-  $records.Add([pscustomobject]@{
-    year = $year
-    month = $month
-    date = $isoDate
-    label = ("{0:D4}/{1:D2}" -f $year, $month)
-    artist = $name
-    country = $country
-  })
+$existingKeys = New-Object System.Collections.Generic.HashSet[string]
+foreach ($record in $records) {
+  [void]$existingKeys.Add((Build-RecordKey $record.label $record.artist))
+}
+
+foreach ($record in $manualAdditions) {
+  $recordKey = Build-RecordKey $record.label $record.artist
+  if ($existingKeys.Contains($recordKey)) {
+    $warnings.Add("Skipped duplicate manual addition: $($record.label): $($record.artist)")
+    continue
+  }
+
+  [void]$existingKeys.Add($recordKey)
+  $records.Add($record)
 }
 
 $knownCountriesByArtist = @{}
 foreach ($record in $records) {
-  $artistKey = Normalize-ArtistKey $record.artist
-  if ($record.country -eq "Unknown" -and -not [string]::IsNullOrWhiteSpace($artistKey) -and $countryOverrides.ContainsKey($artistKey)) {
-    $record.country = $countryOverrides[$artistKey]
+  $specificKey = Build-RecordKey $record.label $record.artist
+  $artistOnlyKey = "*|$(Normalize-ArtistKey $record.artist)"
+
+  if ($record.country -eq "Unknown" -and $countryOverrides.ContainsKey($specificKey)) {
+    $record.country = $countryOverrides[$specificKey]
+    $warnings.Add("Resolved missing country from override: $($record.label): $($record.artist) -> $($record.country)")
+  } elseif ($record.country -eq "Unknown" -and $countryOverrides.ContainsKey($artistOnlyKey)) {
+    $record.country = $countryOverrides[$artistOnlyKey]
     $warnings.Add("Resolved missing country from override: $($record.label): $($record.artist) -> $($record.country)")
   }
 
@@ -181,6 +257,7 @@ foreach ($record in $records) {
     continue
   }
 
+  $artistKey = Normalize-ArtistKey $record.artist
   if ([string]::IsNullOrWhiteSpace($artistKey)) {
     continue
   }
@@ -213,12 +290,16 @@ foreach ($record in $records) {
   $warnings.Add("Resolved missing country from duplicate artist: $($record.label): $($record.artist) -> $($record.country)")
 }
 
-$unresolvedUnknowns = $records | Where-Object { $_.country -eq "Unknown" } | ForEach-Object { "$($_.label): $($_.artist)" }
+$unresolvedUnknowns = @($records | Where-Object { $_.country -eq "Unknown" } | ForEach-Object { "$($_.label): $($_.artist)" })
 $sorted = $records | Sort-Object @{ Expression = "date"; Ascending = $true }, @{ Expression = "artist"; Ascending = $true }
 
 $payload = [pscustomobject]@{
   generatedAt = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssK")
   totalArtists = $sorted.Count
+  sourceCsv = $sourcePath
+  manualAdditionsPath = $ManualAdditionsPath
+  countryOverridesPath = $CountryOverridesPath
+  manualAdditionCount = $manualAdditionCount
   resolvedMissingCountries = $resolvedUnknownCount
   unresolvedMissingCountries = $unresolvedUnknowns
   warnings = $warnings
@@ -228,10 +309,10 @@ $payload = [pscustomobject]@{
 $json = $payload | ConvertTo-Json -Depth 6
 $js = "window.ARTIST_DATA = $json;"
 
-$outDir = Split-Path $outputPath -Parent
+$outDir = Split-Path $OutputPath -Parent
 if (-not (Test-Path $outDir)) {
   New-Item -ItemType Directory -Path $outDir | Out-Null
 }
 
-[System.IO.File]::WriteAllText($outputPath, $js, $utf8NoBom)
-Write-Output "Wrote $($sorted.Count) records to $outputPath"
+[System.IO.File]::WriteAllText($OutputPath, $js, $utf8NoBom)
+Write-Output "Wrote $($sorted.Count) records to $OutputPath"

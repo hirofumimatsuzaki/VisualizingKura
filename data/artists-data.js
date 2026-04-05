@@ -1,10 +1,14 @@
 window.ARTIST_DATA = {
-    "generatedAt":  "2026-04-05T22:07:01+09:00",
-    "totalArtists":  935,
+    "generatedAt":  "2026-04-05T22:35:14+09:00",
+    "totalArtists":  936,
+    "sourceCsv":  "C:\\Users\\Mining-Base\\Downloads\\無題のスプレッドシート - シート1.csv",
+    "manualAdditionsPath":  "C:\\Users\\Mining-Base\\Documents\\VisualizingKura\\data\\manual-artists.csv",
+    "countryOverridesPath":  "C:\\Users\\Mining-Base\\Documents\\VisualizingKura\\data\\country-overrides.csv",
+    "manualAdditionCount":  1,
     "resolvedMissingCountries":  1,
-    "unresolvedMissingCountries":  {
+    "unresolvedMissingCountries":  [
 
-                                   },
+                                   ],
     "warnings":  [
                      "Missing country: 2025/12: Katarina Čelebić",
                      "Skipped counter-like line: 2025/07: 28",
@@ -7520,6 +7524,14 @@ window.ARTIST_DATA = {
                         "label":  "2026/03",
                         "artist":  "V Dang",
                         "country":  "France"
+                    },
+                    {
+                        "year":  2026,
+                        "month":  4,
+                        "date":  "2026-04-01",
+                        "label":  "2026/04",
+                        "artist":  "Example Artist",
+                        "country":  "Canada"
                     }
                 ]
 };

@@ -1,5 +1,5 @@
 window.ARTIST_IMAGES = {
-    "generatedAt":  "2026-04-05T22:07:09+09:00",
+    "generatedAt":  "2026-04-05T22:35:15+09:00",
     "totalImages":  186,
     "records":  {
                     "2024/01|chenkehsuan|taiwan":  "https://studiokura.info/en/wp-content/uploads/2024/01/420018504_932449991664031_1116857306711606023_n.jpg",

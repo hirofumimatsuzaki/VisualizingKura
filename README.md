@@ -18,6 +18,10 @@ Studio Kura residency artists visualized on a world map, animated from each arti
   Generated static profile links for artist detail cards.
 - `data/artist-images.js`
   Optional image lookup table, loaded only on larger screens.
+- `data/manual-artists.csv`
+  Manual artist additions merged on top of the source CSV.
+- `data/country-overrides.csv`
+  Country fixes keyed by `label,artist`.
 - `data/world-land.js`
   Local world land topology for accurate coastlines.
 - `data/world-countries.js`
@@ -38,6 +42,12 @@ For WordPress embed preview, open `embed.html`.
 ## Update Artist Data
 
 The project expects the latest residency CSV to exist in `C:\Users\Mining-Base\Downloads`.
+Optional hand-maintained inputs live in the repo:
+
+- `data/manual-artists.csv`
+  Add brand new artists in `label,artist,country` format.
+- `data/country-overrides.csv`
+  Fix country values for existing rows in `label,artist,country` format.
 
 Run:
 
@@ -50,6 +60,26 @@ This regenerates:
 ```text
 data/artists-data.js
 ```
+
+Example manual addition:
+
+```csv
+label,artist,country
+2026/04,New Artist,Canada
+```
+
+Example country override:
+
+```csv
+label,artist,country
+2025/12,Katarina Čelebić,Serbia
+```
+
+Rules:
+
+- `label` must use `YYYY/MM`
+- duplicate `label + artist` rows in `manual-artists.csv` are skipped
+- `Scotland` is normalized to `United Kingdom`
 
 ## Update Artist Profiles
 

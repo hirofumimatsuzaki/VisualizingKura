@@ -59,24 +59,38 @@ $artistData = Read-WindowPayload $ArtistDataPath "ARTIST_DATA"
 $profileData = Read-WindowPayload $ProfileDataPath "ARTIST_PROFILES"
 $imageData = Read-WindowPayload $ImageDataPath "ARTIST_IMAGES"
 
-if ($artistData.records.Count -ne $profileData.records.Count) {
-  throw "Artist/profile record count mismatch: $($artistData.records.Count) vs $($profileData.records.Count)"
-}
-
 $remappedImages = [ordered]@{}
 $profileRecords = New-Object System.Collections.Generic.List[object]
+$profileLookup = @{}
 
-for ($i = 0; $i -lt $profileData.records.Count; $i++) {
-  $artistRecord = $artistData.records[$i]
-  $profileRecord = $profileData.records[$i]
-
-  if ($artistRecord.label -ne $profileRecord.label) {
-    throw "Label mismatch at index ${i}: $($artistRecord.label) vs $($profileRecord.label)"
+foreach ($profileRecord in $profileData.records) {
+  $key = Build-ProfileKey $profileRecord.label $profileRecord.artist $profileRecord.country
+  if (-not $profileLookup.ContainsKey($key)) {
+    $profileLookup[$key] = $profileRecord
   }
 
-  $oldKey = Build-ProfileKey $profileRecord.label $profileRecord.artist $profileRecord.country
+  $fallbackKey = Build-ProfileKey $profileRecord.label $profileRecord.artist ""
+  if (-not $profileLookup.ContainsKey($fallbackKey)) {
+    $profileLookup[$fallbackKey] = $profileRecord
+  }
+}
+
+foreach ($artistRecord in $artistData.records) {
   $newKey = Build-ProfileKey $artistRecord.label $artistRecord.artist $artistRecord.country
-  $imageUrl = $imageData.records.$oldKey
+  $profileRecord =
+    $profileLookup[$newKey]
+
+  if (-not $profileRecord) {
+    $profileRecord = $profileLookup[(Build-ProfileKey $artistRecord.label $artistRecord.artist "")]
+  }
+
+  if ($profileRecord) {
+    $oldKey = Build-ProfileKey $profileRecord.label $profileRecord.artist $profileRecord.country
+    $imageUrl = $imageData.records.$oldKey
+  } else {
+    $imageUrl = $null
+  }
+
   if ($imageUrl) {
     $remappedImages[$newKey] = $imageUrl
   }
@@ -85,7 +99,7 @@ for ($i = 0; $i -lt $profileData.records.Count; $i++) {
     label = $artistRecord.label
     artist = $artistRecord.artist
     country = $artistRecord.country
-    detailUrl = $profileRecord.detailUrl
+    detailUrl = if ($profileRecord) { $profileRecord.detailUrl } else { "" }
   })
 }
 

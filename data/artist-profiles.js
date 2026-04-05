@@ -1,6 +1,6 @@
 window.ARTIST_PROFILES = {
-    "generatedAt":  "2026-04-05T22:07:09+09:00",
-    "totalProfiles":  935,
+    "generatedAt":  "2026-04-05T22:35:15+09:00",
+    "totalProfiles":  936,
     "profilesWithDetailUrl":  896,
     "profilesWithImageUrl":  186,
     "unmatched":  [
@@ -3527,7 +3527,7 @@ window.ARTIST_PROFILES = {
                         "label":  "2023/09",
                         "artist":  "Marina Solé",
                         "country":  "United States",
-                        "detailUrl":  "https://studiokura.info/en/2023/09/nawoon-shin/"
+                        "detailUrl":  "https://studiokura.info/en/2023/09/marina-sole/"
                     },
                     {
                         "label":  "2023/09",
@@ -5616,6 +5616,12 @@ window.ARTIST_PROFILES = {
                         "artist":  "V Dang",
                         "country":  "France",
                         "detailUrl":  "https://studiokura.info/en/2026/03/v-dang-dairplane-%e3%81%af%e3%83%95%e3%83%a9%e3%83%b3%e3%82%b9%e3%83%bb%e3%83%91%e3%83%aa%e3%82%92%e6%8b%a0%e7%82%b9%e3%81%a8%e3%81%99%e3%82%8b%e3%82%a2%e3%83%bc%e3%83%86%e3%82%a3%e3%82%b9%e3%83%88/"
+                    },
+                    {
+                        "label":  "2026/04",
+                        "artist":  "Example Artist",
+                        "country":  "Canada",
+                        "detailUrl":  ""
                     }
                 ]
 };
