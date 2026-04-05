@@ -526,3 +526,218 @@ button:hover {
     line-height: 1.45;
   }
 }
+
+.editor-body {
+  overflow: auto;
+}
+
+.editor-shell {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.editor-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.editor-hero h1,
+.editor-panel h2 {
+  margin: 8px 0 0;
+  font-size: clamp(1.4rem, 2vw, 2.4rem);
+}
+
+.editor-hero-actions,
+.editor-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.editor-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.editor-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.editor-panel-wide {
+  grid-column: 1 / -1;
+}
+
+.editor-panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.editor-note,
+.editor-status {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.editor-checklist {
+  display: grid;
+  gap: 8px;
+}
+
+.editor-check-item {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(237, 247, 255, 0.86);
+}
+
+.editor-search-bar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.editor-search-bar input,
+.editor-cell input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ink);
+  font: inherit;
+}
+
+.editor-search-bar input {
+  min-height: 48px;
+  padding: 0 14px;
+  min-width: min(100%, 360px);
+}
+
+.editor-table {
+  display: grid;
+  gap: 8px;
+}
+
+.editor-thead,
+.editor-tr {
+  display: grid;
+  gap: 8px;
+}
+
+.editor-thead {
+  grid-template-columns: 100px minmax(180px, 1.2fr) minmax(140px, 1fr) minmax(220px, 1.5fr) 110px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+}
+
+#override-table .editor-thead,
+#override-table .editor-tr {
+  grid-template-columns: 100px minmax(180px, 1.4fr) minmax(140px, 1fr) 110px;
+}
+
+#source-table .editor-thead,
+#source-table .editor-tr {
+  grid-template-columns: 100px minmax(180px, 1.4fr) minmax(140px, 1fr) 130px;
+}
+
+.editor-th,
+.editor-cell {
+  min-width: 0;
+}
+
+.editor-cell input,
+.editor-cell-static {
+  min-height: 44px;
+  padding: 10px 12px;
+}
+
+.editor-cell-static {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.editor-cell-action {
+  display: flex;
+  align-items: center;
+}
+
+.editor-delete,
+.editor-copy-row {
+  width: 100%;
+}
+
+.editor-actions button {
+  white-space: nowrap;
+}
+
+.editor-command-block {
+  display: grid;
+  gap: 10px;
+}
+
+.editor-command-block code {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  overflow: auto;
+}
+
+@media (max-width: 1180px) {
+  .editor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-panel-wide {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .editor-shell {
+    padding: 16px;
+  }
+
+  .editor-hero,
+  .editor-panel-head {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .editor-thead {
+    display: none;
+  }
+
+  .editor-tr,
+  #override-table .editor-tr,
+  #source-table .editor-tr {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+}

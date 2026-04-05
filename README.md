@@ -8,6 +8,8 @@ Studio Kura residency artists visualized on a world map, animated from each arti
   Main standalone page.
 - `embed.html`
   WordPress-friendly embed page for iframe use.
+- `editor.html`
+  Browser-based editor for manual additions and country overrides.
 - `sketch.js`
   Canvas-based visualization and animation logic.
 - `style.css`
@@ -38,6 +40,9 @@ Studio Kura residency artists visualized on a world map, animated from each arti
 Open `index.html` directly in a browser.
 
 For WordPress embed preview, open `embed.html`.
+
+To edit artist data in a browser, open `editor.html`.
+The editor is intended for local use and can open/save the CSV files directly in browsers that support the File System Access API.
 
 ## Update Artist Data
 

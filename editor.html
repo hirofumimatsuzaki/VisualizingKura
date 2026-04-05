@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kura Artist Editor</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="editor-body">
+    <div class="editor-shell">
+      <header class="editor-hero panel panel-primary">
+        <div>
+          <p class="eyebrow">Artist Admin</p>
+          <h1>Artist Data Editor</h1>
+          <p class="description">
+            Edit manual additions and country overrides in the browser. After saving the CSV files, run
+            `build-data.ps1` and `sync-profile-data.ps1`.
+          </p>
+        </div>
+        <div class="editor-hero-actions">
+          <a class="editor-link-button" href="./index.html">Visualization</a>
+          <button id="reload-data" type="button">Reload Files</button>
+        </div>
+      </header>
+
+      <main class="editor-grid">
+        <section class="panel editor-panel">
+          <div class="editor-panel-head">
+            <div>
+              <div class="panel-label">Manual Artists</div>
+              <h2>Manual Additions</h2>
+            </div>
+            <div class="editor-actions">
+              <button id="open-manual-file" type="button">Open CSV</button>
+              <button id="save-manual-file" type="button">Save CSV</button>
+              <button id="add-manual-row" type="button">Add Row</button>
+              <button id="download-manual" type="button">Download CSV</button>
+            </div>
+          </div>
+          <p class="editor-note">Columns: `label, artist, country, detailUrl`</p>
+          <p class="editor-note">Use `Open CSV` to load your local file and `Save CSV` to overwrite it directly when your browser supports local file access.</p>
+          <div id="manual-table" class="editor-table"></div>
+        </section>
+
+        <section class="panel editor-panel">
+          <div class="editor-panel-head">
+            <div>
+              <div class="panel-label">Country Overrides</div>
+              <h2>Country Fixes</h2>
+            </div>
+            <div class="editor-actions">
+              <button id="open-override-file" type="button">Open CSV</button>
+              <button id="save-override-file" type="button">Save CSV</button>
+              <button id="add-override-row" type="button">Add Row</button>
+              <button id="download-overrides" type="button">Download CSV</button>
+            </div>
+          </div>
+          <p class="editor-note">Columns: `label, artist, country`</p>
+          <div id="override-table" class="editor-table"></div>
+        </section>
+
+        <section class="panel editor-panel editor-panel-wide">
+          <div class="editor-panel-head">
+            <div>
+              <div class="panel-label">Source Artists</div>
+              <h2>Search Imported Artists</h2>
+            </div>
+          </div>
+          <div class="editor-search-bar">
+            <input id="source-search" type="search" placeholder="Search by artist, label, or country" />
+            <span id="source-count" class="editor-count">0 rows</span>
+          </div>
+          <div id="source-table" class="editor-table editor-table-readonly"></div>
+        </section>
+
+        <section class="panel editor-panel editor-panel-wide">
+          <div class="editor-panel-head">
+            <div>
+              <div class="panel-label">Next Step</div>
+              <h2>Rebuild Commands</h2>
+            </div>
+            <div class="editor-actions">
+              <button id="export-all" type="button">Download Both CSVs</button>
+            </div>
+          </div>
+          <div class="editor-checklist">
+            <div class="editor-check-item">1. Edit rows in this page.</div>
+            <div class="editor-check-item">2. Save CSV directly or download and replace files in `data/`.</div>
+            <div class="editor-check-item">3. Run the rebuild commands below.</div>
+          </div>
+          <div class="editor-command-block">
+            <code>powershell -ExecutionPolicy Bypass -File .\scripts\build-data.ps1</code>
+            <code>powershell -ExecutionPolicy Bypass -File .\scripts\sync-profile-data.ps1</code>
+          </div>
+          <div id="editor-status" class="editor-status">Files loaded.</div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data/artists-data.js"></script>
+    <script src="./editor.js"></script>
+  </body>
+</html>

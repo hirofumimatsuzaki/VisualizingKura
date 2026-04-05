@@ -141,7 +141,7 @@ window.ARTIST_IMAGES = {
                     "2025/01|lucyparrispiper|australia":  "https://studiokura.info/en/wp-content/uploads/2025/01/472880791_1186490889593272_7248650412141371690_n.jpg",
                     "2025/01|odatilset|norway":  "https://studiokura.info/en/wp-content/uploads/2025/01/20220916_134422-1.jpeg",
                     "2025/01|robertmoss|canada":  "https://studiokura.info/en/wp-content/uploads/2025/01/474460559_1196154178626943_7406863837891242076_n.jpg",
-                    "2025/01|rociomuybien|argentina":  "https://studiokura.info/en/wp-content/uploads/2025/01/473646030_1189857905923237_3716835782131628558_n.jpg",
+                    "2025/01|rociomuybien|argentina":  "https://studiokura.info/en/wp-content/uploads/2025/01/Retrato-Rocio-Argentina_n.jpg",
                     "2025/01|ronnuyork|germany":  "https://studiokura.info/en/wp-content/uploads/2025/01/1000013084-scaled-e1737546139399.jpg",
                     "2025/01|sueleenng|australia":  "https://studiokura.info/en/wp-content/uploads/2025/01/472229963_1182691959973165_5292616462319404875_n.jpg",
                     "2025/01|vladimirobellini|argentina":  "https://studiokura.info/en/wp-content/uploads/2025/01/473646030_1189857905923237_3716835782131628558_n.jpg",

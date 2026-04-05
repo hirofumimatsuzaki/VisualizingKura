@@ -4559,7 +4559,7 @@ window.ARTIST_PROFILES = {
                         "label":  "2025/01",
                         "artist":  "Rocío Muy Bien",
                         "country":  "Argentina",
-                        "detailUrl":  "https://studiokura.info/en/2025/01/vladimiro-bellini/"
+                        "detailUrl":  "https://studiokura.info/en/2025/01/rocio-muy-bien/"
                     },
                     {
                         "label":  "2025/01",
