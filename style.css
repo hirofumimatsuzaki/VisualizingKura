@@ -140,6 +140,9 @@ body.embed-mode {
   padding: 24px;
   display: grid;
   gap: 16px;
+  align-content: start;
+  overflow-y: auto;
+  height: 100vh;
   background: linear-gradient(180deg, rgba(3, 8, 14, 0.75), rgba(3, 8, 14, 0.9));
   border-left: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -148,6 +151,35 @@ body.embed-mode {
   padding: 18px;
   background: linear-gradient(180deg, rgba(255, 252, 247, 0.96), rgba(246, 241, 233, 0.96));
   border-left: 1px solid rgba(16, 32, 43, 0.08);
+}
+
+.sidebar-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.sidebar-tab {
+  min-height: 42px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.sidebar-tab.is-active {
+  border-color: rgba(122, 242, 211, 0.5);
+  background: linear-gradient(180deg, rgba(122, 242, 211, 0.18), rgba(255, 255, 255, 0.04));
+}
+
+.embed-mode .sidebar-tab.is-active {
+  border-color: rgba(255, 149, 101, 0.32);
+  background: linear-gradient(180deg, rgba(255, 149, 101, 0.16), rgba(255, 255, 255, 0.92));
+}
+
+.sidebar-view {
+  display: grid;
+  gap: 16px;
 }
 
 .embed-mode .panel {
@@ -400,7 +432,7 @@ body.embed-mode {
 }
 
 .controls-panel {
-  align-self: end;
+  align-self: start;
 }
 
 .panel-label-spaced {
@@ -543,6 +575,8 @@ button:hover {
   .sidebar {
     padding: 16px;
     grid-template-columns: 1fr;
+    height: auto;
+    overflow: visible;
     border-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
@@ -640,6 +674,10 @@ button:hover {
   .sidebar {
     padding: 12px;
     gap: 12px;
+  }
+
+  .sidebar-tabs {
+    grid-template-columns: 1fr;
   }
 
   .panel {

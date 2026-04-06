@@ -26,89 +26,101 @@
           <div id="current-artist" class="current-artist">Preparing data...</div>
         </section>
 
-        <section class="panel stats-grid">
-          <div>
-            <div class="stat-label">Filtered Artists</div>
-            <div id="total-artists" class="stat-value">0</div>
-          </div>
-          <div>
-            <div class="stat-label">Countries</div>
-            <div id="country-count" class="stat-value">0</div>
-          </div>
-          <div>
-            <div class="stat-label">Genres</div>
-            <div id="genre-count" class="stat-value">0</div>
-          </div>
-          <div>
-            <div class="stat-label">Top Origin</div>
-            <div id="top-country" class="stat-value stat-value-small">-</div>
-          </div>
-          <div>
-            <div class="stat-label">Arrived</div>
-            <div id="arrived-count" class="stat-value">0</div>
-          </div>
-          <div class="stat-card-wide">
-            <div class="stat-label">Global Reach</div>
-            <div id="global-summary" class="stat-value stat-value-small">Building global map view...</div>
-          </div>
+        <section class="sidebar-tabs" aria-label="Sidebar sections">
+          <button class="sidebar-tab is-active" type="button" data-sidebar-tab="overview">Overview</button>
+          <button class="sidebar-tab" type="button" data-sidebar-tab="filters">Filters</button>
+          <button class="sidebar-tab" type="button" data-sidebar-tab="directory">Directory</button>
         </section>
 
-        <section class="panel">
-          <div class="panel-label">Country Breakdown</div>
-          <div id="country-list" class="country-list"></div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-label">Country Detail</div>
-          <div id="country-detail" class="country-detail">
-            <div id="detail-empty" class="detail-empty">Click a country dot on the map.</div>
-            <div id="detail-content" class="detail-content" hidden>
-              <div id="detail-country" class="detail-country">-</div>
-              <div class="detail-stats">
-                <div><span class="detail-stat-label">Artists</span><span id="detail-count" class="detail-stat-value">0</span></div>
-                <div><span class="detail-stat-label">First</span><span id="detail-first" class="detail-stat-value">-</span></div>
-                <div><span class="detail-stat-label">Latest</span><span id="detail-latest" class="detail-stat-value">-</span></div>
-              </div>
-              <div id="detail-artists" class="detail-artists"></div>
+        <div class="sidebar-view is-active" data-sidebar-panel="overview">
+          <section class="panel stats-grid">
+            <div>
+              <div class="stat-label">Filtered Artists</div>
+              <div id="total-artists" class="stat-value">0</div>
             </div>
-          </div>
-        </section>
+            <div>
+              <div class="stat-label">Countries</div>
+              <div id="country-count" class="stat-value">0</div>
+            </div>
+            <div>
+              <div class="stat-label">Genres</div>
+              <div id="genre-count" class="stat-value">0</div>
+            </div>
+            <div>
+              <div class="stat-label">Top Origin</div>
+              <div id="top-country" class="stat-value stat-value-small">-</div>
+            </div>
+            <div>
+              <div class="stat-label">Arrived</div>
+              <div id="arrived-count" class="stat-value">0</div>
+            </div>
+            <div class="stat-card-wide">
+              <div class="stat-label">Global Reach</div>
+              <div id="global-summary" class="stat-value stat-value-small">Building global map view...</div>
+            </div>
+          </section>
 
-        <section class="panel controls-panel">
-          <div class="panel-label">Directory Filters</div>
-          <div class="filter-grid">
-            <label class="control-row" for="filter-start">
-              <span>From</span>
-              <select id="filter-start"></select>
-            </label>
-            <label class="control-row" for="filter-end">
-              <span>To</span>
-              <select id="filter-end"></select>
-            </label>
-            <label class="control-row" for="filter-country">
-              <span>Country</span>
-              <select id="filter-country"></select>
-            </label>
-            <label class="control-row" for="filter-genre">
-              <span>Genre</span>
-              <select id="filter-genre"></select>
-            </label>
-          </div>
-          <div class="panel-label panel-label-spaced">Playback</div>
-          <label class="control-row" for="speed-control">
-            <span>Speed</span>
-            <input id="speed-control" type="range" min="0.4" max="3" value="1.25" step="0.05" />
-          </label>
-          <div class="button-row">
-            <button id="toggle-play" type="button">Pause</button>
-            <button id="restart-play" type="button">Restart</button>
-          </div>
-        </section>
+          <section class="panel">
+            <div class="panel-label">Country Breakdown</div>
+            <div id="country-list" class="country-list"></div>
+          </section>
 
-        <section class="panel">
-          <div class="panel-label">Artist Directory</div>
-          <div id="directory-list" class="directory-list"></div>
-        </section>
+          <section class="panel">
+            <div class="panel-label">Country Detail</div>
+            <div id="country-detail" class="country-detail">
+              <div id="detail-empty" class="detail-empty">Click a country dot on the map.</div>
+              <div id="detail-content" class="detail-content" hidden>
+                <div id="detail-country" class="detail-country">-</div>
+                <div class="detail-stats">
+                  <div><span class="detail-stat-label">Artists</span><span id="detail-count" class="detail-stat-value">0</span></div>
+                  <div><span class="detail-stat-label">First</span><span id="detail-first" class="detail-stat-value">-</span></div>
+                  <div><span class="detail-stat-label">Latest</span><span id="detail-latest" class="detail-stat-value">-</span></div>
+                </div>
+                <div id="detail-artists" class="detail-artists"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="sidebar-view" data-sidebar-panel="filters" hidden>
+          <section class="panel controls-panel">
+            <div class="panel-label">Directory Filters</div>
+            <div class="filter-grid">
+              <label class="control-row" for="filter-start">
+                <span>From</span>
+                <select id="filter-start"></select>
+              </label>
+              <label class="control-row" for="filter-end">
+                <span>To</span>
+                <select id="filter-end"></select>
+              </label>
+              <label class="control-row" for="filter-country">
+                <span>Country</span>
+                <select id="filter-country"></select>
+              </label>
+              <label class="control-row" for="filter-genre">
+                <span>Genre</span>
+                <select id="filter-genre"></select>
+              </label>
+            </div>
+            <div class="panel-label panel-label-spaced">Playback</div>
+            <label class="control-row" for="speed-control">
+              <span>Speed</span>
+              <input id="speed-control" type="range" min="0.4" max="3" value="1.25" step="0.05" />
+            </label>
+            <div class="button-row">
+              <button id="toggle-play" type="button">Pause</button>
+              <button id="restart-play" type="button">Restart</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="sidebar-view" data-sidebar-panel="directory" hidden>
+          <section class="panel">
+            <div class="panel-label">Artist Directory</div>
+            <div id="directory-list" class="directory-list"></div>
+          </section>
+        </div>
       </aside>
     </div>
 

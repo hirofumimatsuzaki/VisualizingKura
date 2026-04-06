@@ -108,7 +108,10 @@ function bindDom() {
   dom.filterGenre = document.getElementById("filter-genre");
   dom.togglePlay = document.getElementById("toggle-play");
   dom.restartPlay = document.getElementById("restart-play");
+  dom.sidebarTabs = [...document.querySelectorAll("[data-sidebar-tab]")];
+  dom.sidebarPanels = [...document.querySelectorAll("[data-sidebar-panel]")];
   dom.countryList.addEventListener("click", handleCountryListClick);
+  initializeSidebarTabs();
 }
 
 function initializeMapData() {
@@ -174,6 +177,31 @@ function setupControls() {
     dom.togglePlay.textContent = state.playing ? "Pause" : "Play";
   });
   dom.restartPlay.addEventListener("click", resetTimeline);
+}
+
+function initializeSidebarTabs() {
+  if (!dom.sidebarTabs?.length || !dom.sidebarPanels?.length) {
+    return;
+  }
+
+  for (const button of dom.sidebarTabs) {
+    button.addEventListener("click", () => setActiveSidebarTab(button.dataset.sidebarTab || "overview"));
+  }
+  setActiveSidebarTab("overview");
+}
+
+function setActiveSidebarTab(tabName) {
+  for (const button of dom.sidebarTabs) {
+    const active = button.dataset.sidebarTab === tabName;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
+  }
+
+  for (const panel of dom.sidebarPanels) {
+    const active = panel.dataset.sidebarPanel === tabName;
+    panel.classList.toggle("is-active", active);
+    panel.hidden = !active;
+  }
 }
 
 function initializeFilterControls() {
