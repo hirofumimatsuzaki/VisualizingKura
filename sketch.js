@@ -44,11 +44,15 @@ const state = {
   mapPadding: 48,
   width: 0,
   height: 0,
+  pixelRatio: 1,
   landShapes: [],
   countryShapes: [],
   selectedCountry: null,
   countryPoints: [],
-  profileLookup: new Map()
+  profileLookup: new Map(),
+  mapCacheCanvas: null,
+  mapCacheCtx: null,
+  mapCacheDirty: true
 };
 
 const dom = {};
@@ -59,6 +63,8 @@ let resizeObserver;
 document.addEventListener("DOMContentLoaded", () => {
   canvas = document.createElement("canvas");
   ctx = canvas.getContext("2d");
+  state.mapCacheCanvas = document.createElement("canvas");
+  state.mapCacheCtx = state.mapCacheCanvas.getContext("2d");
   document.getElementById("sketch-root").appendChild(canvas);
   canvas.addEventListener("click", handleCanvasClick);
   bindDom();
@@ -164,6 +170,7 @@ function initializeData() {
   renderCountryList();
   updateDomForCurrent(null);
   renderCountryDetail(null);
+  state.mapCacheDirty = true;
 }
 
 function setupControls() {
@@ -179,15 +186,20 @@ function setupControls() {
 
 function resizeCanvas() {
   const root = document.getElementById("sketch-root");
-  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+  state.pixelRatio = ratio;
   state.width = root.clientWidth;
   state.height = root.clientHeight;
   canvas.width = Math.floor(state.width * ratio);
   canvas.height = Math.floor(state.height * ratio);
+  state.mapCacheCanvas.width = Math.floor(state.width * ratio);
+  state.mapCacheCanvas.height = Math.floor(state.height * ratio);
   canvas.style.width = `${state.width}px`;
   canvas.style.height = `${state.height}px`;
   ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+  state.mapCacheCtx.setTransform(ratio, 0, 0, ratio, 0, 0);
   rebuildPointPositions();
+  state.mapCacheDirty = true;
 }
 
 function rebuildPointPositions() {
@@ -221,13 +233,32 @@ function tick() {
 }
 
 function drawScene() {
-  drawBackdrop();
-  drawMapLayer();
+  drawCachedMapLayer();
   if (state.playing && state.records) {
     runTimeline();
   }
   drawTrails();
   drawDestination();
+}
+
+function drawCachedMapLayer() {
+  if (state.mapCacheDirty) {
+    renderMapCache();
+  }
+  ctx.clearRect(0, 0, state.width, state.height);
+  ctx.drawImage(state.mapCacheCanvas, 0, 0, state.width, state.height);
+}
+
+function renderMapCache() {
+  const cacheCtx = state.mapCacheCtx;
+  if (!cacheCtx) {
+    return;
+  }
+
+  cacheCtx.clearRect(0, 0, state.width, state.height);
+  drawBackdrop(cacheCtx);
+  drawMapLayer(cacheCtx);
+  state.mapCacheDirty = false;
 }
 
 function runTimeline() {
@@ -265,55 +296,51 @@ function runTimeline() {
   dom.arrivedCount.textContent = state.arrived;
 }
 
-function drawBackdrop() {
-  ctx.clearRect(0, 0, state.width, state.height);
-
-  const oceanGradient = ctx.createLinearGradient(0, 0, 0, state.height);
+function drawBackdrop(targetCtx = ctx) {
+  const oceanGradient = targetCtx.createLinearGradient(0, 0, 0, state.height);
   oceanGradient.addColorStop(0, "#03111a");
   oceanGradient.addColorStop(0.45, "#081a27");
   oceanGradient.addColorStop(1, "#041019");
-  ctx.fillStyle = oceanGradient;
-  ctx.fillRect(0, 0, state.width, state.height);
+  targetCtx.fillStyle = oceanGradient;
+  targetCtx.fillRect(0, 0, state.width, state.height);
 
   for (let i = 0; i < 4; i += 1) {
     const radius = state.width * (0.22 + i * 0.1);
     const x = state.width * (0.17 + i * 0.16);
     const y = state.height * (0.12 + i * 0.11);
-    const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+    const gradient = targetCtx.createRadialGradient(x, y, 0, x, y, radius);
     gradient.addColorStop(0, i % 2 === 0 ? "rgba(255,149,101,0.08)" : "rgba(122,242,211,0.06)");
     gradient.addColorStop(1, "rgba(0,0,0,0)");
-    ctx.fillStyle = gradient;
-    ctx.beginPath();
-    ctx.arc(x, y, radius, 0, Math.PI * 2);
-    ctx.fill();
+    targetCtx.fillStyle = gradient;
+    targetCtx.beginPath();
+    targetCtx.arc(x, y, radius, 0, Math.PI * 2);
+    targetCtx.fill();
   }
 
-  const vignette = ctx.createRadialGradient(state.width * 0.5, state.height * 0.45, state.width * 0.1, state.width * 0.5, state.height * 0.45, state.width * 0.75);
+  const vignette = targetCtx.createRadialGradient(state.width * 0.5, state.height * 0.45, state.width * 0.1, state.width * 0.5, state.height * 0.45, state.width * 0.75);
   vignette.addColorStop(0, "rgba(0,0,0,0)");
   vignette.addColorStop(1, "rgba(0,0,0,0.34)");
-  ctx.fillStyle = vignette;
-  ctx.fillRect(0, 0, state.width, state.height);
+  targetCtx.fillStyle = vignette;
+  targetCtx.fillRect(0, 0, state.width, state.height);
 }
 
-function drawMapLayer() {
-  drawLongitudeLatitudeGrid();
-  drawLatitudeBands();
-  drawLand();
-  drawCountryBorders();
-  drawJapanFocus();
-  drawOriginDots();
-  drawMapLabels();
+function drawMapLayer(targetCtx = ctx) {
+  drawLongitudeLatitudeGrid(targetCtx);
+  drawLatitudeBands(targetCtx);
+  drawLand(targetCtx);
+  drawCountryBorders(targetCtx);
+  drawJapanFocus(targetCtx);
+  drawOriginDots(targetCtx);
+  drawMapLabels(targetCtx);
 }
 
-function drawLongitudeLatitudeGrid() {
-  ctx.strokeStyle = "rgba(122,242,211,0.08)";
-  ctx.lineWidth = 1;
-
+function drawLongitudeLatitudeGrid(targetCtx = ctx) {
   for (let lon = -150; lon <= 150; lon += 30) {
     drawGeodesicLine(
       Array.from({ length: 30 }, (_, index) => projectLonLat(lon, -60 + index * 5)),
       "rgba(122,242,211,0.08)",
-      1
+      1,
+      targetCtx
     );
   }
 
@@ -321,87 +348,88 @@ function drawLongitudeLatitudeGrid() {
     drawGeodesicLine(
       Array.from({ length: 73 }, (_, index) => projectLonLat(-180 + index * 5, lat)),
       lat === 0 ? "rgba(255,149,101,0.18)" : "rgba(255,255,255,0.05)",
-      lat === 0 ? 1.3 : 0.8
+      lat === 0 ? 1.3 : 0.8,
+      targetCtx
     );
   }
 }
 
-function drawLatitudeBands() {
+function drawLatitudeBands(targetCtx = ctx) {
   const top = projectLonLat(0, 23.5).y;
   const bottom = projectLonLat(0, -23.5).y;
-  ctx.fillStyle = "rgba(255,255,255,0.025)";
-  ctx.fillRect(state.mapPadding, top, state.width - state.mapPadding * 2, bottom - top);
+  targetCtx.fillStyle = "rgba(255,255,255,0.025)";
+  targetCtx.fillRect(state.mapPadding, top, state.width - state.mapPadding * 2, bottom - top);
 }
 
-function drawLand() {
+function drawLand(targetCtx = ctx) {
   if (!state.landShapes.length) {
     return;
   }
 
-  ctx.save();
-  ctx.shadowColor = "rgba(0,0,0,0.35)";
-  ctx.shadowBlur = 24;
-  ctx.shadowOffsetY = 10;
+  targetCtx.save();
+  targetCtx.shadowColor = "rgba(0,0,0,0.35)";
+  targetCtx.shadowBlur = 24;
+  targetCtx.shadowOffsetY = 10;
 
   for (const polygon of state.landShapes) {
-    const fill = ctx.createLinearGradient(0, state.mapPadding, 0, state.height - state.mapPadding);
+    const fill = targetCtx.createLinearGradient(0, state.mapPadding, 0, state.height - state.mapPadding);
     fill.addColorStop(0, "rgba(149,225,248,0.16)");
     fill.addColorStop(0.6, "rgba(73,132,153,0.18)");
     fill.addColorStop(1, "rgba(32,73,92,0.24)");
-    tracePolygon(polygon);
-    ctx.fillStyle = fill;
-    ctx.strokeStyle = "rgba(122,242,211,0.18)";
-    ctx.lineWidth = 1;
-    ctx.fill("evenodd");
-    ctx.stroke();
+    tracePolygon(polygon, targetCtx);
+    targetCtx.fillStyle = fill;
+    targetCtx.strokeStyle = "rgba(122,242,211,0.18)";
+    targetCtx.lineWidth = 1;
+    targetCtx.fill("evenodd");
+    targetCtx.stroke();
   }
 
-  ctx.restore();
+  targetCtx.restore();
 }
 
-function drawCountryBorders() {
+function drawCountryBorders(targetCtx = ctx) {
   if (!state.countryShapes.length) {
     return;
   }
 
-  ctx.save();
-  ctx.strokeStyle = "rgba(208, 240, 255, 0.11)";
-  ctx.lineWidth = 0.55;
+  targetCtx.save();
+  targetCtx.strokeStyle = "rgba(208, 240, 255, 0.11)";
+  targetCtx.lineWidth = 0.55;
 
   for (const polygon of state.countryShapes) {
-    tracePolygon(polygon);
-    ctx.stroke();
+    tracePolygon(polygon, targetCtx);
+    targetCtx.stroke();
   }
 
-  ctx.restore();
+  targetCtx.restore();
 }
 
-function drawJapanFocus() {
+function drawJapanFocus(targetCtx = ctx) {
   const jp = projectLonLat(138, 37);
-  const glow = ctx.createRadialGradient(jp.x, jp.y, 0, jp.x, jp.y, 90);
+  const glow = targetCtx.createRadialGradient(jp.x, jp.y, 0, jp.x, jp.y, 90);
   glow.addColorStop(0, "rgba(122,242,211,0.18)");
   glow.addColorStop(1, "rgba(122,242,211,0)");
-  ctx.fillStyle = glow;
-  ctx.beginPath();
-  ctx.arc(jp.x, jp.y, 90, 0, Math.PI * 2);
-  ctx.fill();
+  targetCtx.fillStyle = glow;
+  targetCtx.beginPath();
+  targetCtx.arc(jp.x, jp.y, 90, 0, Math.PI * 2);
+  targetCtx.fill();
 
-  ctx.strokeStyle = "rgba(122,242,211,0.2)";
-  ctx.lineWidth = 1;
-  ctx.beginPath();
-  ctx.arc(jp.x, jp.y, 42 + Math.sin(state.frame * 0.03) * 3, 0, Math.PI * 2);
-  ctx.stroke();
+  targetCtx.strokeStyle = "rgba(122,242,211,0.2)";
+  targetCtx.lineWidth = 1;
+  targetCtx.beginPath();
+  targetCtx.arc(jp.x, jp.y, 42, 0, Math.PI * 2);
+  targetCtx.stroke();
 }
 
-function drawOriginDots() {
+function drawOriginDots(targetCtx = ctx) {
   for (const point of state.countryPoints) {
-    ctx.shadowColor = "rgba(122,242,211,0.45)";
-    ctx.shadowBlur = 12;
-    ctx.beginPath();
-    ctx.arc(point.x, point.y, state.selectedCountry === point.country ? 5.5 : 3, 0, Math.PI * 2);
-    ctx.fillStyle = state.selectedCountry === point.country ? "rgba(255,209,102,0.95)" : "rgba(122,242,211,0.8)";
-    ctx.fill();
-    ctx.shadowBlur = 0;
+    targetCtx.shadowColor = "rgba(122,242,211,0.45)";
+    targetCtx.shadowBlur = 12;
+    targetCtx.beginPath();
+    targetCtx.arc(point.x, point.y, state.selectedCountry === point.country ? 5.5 : 3, 0, Math.PI * 2);
+    targetCtx.fillStyle = state.selectedCountry === point.country ? "rgba(255,209,102,0.95)" : "rgba(122,242,211,0.8)";
+    targetCtx.fill();
+    targetCtx.shadowBlur = 0;
   }
 }
 
@@ -483,15 +511,15 @@ function drawDestination() {
   ctx.fillText("Itoshima", state.itoshimaScreen.x + 10, state.itoshimaScreen.y - 12);
 }
 
-function drawMapLabels() {
-  ctx.save();
+function drawMapLabels(targetCtx = ctx) {
+  targetCtx.save();
   for (const label of MAP_LABELS) {
     const point = projectLonLat(label.lon, label.lat);
-    ctx.fillStyle = label.text === "JAPAN" ? "rgba(255,209,102,0.78)" : "rgba(237,247,255,0.34)";
-    ctx.font = label.text === "JAPAN" ? "700 10px 'Space Grotesk', sans-serif" : "600 9px 'Space Grotesk', sans-serif";
-    ctx.fillText(label.text, point.x, point.y);
+    targetCtx.fillStyle = label.text === "JAPAN" ? "rgba(255,209,102,0.78)" : "rgba(237,247,255,0.34)";
+    targetCtx.font = label.text === "JAPAN" ? "700 10px 'Space Grotesk', sans-serif" : "600 9px 'Space Grotesk', sans-serif";
+    targetCtx.fillText(label.text, point.x, point.y);
   }
-  ctx.restore();
+  targetCtx.restore();
 }
 
 function renderCountryList() {
@@ -558,7 +586,6 @@ function updateDomForCurrent(record) {
   dom.currentArtist.innerHTML = `
     <strong>${escapeHtml(record.artist)}</strong><br>
     ${escapeHtml(record.country)}
-    ${record.profile?.detailUrl ? `<br><a class="current-artist-link" href="${escapeHtml(record.profile.detailUrl)}" target="_blank" rel="noreferrer">Artist page</a>` : ""}
   `;
   dom.arrivedCount.textContent = state.arrived;
 }
@@ -592,6 +619,7 @@ function handleCanvasClick(event) {
   }
 
   state.selectedCountry = hit;
+  state.mapCacheDirty = true;
   renderCountryDetail(hit);
 }
 
@@ -602,36 +630,37 @@ function handleCountryListClick(event) {
   }
   const country = row.getAttribute("data-country");
   state.selectedCountry = country;
+  state.mapCacheDirty = true;
   renderCountryDetail(country);
 }
 
-function tracePolygon(polygon) {
-  ctx.beginPath();
+function tracePolygon(polygon, targetCtx = ctx) {
+  targetCtx.beginPath();
   for (const ring of polygon) {
     ring.forEach((point, index) => {
       const projected = projectLonLat(point[0], point[1]);
       if (index === 0) {
-        ctx.moveTo(projected.x, projected.y);
+        targetCtx.moveTo(projected.x, projected.y);
       } else {
-        ctx.lineTo(projected.x, projected.y);
+        targetCtx.lineTo(projected.x, projected.y);
       }
     });
-    ctx.closePath();
+    targetCtx.closePath();
   }
 }
 
-function drawGeodesicLine(points, strokeStyle, lineWidth) {
-  ctx.strokeStyle = strokeStyle;
-  ctx.lineWidth = lineWidth;
-  ctx.beginPath();
+function drawGeodesicLine(points, strokeStyle, lineWidth, targetCtx = ctx) {
+  targetCtx.strokeStyle = strokeStyle;
+  targetCtx.lineWidth = lineWidth;
+  targetCtx.beginPath();
   points.forEach((point, index) => {
     if (index === 0) {
-      ctx.moveTo(point.x, point.y);
+      targetCtx.moveTo(point.x, point.y);
     } else {
-      ctx.lineTo(point.x, point.y);
+      targetCtx.lineTo(point.x, point.y);
     }
   });
-  ctx.stroke();
+  targetCtx.stroke();
 }
 
 function projectLonLat(lon, lat) {
