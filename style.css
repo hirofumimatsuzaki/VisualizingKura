@@ -406,6 +406,29 @@ body.embed-mode {
   color: rgba(237, 247, 255, 0.86);
 }
 
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+select {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--ink);
+  font: inherit;
+}
+
+.embed-mode select {
+  border-color: rgba(16, 32, 43, 0.12);
+  background: rgba(255, 255, 255, 0.94);
+  color: #10202b;
+}
+
 input[type="range"] {
   width: 100%;
   accent-color: var(--accent-2);
@@ -508,7 +531,8 @@ button:hover {
   .country-title,
   .detail-stat-value,
   .control-row,
-  button {
+  button,
+  select {
     font-size: 0.9rem;
   }
 }
@@ -577,7 +601,8 @@ button:hover {
   .detail-country,
   .detail-stat-value,
   .control-row,
-  button {
+  button,
+  select {
     font-size: 0.84rem;
   }
 
@@ -589,6 +614,10 @@ button:hover {
   .detail-artists,
   .country-list {
     gap: 6px;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr;
   }
 }
 

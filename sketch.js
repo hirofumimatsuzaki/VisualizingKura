@@ -50,6 +50,9 @@ const state = {
   selectedCountry: null,
   countryPoints: [],
   profileLookup: new Map(),
+  allRecords: [],
+  filterStart: "",
+  filterEnd: "",
   mapCacheCanvas: null,
   mapCacheCtx: null,
   mapCacheDirty: true
@@ -93,6 +96,8 @@ function bindDom() {
   dom.detailLatest = document.getElementById("detail-latest");
   dom.detailArtists = document.getElementById("detail-artists");
   dom.speedControl = document.getElementById("speed-control");
+  dom.filterStart = document.getElementById("filter-start");
+  dom.filterEnd = document.getElementById("filter-end");
   dom.togglePlay = document.getElementById("toggle-play");
   dom.restartPlay = document.getElementById("restart-play");
   dom.countryList.addEventListener("click", handleCountryListClick);
@@ -115,31 +120,9 @@ function initializeData() {
     return;
   }
 
-  const countryTotals = new Map();
-  const countryDetails = new Map();
-  state.records = payload.records.map((record, index) => {
+  state.allRecords = payload.records.map((record, index) => {
     const origin = COUNTRY_COORDS[record.country];
     const profile = resolveProfile(record);
-    countryTotals.set(record.country, (countryTotals.get(record.country) || 0) + 1);
-    if (!countryDetails.has(record.country)) {
-      countryDetails.set(record.country, {
-        country: record.country,
-        count: 0,
-        firstYear: record.year,
-        latestYear: record.year,
-        artists: []
-      });
-    }
-    const detail = countryDetails.get(record.country);
-    detail.count += 1;
-    detail.firstYear = Math.min(detail.firstYear, record.year);
-    detail.latestYear = Math.max(detail.latestYear, record.year);
-    detail.artists.push({
-      artist: record.artist,
-      label: record.label,
-      date: record.date,
-      detailUrl: profile?.detailUrl || ""
-    });
     return {
       ...record,
       index,
@@ -150,6 +133,92 @@ function initializeData() {
       seed: (index * 9301 + 49297) % 233280
     };
   });
+
+  initializeFilterControls();
+  applyDateFilter();
+}
+
+function setupControls() {
+  dom.filterStart?.addEventListener("change", () => {
+    state.filterStart = dom.filterStart.value;
+    applyDateFilter();
+  });
+  dom.filterEnd?.addEventListener("change", () => {
+    state.filterEnd = dom.filterEnd.value;
+    applyDateFilter();
+  });
+  dom.speedControl.addEventListener("input", (event) => {
+    state.speed = Number(event.target.value);
+  });
+  dom.togglePlay.addEventListener("click", () => {
+    state.playing = !state.playing;
+    dom.togglePlay.textContent = state.playing ? "Pause" : "Play";
+  });
+  dom.restartPlay.addEventListener("click", resetTimeline);
+}
+
+function initializeFilterControls() {
+  if (!dom.filterStart || !dom.filterEnd) {
+    return;
+  }
+
+  const labels = [...new Set(state.allRecords.map((record) => record.label))];
+  const options = labels.map((label) => `<option value="${escapeHtml(label)}">${escapeHtml(label)}</option>`).join("");
+  dom.filterStart.innerHTML = `<option value="">All</option>${options}`;
+  dom.filterEnd.innerHTML = `<option value="">All</option>${options}`;
+  state.filterStart = "";
+  state.filterEnd = "";
+}
+
+function applyDateFilter() {
+  const filtered = state.allRecords.filter((record) => {
+    if (state.filterStart && record.label < state.filterStart) {
+      return false;
+    }
+    if (state.filterEnd && record.label > state.filterEnd) {
+      return false;
+    }
+    return true;
+  });
+
+  rebuildFilteredState(filtered);
+  state.selectedCountry = state.countryDetails?.has(state.selectedCountry) ? state.selectedCountry : null;
+  renderCountryList();
+  renderCountryDetail(state.selectedCountry);
+  resetTimeline();
+  state.mapCacheDirty = true;
+}
+
+function rebuildFilteredState(records) {
+  const countryTotals = new Map();
+  const countryDetails = new Map();
+
+  state.records = records;
+  for (const record of state.records) {
+    record.status = "queued";
+    record.progress = 0;
+    countryTotals.set(record.country, (countryTotals.get(record.country) || 0) + 1);
+    if (!countryDetails.has(record.country)) {
+      countryDetails.set(record.country, {
+        country: record.country,
+        count: 0,
+        firstYear: record.year,
+        latestYear: record.year,
+        artists: []
+      });
+    }
+
+    const detail = countryDetails.get(record.country);
+    detail.count += 1;
+    detail.firstYear = Math.min(detail.firstYear, record.year);
+    detail.latestYear = Math.max(detail.latestYear, record.year);
+    detail.artists.push({
+      artist: record.artist,
+      label: record.label,
+      date: record.date,
+      detailUrl: record.profile?.detailUrl || ""
+    });
+  }
 
   state.countryTotals = [...countryTotals.entries()]
     .map(([country, count]) => ({ country, count }))
@@ -167,21 +236,6 @@ function initializeData() {
   dom.totalArtists.textContent = state.records.length;
   dom.countryCount.textContent = state.countryTotals.length;
   dom.topCountry.textContent = `${state.countryTotals[0]?.country || "-"} (${state.countryTotals[0]?.count || 0})`;
-  renderCountryList();
-  updateDomForCurrent(null);
-  renderCountryDetail(null);
-  state.mapCacheDirty = true;
-}
-
-function setupControls() {
-  dom.speedControl.addEventListener("input", (event) => {
-    state.speed = Number(event.target.value);
-  });
-  dom.togglePlay.addEventListener("click", () => {
-    state.playing = !state.playing;
-    dom.togglePlay.textContent = state.playing ? "Pause" : "Play";
-  });
-  dom.restartPlay.addEventListener("click", resetTimeline);
 }
 
 function resizeCanvas() {
