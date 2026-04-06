@@ -48,10 +48,7 @@ const state = {
   countryShapes: [],
   selectedCountry: null,
   countryPoints: [],
-  profileLookup: new Map(),
-  imageLookup: new Map(),
-  imageDataLoaded: false,
-  imageDataRequested: false
+  profileLookup: new Map()
 };
 
 const dom = {};
@@ -67,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   bindDom();
   initializeMapData();
   initializeData();
-  maybeLoadImageData();
   setupControls();
   resizeCanvas();
   resizeObserver = new ResizeObserver(() => resizeCanvas());
@@ -108,7 +104,6 @@ function initializeMapData() {
 function initializeData() {
   const payload = window.ARTIST_DATA;
   initializeProfileLookup(window.ARTIST_PROFILES);
-  initializeImageLookup(window.ARTIST_IMAGES);
   if (!payload || !Array.isArray(payload.records)) {
     document.getElementById("sketch-root").textContent = "Artist data could not be loaded.";
     return;
@@ -137,8 +132,7 @@ function initializeData() {
       artist: record.artist,
       label: record.label,
       date: record.date,
-      detailUrl: profile?.detailUrl || "",
-      profileKey: buildProfileKey(record.label, record.artist, record.country)
+      detailUrl: profile?.detailUrl || ""
     });
     return {
       ...record,
@@ -540,7 +534,6 @@ function renderCountryDetail(country) {
     .map(
       (artist) => `
         <div class="detail-artist">
-          ${resolveImageUrl(artist.profileKey) ? `<img class="detail-artist-image" src="${escapeHtml(resolveImageUrl(artist.profileKey))}" alt="${escapeHtml(artist.artist)}">` : ""}
           <div class="detail-artist-copy">
             <strong>${escapeHtml(artist.artist)}</strong>
             <span class="detail-artist-date">${escapeHtml(artist.label)}</span>
@@ -666,47 +659,6 @@ function initializeProfileLookup(payload) {
       state.profileLookup.set(fallbackKey, record);
     }
   }
-}
-
-function initializeImageLookup(payload) {
-  state.imageLookup = new Map();
-  if (!payload || !payload.records) {
-    return;
-  }
-
-  for (const [key, value] of Object.entries(payload.records)) {
-    if (value) {
-      state.imageLookup.set(key, value);
-    }
-  }
-  state.imageDataLoaded = state.imageLookup.size > 0;
-}
-
-function maybeLoadImageData() {
-  if (window.innerWidth < 920 || state.imageDataLoaded || state.imageDataRequested) {
-    return;
-  }
-
-  state.imageDataRequested = true;
-  const script = document.createElement("script");
-  script.src = "./data/artist-images.js";
-  script.onload = () => {
-    initializeImageLookup(window.ARTIST_IMAGES);
-    if (state.selectedCountry) {
-      renderCountryDetail(state.selectedCountry);
-    }
-  };
-  script.onerror = () => {
-    state.imageDataRequested = false;
-  };
-  document.body.appendChild(script);
-}
-
-function resolveImageUrl(profileKey) {
-  if (!profileKey || !state.imageLookup?.size) {
-    return "";
-  }
-  return state.imageLookup.get(profileKey) || "";
 }
 
 function resolveProfile(record) {

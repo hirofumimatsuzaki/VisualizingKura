@@ -370,8 +370,8 @@ body.embed-mode {
 
 .detail-artist {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px;
   align-items: start;
   padding: 8px 10px;
   border-radius: 12px;
@@ -381,14 +381,6 @@ body.embed-mode {
 
 .detail-artist-copy {
   min-width: 0;
-}
-
-.detail-artist-image {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  object-fit: cover;
-  background: rgba(255, 255, 255, 0.08);
 }
 
 .detail-artist-date {

@@ -19,7 +19,7 @@ Studio Kura residency artists visualized on a world map, animated from each arti
 - `data/artist-profiles.js`
   Generated static profile links for artist detail cards.
 - `data/artist-images.js`
-  Optional image lookup table, loaded only on larger screens.
+  Optional image lookup table. Currently not loaded by the visualization UI.
 - `data/manual-artists.csv`
   Manual artist additions merged on top of the source CSV.
 - `data/country-overrides.csv`
@@ -106,6 +106,10 @@ This regenerates:
 data/artist-profiles.js
 data/artist-images.js
 ```
+
+Note:
+
+- the current visualization keeps profile links but does not load artist images for performance reasons
 
 ## Update Map Data
 
