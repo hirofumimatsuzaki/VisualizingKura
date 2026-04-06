@@ -163,8 +163,23 @@ body.embed-mode {
   min-height: 42px;
   padding: 10px 12px;
   border-radius: 999px;
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.sidebar-tab-title {
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.sidebar-tab-note {
+  font-size: 0.66rem;
+  color: var(--muted);
+  line-height: 1.1;
 }
 
 .sidebar-tab.is-active {
@@ -180,6 +195,17 @@ body.embed-mode {
 .sidebar-view {
   display: grid;
   gap: 16px;
+}
+
+.panel-helper-copy {
+  margin: 10px 0 0;
+  color: rgba(237, 247, 255, 0.74);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.embed-mode .panel-helper-copy {
+  color: rgba(16, 32, 43, 0.72);
 }
 
 .embed-mode .panel {
@@ -678,6 +704,12 @@ button:hover {
 
   .sidebar-tabs {
     grid-template-columns: 1fr;
+  }
+
+  .sidebar-tab {
+    justify-items: start;
+    text-align: left;
+    border-radius: 18px;
   }
 
   .panel {

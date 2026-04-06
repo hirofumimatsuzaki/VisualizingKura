@@ -27,12 +27,25 @@
         </section>
 
         <section class="sidebar-tabs" aria-label="Sidebar sections">
-          <button class="sidebar-tab is-active" type="button" data-sidebar-tab="overview">Overview</button>
-          <button class="sidebar-tab" type="button" data-sidebar-tab="filters">Filters</button>
-          <button class="sidebar-tab" type="button" data-sidebar-tab="directory">Directory</button>
+          <button class="sidebar-tab is-active" type="button" data-sidebar-tab="overview">
+            <span class="sidebar-tab-title">Map</span>
+            <span class="sidebar-tab-note">country view</span>
+          </button>
+          <button class="sidebar-tab" type="button" data-sidebar-tab="filters">
+            <span class="sidebar-tab-title">Filter</span>
+            <span class="sidebar-tab-note">period and genre</span>
+          </button>
+          <button class="sidebar-tab" type="button" data-sidebar-tab="directory">
+            <span class="sidebar-tab-title">Artists</span>
+            <span class="sidebar-tab-note">matching list</span>
+          </button>
         </section>
 
         <div class="sidebar-view is-active" data-sidebar-panel="overview">
+          <section class="panel panel-helper">
+            <div class="panel-label">Current View</div>
+            <p class="panel-helper-copy">Map shows the country totals, arrival progress, and the active country detail.</p>
+          </section>
           <section class="panel stats-grid">
             <div>
               <div class="stat-label">Filtered Artists</div>
@@ -83,6 +96,10 @@
         </div>
 
         <div class="sidebar-view" data-sidebar-panel="filters" hidden>
+          <section class="panel panel-helper">
+            <div class="panel-label">Current View</div>
+            <p class="panel-helper-copy">Filter updates the map and directory by period, country, and genre.</p>
+          </section>
           <section class="panel controls-panel">
             <div class="panel-label">Directory Filters</div>
             <div class="filter-grid">
@@ -116,6 +133,10 @@
         </div>
 
         <div class="sidebar-view" data-sidebar-panel="directory" hidden>
+          <section class="panel panel-helper">
+            <div class="panel-label">Current View</div>
+            <p class="panel-helper-copy">Artists lists the matching artists in reverse chronological order.</p>
+          </section>
           <section class="panel">
             <div class="panel-label">Artist Directory</div>
             <div id="directory-list" class="directory-list"></div>
