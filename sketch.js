@@ -50,9 +50,12 @@ const state = {
   selectedCountry: null,
   countryPoints: [],
   profileLookup: new Map(),
+  metadataLookup: new Map(),
   allRecords: [],
   filterStart: "",
   filterEnd: "",
+  filterCountry: "",
+  filterGenre: "",
   mapCacheCanvas: null,
   mapCacheCtx: null,
   mapCacheDirty: true
@@ -85,9 +88,12 @@ function bindDom() {
   dom.currentArtist = document.getElementById("current-artist");
   dom.totalArtists = document.getElementById("total-artists");
   dom.countryCount = document.getElementById("country-count");
+  dom.genreCount = document.getElementById("genre-count");
   dom.arrivedCount = document.getElementById("arrived-count");
   dom.topCountry = document.getElementById("top-country");
+  dom.globalSummary = document.getElementById("global-summary");
   dom.countryList = document.getElementById("country-list");
+  dom.directoryList = document.getElementById("directory-list");
   dom.detailEmpty = document.getElementById("detail-empty");
   dom.detailContent = document.getElementById("detail-content");
   dom.detailCountry = document.getElementById("detail-country");
@@ -98,6 +104,8 @@ function bindDom() {
   dom.speedControl = document.getElementById("speed-control");
   dom.filterStart = document.getElementById("filter-start");
   dom.filterEnd = document.getElementById("filter-end");
+  dom.filterCountry = document.getElementById("filter-country");
+  dom.filterGenre = document.getElementById("filter-genre");
   dom.togglePlay = document.getElementById("toggle-play");
   dom.restartPlay = document.getElementById("restart-play");
   dom.countryList.addEventListener("click", handleCountryListClick);
@@ -115,6 +123,7 @@ function initializeMapData() {
 function initializeData() {
   const payload = window.ARTIST_DATA;
   initializeProfileLookup(window.ARTIST_PROFILES);
+  initializeMetadataLookup(window.ARTIST_METADATA);
   if (!payload || !Array.isArray(payload.records)) {
     document.getElementById("sketch-root").textContent = "Artist data could not be loaded.";
     return;
@@ -123,11 +132,13 @@ function initializeData() {
   state.allRecords = payload.records.map((record, index) => {
     const origin = COUNTRY_COORDS[record.country];
     const profile = resolveProfile(record);
+    const metadata = resolveMetadata(record);
     return {
       ...record,
       index,
       origin,
       profile,
+      genre: metadata.genre || "Unspecified",
       status: "queued",
       progress: 0,
       seed: (index * 9301 + 49297) % 233280
@@ -147,6 +158,14 @@ function setupControls() {
     state.filterEnd = dom.filterEnd.value;
     applyDateFilter();
   });
+  dom.filterCountry?.addEventListener("change", () => {
+    state.filterCountry = dom.filterCountry.value;
+    applyDateFilter();
+  });
+  dom.filterGenre?.addEventListener("change", () => {
+    state.filterGenre = dom.filterGenre.value;
+    applyDateFilter();
+  });
   dom.speedControl.addEventListener("input", (event) => {
     state.speed = Number(event.target.value);
   });
@@ -158,16 +177,24 @@ function setupControls() {
 }
 
 function initializeFilterControls() {
-  if (!dom.filterStart || !dom.filterEnd) {
+  if (!dom.filterStart || !dom.filterEnd || !dom.filterCountry || !dom.filterGenre) {
     return;
   }
 
   const labels = [...new Set(state.allRecords.map((record) => record.label))];
+  const countries = [...new Set(state.allRecords.map((record) => record.country))].sort((a, b) => a.localeCompare(b));
+  const genres = [...new Set(state.allRecords.map((record) => record.genre))].sort((a, b) => a.localeCompare(b));
   const options = labels.map((label) => `<option value="${escapeHtml(label)}">${escapeHtml(label)}</option>`).join("");
+  const countryOptions = countries.map((country) => `<option value="${escapeHtml(country)}">${escapeHtml(country)}</option>`).join("");
+  const genreOptions = genres.map((genre) => `<option value="${escapeHtml(genre)}">${escapeHtml(genre)}</option>`).join("");
   dom.filterStart.innerHTML = `<option value="">All</option>${options}`;
   dom.filterEnd.innerHTML = `<option value="">All</option>${options}`;
+  dom.filterCountry.innerHTML = `<option value="">All</option>${countryOptions}`;
+  dom.filterGenre.innerHTML = `<option value="">All</option>${genreOptions}`;
   state.filterStart = "";
   state.filterEnd = "";
+  state.filterCountry = "";
+  state.filterGenre = "";
 }
 
 function applyDateFilter() {
@@ -178,6 +205,12 @@ function applyDateFilter() {
     if (state.filterEnd && record.label > state.filterEnd) {
       return false;
     }
+    if (state.filterCountry && record.country !== state.filterCountry) {
+      return false;
+    }
+    if (state.filterGenre && record.genre !== state.filterGenre) {
+      return false;
+    }
     return true;
   });
 
@@ -185,6 +218,7 @@ function applyDateFilter() {
   state.selectedCountry = state.countryDetails?.has(state.selectedCountry) ? state.selectedCountry : null;
   renderCountryList();
   renderCountryDetail(state.selectedCountry);
+  renderDirectory();
   resetTimeline();
   state.mapCacheDirty = true;
 }
@@ -204,7 +238,8 @@ function rebuildFilteredState(records) {
         count: 0,
         firstYear: record.year,
         latestYear: record.year,
-        artists: []
+        artists: [],
+        genres: new Set()
       });
     }
 
@@ -212,14 +247,18 @@ function rebuildFilteredState(records) {
     detail.count += 1;
     detail.firstYear = Math.min(detail.firstYear, record.year);
     detail.latestYear = Math.max(detail.latestYear, record.year);
+    detail.genres.add(record.genre);
     detail.artists.push({
       artist: record.artist,
       label: record.label,
       date: record.date,
-      detailUrl: record.profile?.detailUrl || ""
+      detailUrl: record.profile?.detailUrl || "",
+      genre: record.genre,
+      country: record.country
     });
   }
 
+  const visibleGenres = new Set(state.records.map((record) => record.genre));
   state.countryTotals = [...countryTotals.entries()]
     .map(([country, count]) => ({ country, count }))
     .sort((a, b) => b.count - a.count || a.country.localeCompare(b.country));
@@ -228,6 +267,7 @@ function rebuildFilteredState(records) {
       country,
       {
         ...detail,
+        genres: [...detail.genres].sort((a, b) => a.localeCompare(b)),
         artists: detail.artists.sort((a, b) => a.date.localeCompare(b.date) || a.artist.localeCompare(b.artist))
       }
     ])
@@ -235,7 +275,11 @@ function rebuildFilteredState(records) {
 
   dom.totalArtists.textContent = state.records.length;
   dom.countryCount.textContent = state.countryTotals.length;
+  dom.genreCount.textContent = visibleGenres.size;
   dom.topCountry.textContent = `${state.countryTotals[0]?.country || "-"} (${state.countryTotals[0]?.count || 0})`;
+  dom.globalSummary.textContent = state.records.length
+    ? `${state.records.length} artists from ${state.countryTotals.length} countries across ${visibleGenres.size} genre labels`
+    : "No artists match the current filters.";
 }
 
 function resizeCanvas() {
@@ -619,6 +663,7 @@ function renderCountryDetail(country) {
           <div class="detail-artist-copy">
             <strong>${escapeHtml(artist.artist)}</strong>
             <span class="detail-artist-date">${escapeHtml(artist.label)}</span>
+            <span class="detail-artist-date">${escapeHtml(artist.genre)}</span>
             ${artist.detailUrl ? `<a class="detail-artist-link" href="${escapeHtml(artist.detailUrl)}" target="_blank" rel="noreferrer">Profile</a>` : ""}
           </div>
         </div>
@@ -626,6 +671,38 @@ function renderCountryDetail(country) {
     )
     .join("");
   renderCountryList();
+}
+
+function renderDirectory() {
+  if (!dom.directoryList) {
+    return;
+  }
+
+  if (!state.records?.length) {
+    dom.directoryList.innerHTML = `<div class="detail-empty">No artists match the current filters.</div>`;
+    return;
+  }
+
+  dom.directoryList.innerHTML = state.records
+    .slice()
+    .sort((a, b) => b.date.localeCompare(a.date) || a.artist.localeCompare(b.artist))
+    .slice(0, 60)
+    .map(
+      (record) => `
+        <article class="directory-card">
+          <div class="directory-title">
+            <strong>${escapeHtml(record.artist)}</strong>
+            <span class="directory-period">${escapeHtml(record.label)}</span>
+          </div>
+          <div class="directory-meta">
+            <span class="directory-pill">${escapeHtml(record.country)}</span>
+            <span class="directory-pill">${escapeHtml(record.genre)}</span>
+          </div>
+          ${record.profile?.detailUrl ? `<a class="directory-link" href="${escapeHtml(record.profile.detailUrl)}" target="_blank" rel="noreferrer">Profile</a>` : ""}
+        </article>
+      `
+    )
+    .join("");
 }
 
 function updateDomForCurrent(record) {
@@ -744,6 +821,17 @@ function initializeProfileLookup(payload) {
   }
 }
 
+function initializeMetadataLookup(payload) {
+  state.metadataLookup = new Map();
+  if (!payload || !payload.records) {
+    return;
+  }
+
+  for (const [key, value] of Object.entries(payload.records)) {
+    state.metadataLookup.set(key, value);
+  }
+}
+
 function resolveProfile(record) {
   if (!state.profileLookup?.size) {
     return null;
@@ -756,8 +844,17 @@ function resolveProfile(record) {
   );
 }
 
+function resolveMetadata(record) {
+  const exactKey = buildMetadataKey(record.label, record.artist);
+  return state.metadataLookup.get(exactKey) || { genre: "Unspecified" };
+}
+
 function buildProfileKey(label, artist, country) {
   return [label, normalizeProfileText(artist), normalizeProfileText(country)].join("|");
+}
+
+function buildMetadataKey(label, artist) {
+  return [label, normalizeProfileText(artist)].join("|");
 }
 
 function normalizeProfileText(value) {

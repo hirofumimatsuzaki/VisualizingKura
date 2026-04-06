@@ -28,7 +28,7 @@
 
         <section class="panel stats-grid">
           <div>
-            <div class="stat-label">Total Artists</div>
+            <div class="stat-label">Filtered Artists</div>
             <div id="total-artists" class="stat-value">0</div>
           </div>
           <div>
@@ -36,12 +36,20 @@
             <div id="country-count" class="stat-value">0</div>
           </div>
           <div>
-            <div class="stat-label">Arrived</div>
-            <div id="arrived-count" class="stat-value">0</div>
+            <div class="stat-label">Genres</div>
+            <div id="genre-count" class="stat-value">0</div>
           </div>
           <div>
             <div class="stat-label">Top Origin</div>
             <div id="top-country" class="stat-value stat-value-small">-</div>
+          </div>
+          <div>
+            <div class="stat-label">Arrived</div>
+            <div id="arrived-count" class="stat-value">0</div>
+          </div>
+          <div class="stat-card-wide">
+            <div class="stat-label">Global Reach</div>
+            <div id="global-summary" class="stat-value stat-value-small">Building global map view...</div>
           </div>
         </section>
 
@@ -67,7 +75,7 @@
         </section>
 
         <section class="panel controls-panel">
-          <div class="panel-label">Playback</div>
+          <div class="panel-label">Directory Filters</div>
           <div class="filter-grid">
             <label class="control-row" for="filter-start">
               <span>From</span>
@@ -77,7 +85,16 @@
               <span>To</span>
               <select id="filter-end"></select>
             </label>
+            <label class="control-row" for="filter-country">
+              <span>Country</span>
+              <select id="filter-country"></select>
+            </label>
+            <label class="control-row" for="filter-genre">
+              <span>Genre</span>
+              <select id="filter-genre"></select>
+            </label>
           </div>
+          <div class="panel-label panel-label-spaced">Playback</div>
           <label class="control-row" for="speed-control">
             <span>Speed</span>
             <input id="speed-control" type="range" min="0.4" max="3" value="1.25" step="0.05" />
@@ -87,11 +104,17 @@
             <button id="restart-play" type="button">Restart</button>
           </div>
         </section>
+
+        <section class="panel">
+          <div class="panel-label">Artist Directory</div>
+          <div id="directory-list" class="directory-list"></div>
+        </section>
       </aside>
     </div>
 
     <script src="./data/artists-data.js"></script>
     <script src="./data/artist-profiles.js"></script>
+    <script src="./data/artist-metadata.js"></script>
     <script src="./data/world-land.js"></script>
     <script src="./data/world-countries.js"></script>
     <script src="./sketch.js"></script>
