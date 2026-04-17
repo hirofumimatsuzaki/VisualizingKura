@@ -56,6 +56,9 @@ const state = {
   filterEnd: "",
   filterCountry: "",
   filterGenre: "",
+  directorySearch: "",
+  directorySort: "date-desc",
+  directoryView: "cards",
   mapCacheCanvas: null,
   mapCacheCtx: null,
   mapCacheDirty: true
@@ -108,6 +111,10 @@ function bindDom() {
   dom.filterGenre = document.getElementById("filter-genre");
   dom.togglePlay = document.getElementById("toggle-play");
   dom.restartPlay = document.getElementById("restart-play");
+  dom.directorySearch = document.getElementById("directory-search");
+  dom.directorySort = document.getElementById("directory-sort");
+  dom.directorySummary = document.getElementById("directory-summary");
+  dom.directoryViewButtons = [...document.querySelectorAll("[data-directory-view]")];
   dom.sidebarTabs = [...document.querySelectorAll("[data-sidebar-tab]")];
   dom.sidebarPanels = [...document.querySelectorAll("[data-sidebar-panel]")];
   dom.countryList.addEventListener("click", handleCountryListClick);
@@ -173,6 +180,17 @@ function setupControls() {
     dom.togglePlay.textContent = state.playing ? "Pause" : "Play";
   });
   dom.restartPlay.addEventListener("click", resetTimeline);
+  dom.directorySearch?.addEventListener("input", (event) => {
+    state.directorySearch = event.target.value.trim().toLowerCase();
+    renderDirectory();
+  });
+  dom.directorySort?.addEventListener("change", (event) => {
+    state.directorySort = event.target.value;
+    renderDirectory();
+  });
+  for (const button of dom.directoryViewButtons || []) {
+    button.addEventListener("click", () => setDirectoryView(button.dataset.directoryView || "cards"));
+  }
 }
 
 function initializeSidebarTabs() {
@@ -198,6 +216,16 @@ function setActiveSidebarTab(tabName) {
     panel.classList.toggle("is-active", active);
     panel.hidden = !active;
   }
+}
+
+function setDirectoryView(viewName) {
+  state.directoryView = viewName === "timeline" ? "timeline" : "cards";
+  for (const button of dom.directoryViewButtons || []) {
+    const active = button.dataset.directoryView === state.directoryView;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
+  }
+  renderDirectory();
 }
 
 function initializeFilterControls() {
@@ -703,14 +731,64 @@ function renderDirectory() {
   }
 
   if (!state.records?.length) {
+    if (dom.directorySummary) {
+      dom.directorySummary.textContent = "0 artists in the current selection.";
+    }
     dom.directoryList.innerHTML = `<div class="detail-empty">No artists match the current filters.</div>`;
     return;
   }
 
-  dom.directoryList.innerHTML = state.records
-    .slice()
-    .sort((a, b) => b.date.localeCompare(a.date) || a.artist.localeCompare(b.artist))
-    .slice(0, 60)
+  const visible = getDirectoryRecords();
+  if (dom.directorySummary) {
+    dom.directorySummary.textContent = buildDirectorySummary(visible);
+  }
+
+  if (!visible.length) {
+    dom.directoryList.innerHTML = `<div class="detail-empty">No artists match the current search.</div>`;
+    return;
+  }
+
+  dom.directoryList.innerHTML =
+    state.directoryView === "timeline" ? renderDirectoryTimeline(visible) : renderDirectoryCards(visible);
+}
+
+function getDirectoryRecords() {
+  const query = state.directorySearch;
+  const filtered = state.records.filter((record) => {
+    if (!query) {
+      return true;
+    }
+
+    return [record.artist, record.country, record.genre, record.label]
+      .some((value) => String(value || "").toLowerCase().includes(query));
+  });
+
+  return filtered.slice().sort((a, b) => compareDirectoryRecords(a, b, state.directorySort));
+}
+
+function compareDirectoryRecords(a, b, mode) {
+  if (mode === "date-asc") {
+    return a.date.localeCompare(b.date) || a.artist.localeCompare(b.artist);
+  }
+  if (mode === "artist-asc") {
+    return a.artist.localeCompare(b.artist) || a.date.localeCompare(b.date);
+  }
+  if (mode === "country-asc") {
+    return a.country.localeCompare(b.country) || a.artist.localeCompare(b.artist) || a.date.localeCompare(b.date);
+  }
+  return b.date.localeCompare(a.date) || a.artist.localeCompare(b.artist);
+}
+
+function buildDirectorySummary(records) {
+  const countryCount = new Set(records.map((record) => record.country)).size;
+  if (!records.length) {
+    return "0 artists in the current selection.";
+  }
+  return `${records.length} artists across ${countryCount} countries. Use search and sort to scan the full residency history.`;
+}
+
+function renderDirectoryCards(records) {
+  return records
     .map(
       (record) => `
         <article class="directory-card">
@@ -724,6 +802,47 @@ function renderDirectory() {
           </div>
           ${record.profile?.detailUrl ? `<a class="directory-link" href="${escapeHtml(record.profile.detailUrl)}" target="_blank" rel="noreferrer">Profile</a>` : ""}
         </article>
+      `
+    )
+    .join("");
+}
+
+function renderDirectoryTimeline(records) {
+  const groups = new Map();
+  for (const record of records) {
+    if (!groups.has(record.label)) {
+      groups.set(record.label, []);
+    }
+    groups.get(record.label).push(record);
+  }
+
+  return [...groups.entries()]
+    .map(
+      ([label, groupRecords]) => `
+        <section class="directory-group">
+          <div class="directory-group-header">
+            <strong>${escapeHtml(label)}</strong>
+            <span>${groupRecords.length} artists</span>
+          </div>
+          <div class="directory-group-list">
+            ${groupRecords
+              .map(
+                (record) => `
+                  <article class="directory-card directory-card-compact">
+                    <div class="directory-title">
+                      <strong>${escapeHtml(record.artist)}</strong>
+                      <span class="directory-period">${escapeHtml(record.country)}</span>
+                    </div>
+                    <div class="directory-meta">
+                      <span class="directory-pill">${escapeHtml(record.genre)}</span>
+                    </div>
+                    ${record.profile?.detailUrl ? `<a class="directory-link" href="${escapeHtml(record.profile.detailUrl)}" target="_blank" rel="noreferrer">Profile</a>` : ""}
+                  </article>
+                `
+              )
+              .join("")}
+          </div>
+        </section>
       `
     )
     .join("");

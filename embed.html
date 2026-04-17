@@ -29,15 +29,15 @@
         <section class="sidebar-tabs" aria-label="Sidebar sections">
           <button class="sidebar-tab is-active" type="button" data-sidebar-tab="overview">
             <span class="sidebar-tab-title">Map</span>
-            <span class="sidebar-tab-note">country view</span>
-          </button>
-          <button class="sidebar-tab" type="button" data-sidebar-tab="filters">
-            <span class="sidebar-tab-title">Filter</span>
-            <span class="sidebar-tab-note">period and genre</span>
+            <span class="sidebar-tab-note">world view</span>
           </button>
           <button class="sidebar-tab" type="button" data-sidebar-tab="directory">
-            <span class="sidebar-tab-title">Artists</span>
-            <span class="sidebar-tab-note">matching list</span>
+            <span class="sidebar-tab-title">List</span>
+            <span class="sidebar-tab-note">all artists</span>
+          </button>
+          <button class="sidebar-tab" type="button" data-sidebar-tab="filters">
+            <span class="sidebar-tab-title">Browse</span>
+            <span class="sidebar-tab-note">search and filter</span>
           </button>
         </section>
 
@@ -98,7 +98,7 @@
         <div class="sidebar-view" data-sidebar-panel="filters" hidden>
           <section class="panel panel-helper">
             <div class="panel-label">Current View</div>
-            <p class="panel-helper-copy">Filter updates the map and directory by period, country, and genre.</p>
+            <p class="panel-helper-copy">Browse narrows the map and full list by period, country, genre, and playback controls.</p>
           </section>
           <section class="panel controls-panel">
             <div class="panel-label">Directory Filters</div>
@@ -135,9 +135,34 @@
         <div class="sidebar-view" data-sidebar-panel="directory" hidden>
           <section class="panel panel-helper">
             <div class="panel-label">Current View</div>
-            <p class="panel-helper-copy">Artists lists the matching artists in reverse chronological order.</p>
+            <p class="panel-helper-copy">List shows every matching artist with search, sorting, and alternate layouts for scanning or browsing by month.</p>
           </section>
           <section class="panel">
+            <div class="directory-toolbar">
+              <label class="control-row" for="directory-search">
+                <span>Search</span>
+                <input id="directory-search" type="search" placeholder="Artist, country, genre, month..." />
+              </label>
+              <div class="filter-grid directory-toolbar-grid">
+                <label class="control-row" for="directory-sort">
+                  <span>Sort</span>
+                  <select id="directory-sort">
+                    <option value="date-desc">Newest First</option>
+                    <option value="date-asc">Oldest First</option>
+                    <option value="artist-asc">Artist A-Z</option>
+                    <option value="country-asc">Country A-Z</option>
+                  </select>
+                </label>
+                <div class="control-row">
+                  <span>View</span>
+                  <div class="view-toggle" id="directory-view-toggle">
+                    <button type="button" class="view-toggle-button is-active" data-directory-view="cards">Cards</button>
+                    <button type="button" class="view-toggle-button" data-directory-view="timeline">Timeline</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="directory-summary" class="directory-summary">Loading artists...</div>
             <div class="panel-label">Artist Directory</div>
             <div id="directory-list" class="directory-list"></div>
           </section>

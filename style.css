@@ -480,11 +480,44 @@ body.embed-mode {
 
 .directory-list {
   margin-top: 12px;
-  max-height: 28vh;
+  max-height: 46vh;
   overflow: auto;
   display: grid;
   gap: 8px;
   padding-right: 6px;
+}
+
+.directory-toolbar {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.directory-toolbar-grid {
+  align-items: start;
+}
+
+.directory-summary {
+  margin-bottom: 12px;
+  color: rgba(237, 247, 255, 0.72);
+  line-height: 1.45;
+  font-size: 0.84rem;
+}
+
+.view-toggle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.view-toggle-button {
+  min-height: 42px;
+  padding: 10px 12px;
+}
+
+.view-toggle-button.is-active {
+  border-color: rgba(122, 242, 211, 0.5);
+  background: linear-gradient(180deg, rgba(122, 242, 211, 0.18), rgba(255, 255, 255, 0.04));
 }
 
 .directory-card {
@@ -493,6 +526,10 @@ body.embed-mode {
   background: rgba(255, 255, 255, 0.05);
   display: grid;
   gap: 6px;
+}
+
+.directory-card-compact {
+  gap: 4px;
 }
 
 .directory-title {
@@ -535,6 +572,31 @@ body.embed-mode {
   text-decoration: underline;
 }
 
+.directory-group {
+  display: grid;
+  gap: 10px;
+}
+
+.directory-group-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(237, 247, 255, 0.88);
+}
+
+.directory-group-header span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.directory-group-list {
+  display: grid;
+  gap: 8px;
+}
+
 select {
   width: 100%;
   min-height: 42px;
@@ -555,6 +617,23 @@ select {
 input[type="range"] {
   width: 100%;
   accent-color: var(--accent-2);
+}
+
+input[type="search"] {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--ink);
+  font: inherit;
+}
+
+.embed-mode input[type="search"] {
+  border-color: rgba(16, 32, 43, 0.12);
+  background: rgba(255, 255, 255, 0.94);
+  color: #10202b;
 }
 
 .button-row {
@@ -664,6 +743,10 @@ button:hover {
   .directory-title {
     font-size: 0.88rem;
   }
+
+  .directory-list {
+    max-height: 38vh;
+  }
 }
 
 @media (max-width: 720px) {
@@ -756,6 +839,10 @@ button:hover {
   }
 
   .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .view-toggle {
     grid-template-columns: 1fr;
   }
 
