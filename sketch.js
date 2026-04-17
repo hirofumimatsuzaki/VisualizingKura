@@ -117,6 +117,8 @@ function bindDom() {
   dom.directorySummary = document.getElementById("directory-summary");
   dom.browseList = document.getElementById("browse-list");
   dom.browseSummary = document.getElementById("browse-summary");
+  dom.browseYearChart = document.getElementById("browse-year-chart");
+  dom.browseChartSummary = document.getElementById("browse-chart-summary");
   dom.directoryViewButtons = [...document.querySelectorAll("[data-directory-view]")];
   dom.sidebarTabs = [...document.querySelectorAll("[data-sidebar-tab]")];
   dom.sidebarPanels = [...document.querySelectorAll("[data-sidebar-panel]")];
@@ -286,6 +288,7 @@ function applyDateFilter() {
   state.selectedCountry = state.countryDetails?.has(state.selectedCountry) ? state.selectedCountry : null;
   renderCountryList();
   renderCountryDetail(state.selectedCountry);
+  renderBrowseYearChart();
   renderDirectory();
   resetTimeline();
   state.mapCacheDirty = true;
@@ -805,6 +808,112 @@ function buildDirectorySummary(records) {
     return "0 artists in the current selection.";
   }
   return `${records.length} artists across ${countryCount} countries. Use search and sort to scan the full residency history.`;
+}
+
+function renderBrowseYearChart() {
+  if (!dom.browseYearChart) {
+    return;
+  }
+
+  const yearData = getBrowseYearChartData();
+  if (!yearData.length) {
+    if (dom.browseChartSummary) {
+      dom.browseChartSummary.textContent = "No yearly data matches the current country and genre filters.";
+    }
+    dom.browseYearChart.innerHTML = `<div class="detail-empty">No yearly totals available.</div>`;
+    return;
+  }
+
+  const maxCount = Math.max(...yearData.map((item) => item.count), 1);
+  const selectedYear = getSelectedBrowseYear();
+  if (dom.browseChartSummary) {
+    const total = yearData.reduce((sum, item) => sum + item.count, 0);
+    dom.browseChartSummary.textContent = selectedYear
+      ? `${selectedYear} is selected. Click the same bar again to clear the year filter.`
+      : `${total} artists across ${yearData.length} years. Click a bar to filter that year.`;
+  }
+
+  dom.browseYearChart.innerHTML = yearData
+    .map((item) => {
+      const active = item.year === selectedYear;
+      const height = Math.max(18, Math.round((item.count / maxCount) * 100));
+      return `
+        <button
+          type="button"
+          class="year-bar${active ? " is-active" : ""}"
+          data-browse-year="${item.year}"
+          title="${item.year}: ${item.count} artists"
+          aria-pressed="${active ? "true" : "false"}"
+        >
+          <span class="year-bar-count">${item.count}</span>
+          <span class="year-bar-track">
+            <span class="year-bar-fill" style="height:${height}%"></span>
+          </span>
+          <span class="year-bar-label">${item.year}</span>
+        </button>
+      `;
+    })
+    .join("");
+
+  dom.browseYearChart.querySelectorAll("[data-browse-year]").forEach((button) => {
+    button.addEventListener("click", () => toggleBrowseYearFilter(Number(button.dataset.browseYear)));
+  });
+}
+
+function getBrowseYearChartData() {
+  const counts = new Map();
+  for (const record of state.allRecords) {
+    if (state.filterCountry && record.country !== state.filterCountry) {
+      continue;
+    }
+    if (state.filterGenre && record.genre !== state.filterGenre) {
+      continue;
+    }
+    counts.set(record.year, (counts.get(record.year) || 0) + 1);
+  }
+
+  return [...counts.entries()]
+    .map(([year, count]) => ({ year, count }))
+    .sort((a, b) => a.year - b.year);
+}
+
+function getSelectedBrowseYear() {
+  if (!state.filterStart || !state.filterEnd) {
+    return null;
+  }
+
+  const startMatch = /^(\d{4})\/01$/.exec(state.filterStart);
+  const endMatch = /^(\d{4})\/12$/.exec(state.filterEnd);
+  if (!startMatch || !endMatch || startMatch[1] !== endMatch[1]) {
+    return null;
+  }
+
+  return Number(startMatch[1]);
+}
+
+function toggleBrowseYearFilter(year) {
+  const selectedYear = getSelectedBrowseYear();
+  if (selectedYear === year) {
+    state.filterStart = "";
+    state.filterEnd = "";
+    if (dom.filterStart) {
+      dom.filterStart.value = "";
+    }
+    if (dom.filterEnd) {
+      dom.filterEnd.value = "";
+    }
+  } else {
+    state.filterStart = `${year}/01`;
+    state.filterEnd = `${year}/12`;
+    if (dom.filterStart) {
+      dom.filterStart.value = state.filterStart;
+    }
+    if (dom.filterEnd) {
+      dom.filterEnd.value = state.filterEnd;
+    }
+  }
+
+  applyDateFilter();
 }
 
 function setDirectoryRenderState(summary, html) {

@@ -533,6 +533,63 @@ body.embed-mode {
   max-height: 56vh;
 }
 
+.year-chart {
+  margin: 12px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+  gap: 10px;
+  align-items: end;
+}
+
+.year-bar {
+  min-height: 180px;
+  padding: 10px 6px 8px;
+  border-radius: 18px;
+  display: grid;
+  gap: 8px;
+  align-items: end;
+  justify-items: center;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.year-bar:hover {
+  border-color: rgba(255, 209, 102, 0.35);
+}
+
+.year-bar.is-active {
+  border-color: rgba(255, 209, 102, 0.55);
+  background: linear-gradient(180deg, rgba(255, 209, 102, 0.16), rgba(255, 255, 255, 0.04));
+}
+
+.year-bar-count {
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.year-bar-track {
+  width: 100%;
+  height: 112px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.year-bar-fill {
+  width: 100%;
+  max-width: 28px;
+  min-height: 12px;
+  border-radius: 999px 999px 8px 8px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  box-shadow: 0 8px 24px rgba(122, 242, 211, 0.18);
+}
+
+.year-bar-label {
+  font-size: 0.72rem;
+  color: rgba(237, 247, 255, 0.82);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
 .directory-toolbar {
   display: grid;
   gap: 12px;
@@ -581,6 +638,19 @@ body.embed-mode {
 
 .embed-mode .directory-summary {
   color: rgba(16, 32, 43, 0.68);
+}
+
+.embed-mode .year-bar {
+  background: rgba(16, 32, 43, 0.05);
+}
+
+.embed-mode .year-bar.is-active {
+  background: linear-gradient(180deg, rgba(255, 149, 101, 0.14), rgba(16, 32, 43, 0.03));
+}
+
+.embed-mode .year-bar-label,
+.embed-mode .year-bar-count {
+  color: rgba(16, 32, 43, 0.7);
 }
 
 .directory-card {
@@ -836,6 +906,11 @@ button:hover {
   .directory-list-main {
     max-height: none;
   }
+
+  .year-chart {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 8px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -938,6 +1013,14 @@ button:hover {
 
   .main-filter-grid {
     grid-template-columns: 1fr;
+  }
+
+  .year-bar {
+    min-height: 152px;
+  }
+
+  .year-bar-track {
+    height: 92px;
   }
 
   .view-toggle {
