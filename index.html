@@ -62,7 +62,7 @@
 
         <section class="main-view" data-main-panel="filters" hidden>
           <div class="main-stage">
-            <section class="main-panel">
+            <section class="main-panel main-panel-wide">
               <div class="main-panel-headline">
                 <p class="eyebrow">Browse Mode</p>
                 <h2>Filter The Residency Archive</h2>
@@ -70,9 +70,6 @@
                   Narrow the archive by period, country, and genre, then review the matching artists without the map getting in the way.
                 </p>
               </div>
-              <div class="panel-label">Yearly Intake</div>
-              <div id="browse-chart-summary" class="directory-summary">Loading yearly totals...</div>
-              <div id="browse-year-chart" class="year-chart"></div>
               <div class="filter-grid main-filter-grid">
                 <label class="control-row" for="filter-start">
                   <span>From</span>
@@ -103,6 +100,9 @@
             </section>
 
             <section class="main-panel">
+              <div class="panel-label">Yearly Intake</div>
+              <div id="browse-chart-summary" class="directory-summary">Loading yearly totals...</div>
+              <div id="browse-year-chart" class="year-chart"></div>
               <div class="panel-label">Filtered Results</div>
               <div id="browse-summary" class="directory-summary">Loading filtered artists...</div>
               <div id="browse-list" class="directory-list directory-list-main"></div>

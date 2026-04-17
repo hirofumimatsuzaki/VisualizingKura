@@ -72,6 +72,7 @@ body.embed-mode {
   display: grid;
   gap: 18px;
   align-content: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .hero-copy {
@@ -135,6 +136,10 @@ body.embed-mode {
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.03),
     0 18px 44px rgba(0, 0, 0, 0.24);
+}
+
+.main-panel-wide {
+  grid-column: 1 / -1;
 }
 
 .main-panel-headline {
@@ -539,6 +544,7 @@ body.embed-mode {
   grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
   gap: 10px;
   align-items: end;
+  min-height: 180px;
 }
 
 .year-bar {
@@ -818,6 +824,10 @@ button:hover {
   .main-view,
   .main-stage {
     min-height: auto;
+  }
+
+  .main-stage {
+    grid-template-columns: 1fr;
   }
 
   #sketch-root {
