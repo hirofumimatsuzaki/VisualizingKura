@@ -234,6 +234,11 @@ function setActiveSidebarTab(tabName) {
     resizeCanvas();
     state.mapCacheDirty = true;
   }
+
+  if (tabName === "filters") {
+    renderBrowseYearChart();
+    renderDirectory();
+  }
 }
 
 function setDirectoryView(viewName) {
@@ -285,11 +290,11 @@ function applyDateFilter() {
   });
 
   rebuildFilteredState(filtered);
+  renderBrowseYearChart();
+  renderDirectory();
   state.selectedCountry = state.countryDetails?.has(state.selectedCountry) ? state.selectedCountry : null;
   renderCountryList();
   renderCountryDetail(state.selectedCountry);
-  renderBrowseYearChart();
-  renderDirectory();
   resetTimeline();
   state.mapCacheDirty = true;
 }
