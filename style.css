@@ -669,11 +669,23 @@ select {
   background: rgba(255, 255, 255, 0.05);
   color: var(--ink);
   font: inherit;
+  color-scheme: dark;
+}
+
+select option {
+  background: #0d2231;
+  color: #edf7ff;
 }
 
 .embed-mode select {
   border-color: rgba(16, 32, 43, 0.12);
   background: rgba(255, 255, 255, 0.94);
+  color: #10202b;
+  color-scheme: light;
+}
+
+.embed-mode select option {
+  background: #ffffff;
   color: #10202b;
 }
 
