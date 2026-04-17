@@ -124,9 +124,7 @@ function initializeMapData() {
 }
 
 function initializeData() {
-  const payload = window.ARTIST_DATA;
-  initializeProfileLookup(window.ARTIST_PROFILES);
-  initializeMetadataLookup(window.ARTIST_METADATA);
+  const payload = getVisualizationPayload();
   if (!payload || !Array.isArray(payload.records)) {
     document.getElementById("sketch-root").textContent = "Artist data could not be loaded.";
     return;
@@ -134,14 +132,12 @@ function initializeData() {
 
   state.allRecords = payload.records.map((record, index) => {
     const origin = COUNTRY_COORDS[record.country];
-    const profile = resolveProfile(record);
-    const metadata = resolveMetadata(record);
     return {
       ...record,
       index,
       origin,
-      profile,
-      genre: metadata.genre || "Unspecified",
+      profile: record.detailUrl ? { detailUrl: record.detailUrl } : null,
+      genre: record.genre || "Unspecified",
       status: "queued",
       progress: 0,
       seed: (index * 9301 + 49297) % 233280
@@ -858,6 +854,32 @@ function initializeMetadataLookup(payload) {
   for (const [key, value] of Object.entries(payload.records)) {
     state.metadataLookup.set(key, value);
   }
+}
+
+function getVisualizationPayload() {
+  if (window.VISUALIZATION_DATA?.records) {
+    return window.VISUALIZATION_DATA;
+  }
+
+  const payload = window.ARTIST_DATA;
+  initializeProfileLookup(window.ARTIST_PROFILES);
+  initializeMetadataLookup(window.ARTIST_METADATA);
+  if (!payload || !Array.isArray(payload.records)) {
+    return null;
+  }
+
+  return {
+    ...payload,
+    records: payload.records.map((record) => {
+      const profile = resolveProfile(record);
+      const metadata = resolveMetadata(record);
+      return {
+        ...record,
+        detailUrl: record.detailUrl || profile?.detailUrl || "",
+        genre: metadata.genre || "Unspecified"
+      };
+    })
+  };
 }
 
 function resolveProfile(record) {

@@ -18,6 +18,8 @@ Studio Kura residency artists visualized on a world map, animated from each arti
   Generated artist dataset.
 - `data/artist-profiles.js`
   Generated static profile links for artist detail cards.
+- `data/visualization-data.js`
+  Generated unified dataset for the frontend. This is the preferred input for the map UI.
 - `data/artist-images.js`
   Optional image lookup table. Currently not loaded by the visualization UI.
 - `data/manual-artists.csv`
@@ -34,6 +36,8 @@ Studio Kura residency artists visualized on a world map, animated from each arti
   Rebuilds static artist profile metadata from Studio Kura's public artist list.
 - `scripts/build-map-data.ps1`
   Rebuilds JS wrappers from the local map JSON files.
+- `scripts/build-visualization-data.ps1`
+  Merges artist, profile, and metadata sources into a single frontend dataset.
 
 ## Local Use
 
@@ -64,6 +68,12 @@ This regenerates:
 
 ```text
 data/artists-data.js
+```
+
+Then rebuild the frontend-ready unified dataset:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\build-visualization-data.ps1
 ```
 
 Example manual addition:
@@ -105,6 +115,12 @@ This regenerates:
 ```text
 data/artist-profiles.js
 data/artist-images.js
+```
+
+After rebuilding profile or metadata sources, regenerate the unified frontend dataset:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\build-visualization-data.ps1
 ```
 
 Note:
@@ -156,3 +172,4 @@ This adds a WordPress REST endpoint that scrapes the artist list and detail page
 - The map uses local topology data, so it works without external map API requests.
 - The artist list is animated in chronological order starting in 2007.
 - Some CSV rows have missing country values; those entries remain in the dataset as `Unknown`.
+- `index.html` and `embed.html` now consume `data/visualization-data.js` as the single frontend data source.
