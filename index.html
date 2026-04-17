@@ -9,6 +9,7 @@
   <body>
     <div class="app-shell">
       <main class="canvas-column">
+        <section class="main-view is-active" data-main-panel="overview">
         <div class="hero-copy">
           <p class="eyebrow">Kura Residency / Itoshima Flow</p>
           <h1>世界から糸島へ集まるアーティストの軌跡</h1>
@@ -17,6 +18,94 @@
           </p>
         </div>
         <div id="sketch-root"></div>
+        </section>
+
+        <section class="main-view" data-main-panel="directory" hidden>
+          <div class="main-stage">
+            <section class="main-panel">
+              <div class="main-panel-headline">
+                <p class="eyebrow">Artist Directory</p>
+                <h2>All Artists In One Place</h2>
+                <p class="description">
+                  Browse the full residency history as cards or as a monthly timeline. Search across artist names, countries, genres, and dates.
+                </p>
+              </div>
+              <div class="directory-toolbar">
+                <label class="control-row" for="directory-search">
+                  <span>Search</span>
+                  <input id="directory-search" type="search" placeholder="Artist, country, genre, month..." />
+                </label>
+                <div class="filter-grid directory-toolbar-grid">
+                  <label class="control-row" for="directory-sort">
+                    <span>Sort</span>
+                    <select id="directory-sort">
+                      <option value="date-desc">Newest First</option>
+                      <option value="date-asc">Oldest First</option>
+                      <option value="artist-asc">Artist A-Z</option>
+                      <option value="country-asc">Country A-Z</option>
+                    </select>
+                  </label>
+                  <div class="control-row">
+                    <span>View</span>
+                    <div class="view-toggle" id="directory-view-toggle">
+                      <button type="button" class="view-toggle-button is-active" data-directory-view="cards">Cards</button>
+                      <button type="button" class="view-toggle-button" data-directory-view="timeline">Timeline</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="directory-summary" class="directory-summary">Loading artists...</div>
+              <div id="directory-list" class="directory-list directory-list-main"></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="main-view" data-main-panel="filters" hidden>
+          <div class="main-stage">
+            <section class="main-panel">
+              <div class="main-panel-headline">
+                <p class="eyebrow">Browse Mode</p>
+                <h2>Filter The Residency Archive</h2>
+                <p class="description">
+                  Narrow the archive by period, country, and genre, then review the matching artists without the map getting in the way.
+                </p>
+              </div>
+              <div class="filter-grid main-filter-grid">
+                <label class="control-row" for="filter-start">
+                  <span>From</span>
+                  <select id="filter-start"></select>
+                </label>
+                <label class="control-row" for="filter-end">
+                  <span>To</span>
+                  <select id="filter-end"></select>
+                </label>
+                <label class="control-row" for="filter-country">
+                  <span>Country</span>
+                  <select id="filter-country"></select>
+                </label>
+                <label class="control-row" for="filter-genre">
+                  <span>Genre</span>
+                  <select id="filter-genre"></select>
+                </label>
+              </div>
+              <div class="panel-label panel-label-spaced">Playback</div>
+              <label class="control-row" for="speed-control">
+                <span>Speed</span>
+                <input id="speed-control" type="range" min="0.4" max="3" value="1.25" step="0.05" />
+              </label>
+              <div class="button-row">
+                <button id="toggle-play" type="button">Pause</button>
+                <button id="restart-play" type="button">Restart</button>
+              </div>
+            </section>
+
+            <section class="main-panel">
+              <div class="panel-label">Filtered Results</div>
+              <div id="browse-summary" class="directory-summary">Loading filtered artists...</div>
+              <div id="browse-list" class="directory-list directory-list-main"></div>
+            </section>
+          </div>
+        </section>
       </main>
 
       <aside class="sidebar">
@@ -98,73 +187,14 @@
         <div class="sidebar-view" data-sidebar-panel="filters" hidden>
           <section class="panel panel-helper">
             <div class="panel-label">Current View</div>
-            <p class="panel-helper-copy">Browse narrows the map and full list by period, country, genre, and playback controls.</p>
-          </section>
-          <section class="panel controls-panel">
-            <div class="panel-label">Directory Filters</div>
-            <div class="filter-grid">
-              <label class="control-row" for="filter-start">
-                <span>From</span>
-                <select id="filter-start"></select>
-              </label>
-              <label class="control-row" for="filter-end">
-                <span>To</span>
-                <select id="filter-end"></select>
-              </label>
-              <label class="control-row" for="filter-country">
-                <span>Country</span>
-                <select id="filter-country"></select>
-              </label>
-              <label class="control-row" for="filter-genre">
-                <span>Genre</span>
-                <select id="filter-genre"></select>
-              </label>
-            </div>
-            <div class="panel-label panel-label-spaced">Playback</div>
-            <label class="control-row" for="speed-control">
-              <span>Speed</span>
-              <input id="speed-control" type="range" min="0.4" max="3" value="1.25" step="0.05" />
-            </label>
-            <div class="button-row">
-              <button id="toggle-play" type="button">Pause</button>
-              <button id="restart-play" type="button">Restart</button>
-            </div>
+            <p class="panel-helper-copy">Browse now uses the main stage. Adjust filters in the center panel and use this sidebar to keep summary context.</p>
           </section>
         </div>
 
         <div class="sidebar-view" data-sidebar-panel="directory" hidden>
           <section class="panel panel-helper">
             <div class="panel-label">Current View</div>
-            <p class="panel-helper-copy">List shows every matching artist with search, sorting, and alternate layouts for scanning or browsing by month.</p>
-          </section>
-          <section class="panel">
-            <div class="directory-toolbar">
-              <label class="control-row" for="directory-search">
-                <span>Search</span>
-                <input id="directory-search" type="search" placeholder="Artist, country, genre, month..." />
-              </label>
-              <div class="filter-grid directory-toolbar-grid">
-                <label class="control-row" for="directory-sort">
-                  <span>Sort</span>
-                  <select id="directory-sort">
-                    <option value="date-desc">Newest First</option>
-                    <option value="date-asc">Oldest First</option>
-                    <option value="artist-asc">Artist A-Z</option>
-                    <option value="country-asc">Country A-Z</option>
-                  </select>
-                </label>
-                <div class="control-row">
-                  <span>View</span>
-                  <div class="view-toggle" id="directory-view-toggle">
-                    <button type="button" class="view-toggle-button is-active" data-directory-view="cards">Cards</button>
-                    <button type="button" class="view-toggle-button" data-directory-view="timeline">Timeline</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="directory-summary" class="directory-summary">Loading artists...</div>
-            <div class="panel-label">Artist Directory</div>
-            <div id="directory-list" class="directory-list"></div>
+            <p class="panel-helper-copy">List now fills the main stage. Search, sort, and view switches live in the center so the mode change is obvious.</p>
           </section>
         </div>
       </aside>

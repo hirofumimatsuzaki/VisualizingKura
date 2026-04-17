@@ -59,6 +59,7 @@ const state = {
   directorySearch: "",
   directorySort: "date-desc",
   directoryView: "cards",
+  activeTab: "overview",
   mapCacheCanvas: null,
   mapCacheCtx: null,
   mapCacheDirty: true
@@ -114,9 +115,12 @@ function bindDom() {
   dom.directorySearch = document.getElementById("directory-search");
   dom.directorySort = document.getElementById("directory-sort");
   dom.directorySummary = document.getElementById("directory-summary");
+  dom.browseList = document.getElementById("browse-list");
+  dom.browseSummary = document.getElementById("browse-summary");
   dom.directoryViewButtons = [...document.querySelectorAll("[data-directory-view]")];
   dom.sidebarTabs = [...document.querySelectorAll("[data-sidebar-tab]")];
   dom.sidebarPanels = [...document.querySelectorAll("[data-sidebar-panel]")];
+  dom.mainPanels = [...document.querySelectorAll("[data-main-panel]")];
   dom.countryList.addEventListener("click", handleCountryListClick);
   initializeSidebarTabs();
 }
@@ -205,6 +209,7 @@ function initializeSidebarTabs() {
 }
 
 function setActiveSidebarTab(tabName) {
+  state.activeTab = tabName;
   for (const button of dom.sidebarTabs) {
     const active = button.dataset.sidebarTab === tabName;
     button.classList.toggle("is-active", active);
@@ -215,6 +220,17 @@ function setActiveSidebarTab(tabName) {
     const active = panel.dataset.sidebarPanel === tabName;
     panel.classList.toggle("is-active", active);
     panel.hidden = !active;
+  }
+
+  for (const panel of dom.mainPanels || []) {
+    const active = panel.dataset.mainPanel === tabName;
+    panel.classList.toggle("is-active", active);
+    panel.hidden = !active;
+  }
+
+  if (tabName === "overview") {
+    resizeCanvas();
+    state.mapCacheDirty = true;
   }
 }
 
@@ -336,6 +352,12 @@ function rebuildFilteredState(records) {
 
 function resizeCanvas() {
   const root = document.getElementById("sketch-root");
+  if (!root || !canvas || !state.mapCacheCanvas) {
+    return;
+  }
+  if (root.clientWidth === 0 || root.clientHeight === 0) {
+    return;
+  }
   const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
   state.pixelRatio = ratio;
   state.width = root.clientWidth;
@@ -383,6 +405,9 @@ function tick() {
 }
 
 function drawScene() {
+  if (state.activeTab !== "overview") {
+    return;
+  }
   drawCachedMapLayer();
   if (state.playing && state.records) {
     runTimeline();
@@ -726,30 +751,25 @@ function renderCountryDetail(country) {
 }
 
 function renderDirectory() {
-  if (!dom.directoryList) {
+  if (!dom.directoryList && !dom.browseList) {
     return;
   }
 
   if (!state.records?.length) {
-    if (dom.directorySummary) {
-      dom.directorySummary.textContent = "0 artists in the current selection.";
-    }
-    dom.directoryList.innerHTML = `<div class="detail-empty">No artists match the current filters.</div>`;
+    setDirectoryRenderState("0 artists in the current selection.", `<div class="detail-empty">No artists match the current filters.</div>`);
     return;
   }
 
   const visible = getDirectoryRecords();
-  if (dom.directorySummary) {
-    dom.directorySummary.textContent = buildDirectorySummary(visible);
-  }
+  const summary = buildDirectorySummary(visible);
 
   if (!visible.length) {
-    dom.directoryList.innerHTML = `<div class="detail-empty">No artists match the current search.</div>`;
+    setDirectoryRenderState(summary, `<div class="detail-empty">No artists match the current search.</div>`);
     return;
   }
 
-  dom.directoryList.innerHTML =
-    state.directoryView === "timeline" ? renderDirectoryTimeline(visible) : renderDirectoryCards(visible);
+  const html = state.directoryView === "timeline" ? renderDirectoryTimeline(visible) : renderDirectoryCards(visible);
+  setDirectoryRenderState(summary, html);
 }
 
 function getDirectoryRecords() {
@@ -785,6 +805,21 @@ function buildDirectorySummary(records) {
     return "0 artists in the current selection.";
   }
   return `${records.length} artists across ${countryCount} countries. Use search and sort to scan the full residency history.`;
+}
+
+function setDirectoryRenderState(summary, html) {
+  if (dom.directorySummary) {
+    dom.directorySummary.textContent = summary;
+  }
+  if (dom.browseSummary) {
+    dom.browseSummary.textContent = summary;
+  }
+  if (dom.directoryList) {
+    dom.directoryList.innerHTML = html;
+  }
+  if (dom.browseList) {
+    dom.browseList.innerHTML = html;
+  }
 }
 
 function renderDirectoryCards(records) {
